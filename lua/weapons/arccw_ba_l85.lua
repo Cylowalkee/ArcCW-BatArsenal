@@ -53,10 +53,10 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
 
-SWEP.Damage = 34
+SWEP.Damage = 30
 SWEP.DamageMin = 18
 SWEP.Range = 70
-SWEP.Penetration = 37
+SWEP.Penetration = 15
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil
 SWEP.PhysBulletMuzzleVelocity = 960
@@ -83,17 +83,17 @@ SWEP.ReducedClipSize = 10
 
 -- Recoil --
 
-SWEP.Recoil = 0.3
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 0.5
+SWEP.RecoilSide = 0.1
 
 SWEP.RecoilRise = 0
-SWEP.VisualRecoilMult = 0.5
+SWEP.VisualRecoilMult = 1.5
 SWEP.MaxRecoilBlowback = 0
-SWEP.RecoilPunch = 0
+SWEP.RecoilPunch = 0.1
 
 -- Firerate / Firemodes --
 
-SWEP.Delay = 60 / 775
+SWEP.Delay = 60 / 650
 SWEP.Num = 1
 SWEP.Firemodes = {
     {
@@ -107,8 +107,8 @@ SWEP.Firemodes = {
     },
 }
 
-SWEP.ShootPitch = 90
-SWEP.ShootVol = 120
+SWEP.ShootPitch = 100
+SWEP.ShootVol = 100
 
 SWEP.ProceduralRegularFire = false
 SWEP.ProceduralIronFire = false
@@ -122,19 +122,19 @@ SWEP.NPCWeight = 60
 
 -- Accuracy --
 
-SWEP.AccuracyMOA = 1
-SWEP.HipDispersion = 250
-SWEP.MoveDispersion = 50
-SWEP.JumpDispersion = 0
+SWEP.AccuracyMOA = 5
+SWEP.HipDispersion = 600
+SWEP.MoveDispersion = 150
+SWEP.JumpDispersion = 50
 
 SWEP.Primary.Ammo = "smg1"
 SWEP.MagID = "xcr"
 
 -- Speed mult --
 
-SWEP.SpeedMult = 1
-SWEP.SightedSpeedMult = 0.9
-SWEP.SightTime = 0.18
+SWEP.SpeedMult = 0.9
+SWEP.SightedSpeedMult = 0.8
+SWEP.SightTime = 0.35
 
 -- Gun length --
 
@@ -487,6 +487,7 @@ SWEP.Attachments = {
         Slot = {"ba_l85_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_barrel_normal.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -498,6 +499,7 @@ SWEP.Attachments = {
         Slot = {"ba_l85_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Body",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -508,10 +510,33 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"ba_l85_mag"},
         DefaultAttName = "30 Round Magazine",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_mag_30.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
+        },
+    },
+
+    {
+        PrintName = "Fire Group",
+        Slot = "fcg",
+        DefaultAttName = "Standard FCG"
+    },
+
+    {
+        PrintName = "Perk",
+        Slot = "perk"
+    },
+
+    {
+        PrintName = "Charm",
+        Slot = "charm",
+        FreeSlot = true,
+        Bone = "body",
+        Offset = {
+            vpos = Vector(0.5, 2.286, 0),
+            vang = Angle(90, -90, -90),
         },
     },
 }

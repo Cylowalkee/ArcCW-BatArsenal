@@ -1,5 +1,5 @@
 att.PrintName = "LMG Barrel"
-att.Icon = Material("entities/acwatt_bo2_longbarrel.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_l85_barrel_lmg.png", "mips smooth")
 att.Description = "Extremely heavy barrel for suppressive fire. Comes with a bipod for stabilisation."
 
 att.SortOrder = 107
@@ -12,7 +12,16 @@ att.Desc_Cons = {
 att.Slot = "ba_l85_barrel"
 
 att.Bipod = true
-att.Mult_BipodDispersion = 0.2
-att.Mult_BipodRecoil = 0.15
+att.Mult_BipodDispersion = 0.3
+att.Mult_BipodRecoil = 0.5
+
+
+att.Mult_Recoil = 0.8
+att.Mult_Range = 1.1
+att.Mult_HipDispersion = 0.95
+
+att.Mult_RPM = 0.85
+att.Mult_SpeedMult = 0.75
+att.Mult_SightTime = 1.2
 
 att.ActivateElements = {"barrel_lmg"}
