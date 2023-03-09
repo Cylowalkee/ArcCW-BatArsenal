@@ -16,5 +16,5 @@ att.Override_ClipSize = 60
 att.ActivateElements = {"mag_60"}
 
 att.Hook_SelectReloadAnimation = function(wep, anim)
-    return anim .. "_20"
+    return anim .. "_60"
 end

@@ -35,10 +35,21 @@ $BodyGroup "mags"
 $BodyGroup "irons"
 {
 	studio "ironsights.smd"
+	studio "rail top.smd"
 	blank
 }
 
+$BodyGroup "railbottom"
+{
+	blank
+	studio "rail bottom.smd"
+}
 
+$BodyGroup "railtac"
+{
+	blank
+	studio "rail tac.smd"
+}
 
 
 $SurfaceProp "default"
@@ -109,7 +120,21 @@ $sequence "fire" {
 }
 
 $sequence "fire_iron" {
-	""anims\fire_iron.smd""
+	"anims\fire_iron.smd"
+	fadein 0.03
+	fadeout 0.03
+	fps 40
+}
+
+$sequence "fire_empty" {
+	"anims\fire_empty.smd"
+	fadein 0.03
+	fadeout 0.03
+	fps 40
+}
+
+$sequence "fire_empty_iron" {
+	"anims\fire_iron_empty.smd"
 	fadein 0.03
 	fadeout 0.03
 	fps 40
@@ -142,6 +167,21 @@ $sequence "reload_20_dry" {
 	fadeout 0.1
 	fps 40
 }
+
+$sequence "reload_60_wet" {
+	"anims\reload_60_wet.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
+$sequence "reload_60_dry" {
+	"anims\reload_60_dry.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
 
 $sequence "ready" {
 	"anims\ready.smd"

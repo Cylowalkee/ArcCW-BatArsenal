@@ -53,9 +53,9 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
 
-SWEP.Damage = 24
-SWEP.DamageMin = 20
-SWEP.Range = 100
+SWEP.Damage = 34
+SWEP.DamageMin = 18
+SWEP.Range = 70
 SWEP.Penetration = 37
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil
@@ -83,8 +83,8 @@ SWEP.ReducedClipSize = 10
 
 -- Recoil --
 
-SWEP.Recoil = 0.8
-SWEP.RecoilSide = 0.2
+SWEP.Recoil = 0.3
+SWEP.RecoilSide = 0.3
 
 SWEP.RecoilRise = 0
 SWEP.VisualRecoilMult = 0.5
@@ -113,7 +113,7 @@ SWEP.ShootVol = 120
 SWEP.ProceduralRegularFire = false
 SWEP.ProceduralIronFire = false
 
-SWEP.ReloadInSights = true
+SWEP.ReloadInSights = false
 
 -- NPC stuff -- 
 
@@ -247,6 +247,17 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 4, bg = 1}},
     },
 
+    ["bottom"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },
+
+    ["tac"] = {
+        VMBodygroups = {{ind = 6, bg = 1}},
+    },
+
+
+
+
 }
 
 
@@ -281,8 +292,20 @@ SWEP.Animations = {
         Time = 30 / 40,
         ShellEjectAt = 0.01,
     },
+    ["fire_empty"] = {
+        Source = {"fire_empty"},
+        Framerate = 40,
+        Time = 30 / 40,
+        ShellEjectAt = 0.01,
+    },
     ["fire_iron"] = {
         Source = {"fire_iron"},
+        Framerate = 40,
+        Time = 30 / 40,
+        ShellEjectAt = 0.01,
+    },
+    ["fire_empty_iron"] = {
+        Source = {"fire_empty_iron"},
         Framerate = 40,
         Time = 30 / 40,
         ShellEjectAt = 0.01,
@@ -369,6 +392,47 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_60"] = {
+        Source = "reload_60_wet",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 40,
+        Time = 139 / 40,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.5,
+        SoundTable = {
+            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_60"] = {
+        Source = "reload_60_dry",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 40,
+        Time = 154 / 40,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.45,
+        SoundTable = {
+            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "pullback.wav", t = 110 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "boltslap.mp3", t = 130 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 140 / 40, c = ca, v = 0.8 },
+        },
+    },
+
 }
 
 -- FESIUG MY BELOVED --
@@ -382,7 +446,7 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "Body",
         Offset = {
-            vpos = Vector(-0.0, 2, 0.7),
+            vpos = Vector(-0.0, 2, 0.8),
             vang = Angle(0, -90, 0),
         },
         CorrectiveAng = Angle( 0, 180, 0 ),
@@ -397,6 +461,26 @@ SWEP.Attachments = {
             vpos = Vector(0, 20, -0.4),
             vang = Angle(0, -90, 0),
         },
+    },
+    {
+        PrintName = "Underbarrel",
+        Slot = {"foregrip"},
+        Bone = "Body",
+        Offset = {
+            vpos = Vector(0, 11, -2),
+            vang = Angle(-0, -90, -0),
+        },
+        InstalledEles = {"bottom"},
+    },
+    {
+        PrintName = "Tactical",
+        Slot = "tac",
+        Bone = "Body",
+        Offset = {
+            vpos = Vector(-0.95, 10, -0),
+            vang = Angle(-0, -90, -115),
+        },
+        InstalledEles = {"tac"},
     },
     {
         PrintName = "Barrel",
