@@ -112,6 +112,13 @@ $sequence "idle" {
 	fps 40
 }
 
+$sequence "idle_empty" {
+	"anims\reference_empty.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
 $sequence "fire" {
 	"anims\fire.smd"
 	fadein 0.03
@@ -133,7 +140,7 @@ $sequence "fire_empty" {
 	fps 40
 }
 
-$sequence "fire_empty_iron" {
+$sequence "fire_iron_empty" {
 	"anims\fire_iron_empty.smd"
 	fadein 0.03
 	fadeout 0.03
@@ -192,6 +199,13 @@ $sequence "ready" {
 
 $sequence "draw" {
 	"anims\draw.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
+$sequence "draw_empty" {
+	"anims\draw_empty.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 40
