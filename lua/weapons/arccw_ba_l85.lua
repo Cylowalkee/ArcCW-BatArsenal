@@ -267,6 +267,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["idle_empty"] = {
+        Source = "idle_empty",
+    },
     ["ready"] = {
         Source = "ready",
         Framerate = 40,
@@ -282,6 +285,12 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+        SoundTable = {
+            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
@@ -334,7 +343,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_30_dry",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, 
         LastClip1OutTime = 2,
         Framerate = 40,
         Time = 140 / 40,
