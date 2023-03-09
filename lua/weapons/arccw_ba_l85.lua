@@ -47,7 +47,7 @@ end
 -- Viewmodel / Worldmodel / Model FOV / Animations --
 
 SWEP.ViewModel = "models/weapons/arccw/c_ba_rif_l85.mdl"
-SWEP.WorldModel = "models/weapons/arccw/c_lpaak105.mdl"
+SWEP.WorldModel = "models/weapons/arccw/c_ba_rif_l85.mdl"
 SWEP.ViewModelFOV = 70
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
@@ -158,9 +158,6 @@ SWEP.IronSightStruct = {
      ViewModelFOV = 70,
 }
 
-SWEP.CustomizePos = Vector(0, 0, 0)
-SWEP.CustomizeAng = Angle(0, 0, 0)
-
 SWEP.HolsterPos = Vector(3, -2, 0)
 SWEP.HolsterAng = Angle(-8, 25.881, 0)
 
@@ -169,7 +166,7 @@ SWEP.CrouchAng = Angle(0, 0, -2)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-4, 3, -5.5),
+    pos        =    Vector(-9.5, 4, -6.5),
     ang        =    Angle(-6, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -197,15 +194,39 @@ SWEP.AttachmentElements = {
     
     ["barrel_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0, 21.5, -0.4),
+				vang = Angle(0, -90, 0),
+			},
+		},
     },
     ["barrel_lmg"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0, 24, -0.4),
+				vang = Angle(0, -90, 0),
+			},
+		},
     },
     ["barrel_short"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0, 18, -0.4),
+				vang = Angle(0, -90, 0),
+			},
+		},
     },
     ["barrel_stubby"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0, 17.5, -0.4),
+				vang = Angle(0, -90, 0),
+			},
+		},
     },
 
     ["stock_light"] = {
@@ -244,10 +265,15 @@ SWEP.Animations = {
         LHIKEaseOut = 0.2,
         LHIKOut = 0.6,
         SoundTable = {
+            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "boltpull.mp3", t = 20 / 40, c = ca, v = 0.8 },
         },
     },
     ["draw"] = {
         Source = "draw",
+        SoundTable = {
+            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+        },
     },
     ["fire"] = {
         Source = {"fire"},
@@ -356,16 +382,26 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "Body",
         Offset = {
-            vpos = Vector(0.048, 0.2, 11),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-0.0, 2, 0.7),
+            vang = Angle(0, -90, 0),
         },
+        CorrectiveAng = Angle( 0, 180, 0 ),
         InstalledEles = {"irons"},
     },
-
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Slot = "muzzle",
+        Bone = "Body",
+        Offset = {
+            vpos = Vector(0, 20, -0.4),
+            vang = Angle(0, -90, 0),
+        },
+    },
     {
         PrintName = "Barrel",
         Slot = {"ba_l85_barrel"},
-        DefaultAttName = "Barrel",
+        DefaultAttName = "Standard Barrel",
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
