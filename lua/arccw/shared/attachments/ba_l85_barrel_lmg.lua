@@ -1,4 +1,4 @@
-att.PrintName = "20'LMG Barrel"
+att.PrintName = "LMG Barrel"
 att.Icon = Material("entities/acwatt_bo2_longbarrel.png", "mips smooth")
 att.Description = "Extremely heavy barrel for suppressive fire. Comes with a bipod for stabilisation."
 

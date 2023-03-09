@@ -352,19 +352,20 @@ SWEP.Animations = {
 SWEP.Attachments = {
     {
         PrintName = "Optic",
-        Slot = {"lowpoly_optic_lp"},
+        Slot = {"optic", "optic_lp"},
         DefaultAttName = "Iron Sights",
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
+        InstalledEles = {"irons"},
     },
 
     {
         PrintName = "Barrel",
         Slot = {"ba_l85_barrel"},
-        DefaultAttName = "16' Barrel",
+        DefaultAttName = "Barrel",
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),

@@ -1,4 +1,4 @@
-att.PrintName = "10' Stubby Barrel"
+att.PrintName = "Stubby Barrel"
 att.Icon = Material("entities/acwatt_bo2_longbarrel.png", "mips smooth")
 att.Description = "Extreme modification that significantly reduces the barrel length. Optimal for speedy builds."
 
