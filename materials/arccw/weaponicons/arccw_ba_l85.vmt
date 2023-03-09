@@ -1,4 +1,5 @@
-UnlitGeneric
+"UnlitGeneric"
 {
-	$basetexture "/weaponicons/arccw_ba_l85.png"
+	"$basetexture" "arccw/weaponicons/arccw_ba_l85.png"
+	"$translucent" 1
 }
