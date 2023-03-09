@@ -31,7 +31,7 @@ SWEP.Trivia_Desc = "British bulpup service rifle. Good at dealing with targets f
 SWEP.Trivia_Manufacturer = "RSAF"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas Operated, Rotating Bolt"
-SWEP.Trivia_Country = "Russian Federation"
+SWEP.Trivia_Country = "United Kingdom"
 SWEP.Trivia_Year = 1985
 
 -- Weapon slot --
@@ -132,8 +132,8 @@ SWEP.MagID = "xcr"
 
 -- Speed mult --
 
-SWEP.SpeedMult = 0.9
-SWEP.SightedSpeedMult = 0.8
+SWEP.SpeedMult = 0.8
+SWEP.SightedSpeedMult = 0.7
 SWEP.SightTime = 0.35
 
 -- Gun length --
