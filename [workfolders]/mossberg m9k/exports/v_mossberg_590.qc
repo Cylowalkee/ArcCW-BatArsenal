@@ -38,7 +38,20 @@ $BodyGroup "iron"
 {
 	studio "rearsight.smd"
 	studio "rearsight_alt.smd"
+	studio "railtop.smd"
 	blank
+}
+
+$BodyGroup "railtac"
+{
+	blank
+	studio "railtac.smd"
+}
+
+$BodyGroup "railbottom"
+{
+	blank
+	studio "railpump.smd"
 }
 
 
@@ -153,7 +166,7 @@ $sequence "reload_insert" {
 
 $sequence "reload_end" {
 	"anims\reload_end.smd"
-	fadein 0.1
+	fadein 0
 	fadeout 0.1
 	fps 40
 }

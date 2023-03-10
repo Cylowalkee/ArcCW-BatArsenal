@@ -24,6 +24,10 @@ SWEP.TracerWidth = 1
 SWEP.PrintName = "Lancerlot-56" 
 SWEP.TrueName = "L85A2" 
 
+if GetConVar("arccw_truenames"):GetBool() then
+    SWEP.PrintName = SWEP.TrueName
+end
+
 -- Trivia --
 
 SWEP.Trivia_Class = "Carbine"
