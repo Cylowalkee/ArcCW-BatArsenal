@@ -127,15 +127,39 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.AttachmentElements = {
     ["barrel_mberg_marksman"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.56, 35.7, 0.35),
+            vang = Angle(0, -90.5, 0),
+			},
+		},
     },
     ["barrel_mberg_shielded"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.45, 28.7, 0.35),
+            vang = Angle(0, -90.5, 0),
+			},
+		},
     }, 
     ["barrel_mberg_cut"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.45, 25.3, 0.35),
+            vang = Angle(0, -90.5, 0),
+			},
+		},
     },
     ["barrel_mberg_breach"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.5, 27, 0.35),
+            vang = Angle(0, -90.5, 0),
+			},
+		},
     },
     ["barrel_mberg_blitz"] = {
         VMBodygroups = {{ind = 1, bg = 5}},
@@ -188,6 +212,17 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 181.9, -6),
         InstalledEles = {"mberg_rail"},
         GivesFlags = {"norear"},
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Slot = "muzzle_shotgun",
+        Bone = "body",
+        Offset = {
+            vpos = Vector(-0.6, 33.7, 0.35),
+            vang = Angle(0, -90.5, 0),
+        },
+        ExcludeFlags = {"nomuz"},
     },
     {
         PrintName = "Barrel",
@@ -243,6 +278,10 @@ SWEP.Attachments = {
         InstalledEles = {"tac"},
     },
     {
+        PrintName = "Perk",
+        Slot = "perk"
+    },
+    {
         PrintName = "Charm",
         Slot = {"charm","ba_mberg_rear"},
         FreeSlot = true,
@@ -268,7 +307,7 @@ local pathjham = "weapons/arccw/batarsenal/jackhammer/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
 
 SWEP.ShootSound = path590 .. "m3-1.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/m590_suppressed_tp.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw/batarsenal/asval-1.wav"
 
 SWEP.Animations = {
     ["draw"] = {
@@ -316,7 +355,7 @@ SWEP.Animations = {
         Source = {"pump1","pump2"},
         Framerate = 40,
         Time = 30 / 40,
-        ShellEjectAt = 0.3,
+        ShellEjectAt = 0.2,
         MinProgress = 0.5,
         SoundTable = {
             { s = path590 .. "m3_pump.mp3", t = 2 / 40, c = ca, v = 0.8 },
@@ -327,7 +366,7 @@ SWEP.Animations = {
         Source = "pump_iron",
         Framerate = 40,
         Time = 30 / 40,
-        ShellEjectAt = 0.3,
+        ShellEjectAt = 0.2,
         MinProgress = 0.5,
         SoundTable = {
             { s = path590 .. "m3_pump.mp3", t = 2 / 40, c = ca, v = 0.8 },

@@ -63,8 +63,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\mberg590\"
 
-$Attachment "1" "Body" 0 -23 -0.3 rotate 0 -90 0
-$Attachment "2" "Body" 1 1 0 rotate -45 0 0
+$Attachment "1" "Body" 0 -35 0.2 rotate 0 -90 0
+$Attachment "2" "Body" -1 -1 0 rotate -45 180 0
 
 $CBox 0 0 0 0 0 0
 
