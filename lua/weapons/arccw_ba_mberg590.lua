@@ -33,9 +33,9 @@ SWEP.WorldModelOffset = {
 }
 
 
-SWEP.Damage = 14
-SWEP.DamageMin = 6 -- damage done at maximum range
-SWEP.Range = 25 -- in METRES
+SWEP.Damage = 20
+SWEP.DamageMin = 5 -- damage done at maximum range
+SWEP.Range = 30 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -44,8 +44,8 @@ SWEP.MuzzleVelocity = 150 -- projectile or phys bullet muzzle velocity
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 6-- DefaultClip is automatically set.
 
-SWEP.Recoil = 6
-SWEP.RecoilSide = 1
+SWEP.Recoil = 5
+SWEP.RecoilSide = 2
 SWEP.MaxRecoilBlowback = 2
 
 SWEP.ShotgunReload = true
@@ -70,8 +70,8 @@ SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 200
 
 SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 350
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 
