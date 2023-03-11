@@ -133,15 +133,39 @@ SWEP.BarrelLength = 0
 SWEP.AttachmentElements = {
     ["barrel_svu_heavy"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0.1, -25, -0.2),
+				vang = Angle(0, 90, 0),
+			},
+		},
     },
     ["barrel_svu_bipodded"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0.1, -21, -0.2),
+				vang = Angle(0, 90, 0),
+			},
+		},
     },
     ["barrel_svu_short"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0.1, -16.8, -0.2),
+				vang = Angle(0, 90, 0),
+			},
+		},
     },
     ["barrel_svu_krinkov"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(0.1, -13.8, -0.2),
+				vang = Angle(0, 90, 0),
+			},
+		},
     },
 
     ["stock_svu_light"] = {
@@ -193,7 +217,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "Gun",
         Offset = {
-            vpos = Vector(0, -20, -0.1),
+            vpos = Vector(0.1, -19, -0.2),
             vang = Angle(0, 90, 0),
         },
     },
@@ -202,7 +226,7 @@ SWEP.Attachments = {
         Slot = {"foregrip"},
         Bone = "Gun",
         Offset = {
-            vpos = Vector(0, -8, -1),
+            vpos = Vector(0, -7, -1.2),
             vang = Angle(-0, 90, -0),
         },
         InstalledEles = {"railbottom"},
