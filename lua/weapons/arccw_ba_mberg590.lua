@@ -225,6 +225,26 @@ SWEP.Attachments = {
         ExcludeFlags = {"nomuz"},
     },
     {
+        PrintName = "Underbarrel",
+        Slot = {"foregrip"},
+        Bone = "Pump",
+        Offset = {
+            vpos = Vector(0, 11, -1),
+            vang = Angle(-0, -90, -0),
+        },
+        InstalledEles = {"bottom"},
+    },
+    {
+        PrintName = "Tactical",
+        Slot = "tac",
+        Bone = "Pump",
+        Offset = {
+            vpos = Vector(-0.95, 10, -0),
+            vang = Angle(-0, -90, -100),
+        },
+        InstalledEles = {"tac"},
+    },
+    {
         PrintName = "Barrel",
         Slot = {"ba_mberg_barrel"},
         DefaultAttName = "Standard Barrel & Tube Kit",
@@ -258,24 +278,9 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Underbarrel",
-        Slot = {"foregrip"},
-        Bone = "Pump",
-        Offset = {
-            vpos = Vector(0, 11, -1),
-            vang = Angle(-0, -90, -0),
-        },
-        InstalledEles = {"bottom"},
-    },
-    {
-        PrintName = "Tactical",
-        Slot = "tac",
-        Bone = "Pump",
-        Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -100),
-        },
-        InstalledEles = {"tac"},
+        PrintName = "Ammo Type",
+        Slot = "ba_ammo_shotgun",
+        DefaultAttName = "Standard Shells"
     },
     {
         PrintName = "Perk",

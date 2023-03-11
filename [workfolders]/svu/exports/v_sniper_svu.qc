@@ -54,6 +54,18 @@ $BodyGroup "siderail"
 	studio "siderail.smd"
 }
 
+$BodyGroup "bottomrail"
+{
+	blank
+	studio "bottomrail.smd"
+}
+
+$BodyGroup "tacrail"
+{
+	blank
+	studio "tacrail.smd"
+}
+
 
 
 $SurfaceProp "default"
@@ -64,8 +76,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\svu\"
 
-$Attachment "1" "Gun" 0 -23 -0.3 rotate 0 -90 0
-$Attachment "2" "Gun" 1 1 0 rotate -45 0 0
+$attachment "1" "Gun" -0.00 20.00 -0.30 rotate -0 90 0
+$attachment "2" "Gun" 1.00 -5.00 0.00 rotate -30 0 0
 
 $CBox 0 0 0 0 0 0
 

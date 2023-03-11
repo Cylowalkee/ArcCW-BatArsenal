@@ -536,7 +536,11 @@ SWEP.Attachments = {
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
     },
-
+    {
+        PrintName = "Ammo Type",
+        Slot = "ba_ammo_bullet",
+        DefaultAttName = "Standard Rounds"
+    },
     {
         PrintName = "Perk",
         Slot = "perk"

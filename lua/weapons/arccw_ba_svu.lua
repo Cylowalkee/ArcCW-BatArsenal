@@ -25,6 +25,13 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_snip_svu.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_snip_svu.mdl"
 SWEP.ViewModelFOV = 70
 
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos        =    Vector(-15, 4.7, -5.7),
+    ang        =    Angle(-6, 0, 180),
+    bone    =    "ValveBiped.Bip01_R_Hand",
+}
+
 SWEP.BodyDamageMults = 
 {
     [HITGROUP_HEAD] = 3,
@@ -66,8 +73,8 @@ SWEP.Firemodes = {
 }
 
 SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 1250 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.HipDispersion = 750 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 500
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "m14" -- the magazine pool this gun draws from
@@ -154,8 +161,12 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
 
-    ["siderail"] = {
-        VMBodygroups = {{ind = 5, bg = 1}},
+    ["railbottom"] = {
+        VMBodygroups = {{ind = 6, bg = 1}},
+    },
+
+    ["railtac"] = {
+        VMBodygroups = {{ind = 7, bg = 1}},
     },
 }
 
@@ -167,14 +178,13 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_sniper", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic", "optic_sniper", "optic_lp","ba_svu_optic"}, -- what kind of attachments can fit here, can be string or table
         Bone = "Gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.05, -1, 2.5),
             vang = Angle(0, 90, 0),
         },
         CorrectiveAng = Angle(0, 180, 0),
-        InstalledEles = {"siderail"},
         VMScale = Vector(1, 1, 1),
     },
     {
@@ -190,22 +200,22 @@ SWEP.Attachments = {
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "Body",
+        Bone = "Gun",
         Offset = {
-            vpos = Vector(0, 11, -2),
-            vang = Angle(-0, -90, -0),
+            vpos = Vector(0, -8, -1),
+            vang = Angle(-0, 90, -0),
         },
-        InstalledEles = {"bottom"},
+        InstalledEles = {"railbottom"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Body",
+        Bone = "Gun",
         Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -115),
+            vpos = Vector(1, -4, -0),
+            vang = Angle(-0, 90, -103),
         },
-        InstalledEles = {"tac"},
+        InstalledEles = {"railtac"},
     },
     {
         PrintName = "Barrel",
@@ -230,13 +240,17 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = "ba_fcg",
         DefaultAttName = "Standard FCG"
     },
-
+    {
+        PrintName = "Ammo Type",
+        Slot = "ba_ammo_bullet",
+        DefaultAttName = "Standard Rounds"
+    },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = "ba_perk"
     },
     {
         PrintName = "Charm",
@@ -303,13 +317,16 @@ SWEP.Animations = {
         Time = 127 / 40,
         LHIK = true,
         LHIKIn = 0.2,
-        LHIKEaseIn = 0.2,
+        LHIKEaseIn = 0.1,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKOut = 0.85,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            --{ s = pathSVU .. "g3sg1_clipin.mp3", t = 75 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 25 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 40 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 65 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 70 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
         },
     },
@@ -323,11 +340,14 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKOut = 1.5,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            --{ s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 25 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 40 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 65 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 70 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_slide.mp3", t = 110 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 130 / 40, c = ca, v = 0.8 },
@@ -344,12 +364,14 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            --{ s = pathSVU .. "g3sg1_clipin.mp3", t = 75 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 40 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 55 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 60 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 75 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty_5"] = {
@@ -362,11 +384,13 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKOut = 1.45,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            --{ s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 40 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 60 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 65 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 70 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "boltback.wav", t = 100 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "boltforward.wav", t = 112 / 40, c = ca, v = 0.8 },
@@ -384,12 +408,15 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 30 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 50 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 77 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 90 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty_15"] = {
@@ -402,16 +429,18 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKOut = 1.5,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 50 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 77 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 70 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "boltback.wav", t = 113 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "boltforward.wav", t = 130 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 140 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 132 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -425,11 +454,14 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 50 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 77 / 40, c = ca, v = 0.8 },
             { s = pathSVD .. "clipin.mp3", t = 95 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 105 / 40, c = ca, v = 0.8 },
         },
@@ -444,11 +476,14 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKOut = 1.5,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipout.mp3", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magout.wav", t = 30 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magpouch.wav", t = 50 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "g3sg1_clipin.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathSVU .. "svu_magin.wav", t = 77 / 40, c = ca, v = 0.8 },
             { s = pathSVD .. "clipin.mp3", t = 95 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 105 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "boltback.wav", t = 133 / 40, c = ca, v = 0.8 },
@@ -467,6 +502,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if !IsValid(vm) then return end
 
     if hasOptic then
+        if atts[1].Installed != "ba_svu_optic_pso1" then
+            vm:SetBodygroup(5,1)
+        else
+            vm:SetBodygroup(5,0)
+        end
         if barrel == "ba_svu_barrel_heavy" then
             vm:SetBodygroup(4,6)
         elseif  barrel == "ba_svu_barrel_bipodded" then
@@ -479,6 +519,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             vm:SetBodygroup(4,5)
         end
     else
+        vm:SetBodygroup(5,0)
         if barrel == "ba_svu_barrel_heavy" then
             vm:SetBodygroup(4,1)
         elseif  barrel == "ba_svu_barrel_bipodded" then
