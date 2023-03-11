@@ -1,5 +1,5 @@
 att.PrintName = "Short Barrel"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_barrel_short.png", "mips smooth")
 att.Description = "Shortened barrel for increased handling and manouverability."
 
 att.SortOrder = 107

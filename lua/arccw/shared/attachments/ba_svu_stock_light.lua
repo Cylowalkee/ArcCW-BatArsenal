@@ -1,5 +1,5 @@
 att.PrintName = "Light Buttstock & Grip"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_stock_light.png", "mips smooth")
 att.Description = "Low profile buttstock and grip combo for extra manouverability."
 
 att.SortOrder = 107

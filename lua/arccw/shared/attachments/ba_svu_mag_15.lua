@@ -1,5 +1,5 @@
 att.PrintName = "15-Round Long Magazine"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_mag_15.png", "mips smooth")
 att.Description = "Elongated 15 round magazine that allows the shooter to squeeze more shots before needing to reload."
 
 att.SortOrder = 107

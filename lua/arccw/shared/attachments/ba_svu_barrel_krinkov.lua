@@ -1,5 +1,5 @@
 att.PrintName = "Krinkov Barrel"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_barrel_krinkov.png", "mips smooth")
 att.Description = "Extremely short wooden handguard for speedy builds. Lacks the range of an ordinary marksman rifle."
 
 att.SortOrder = 107

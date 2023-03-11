@@ -1,5 +1,5 @@
 att.PrintName = "20-Round Quad Stacked Magazine"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_mag_20.png", "mips smooth")
 att.Description = "Bulky 20 round magazine that allows partial suppressing fire."
 
 att.SortOrder = 107

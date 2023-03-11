@@ -92,7 +92,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 SWEP.ProceduralRegularFire = false
-SWEP.ProceduralIronFire = true
+SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
@@ -212,21 +212,21 @@ SWEP.Attachments = {
         Slot = {"ba_svu_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_mberg_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Buttstock & Grip",
         Slot = {"ba_svu_stock"},
         DefaultAttName = "Standard Buttstock & Grip",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_mberg_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_svu_mag"},
         DefaultAttName = "10-Round Magazine",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_mberg_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
     },
     {
         PrintName = "Fire Group",

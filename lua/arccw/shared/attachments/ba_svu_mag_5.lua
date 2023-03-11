@@ -1,5 +1,5 @@
 att.PrintName = "5-Round Slim Magazine"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_mag_5.png", "mips smooth")
 att.Description = "Short speedy magazine that alows for quick reloads."
 
 att.SortOrder = 107

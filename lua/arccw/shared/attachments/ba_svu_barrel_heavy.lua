@@ -1,5 +1,5 @@
 att.PrintName = "Heavy Wooden Barrel"
-att.Icon = Material("entities/att/acwatt_ba_mberg_barrel_breach.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_svu_barrel_heavy.png", "mips smooth")
 att.Description = "Heavy and long wooden barrel. Increases range."
 
 att.SortOrder = 107
