@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - Bat Arsenal" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "American Fake Shotgun Name"
+SWEP.PrintName = "Antilope-12"
 SWEP.TrueName = "Mossberg 590"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "12 gauge pump shotgun. Effective at close ranges."

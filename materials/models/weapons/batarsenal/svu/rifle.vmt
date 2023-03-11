@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\batarsenal\svu\Rifle"
+	"$bumpmap" 		"models\weapons\batarsenal\svu\Rifle_normal"
+	"$envmap" 		"env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+}
