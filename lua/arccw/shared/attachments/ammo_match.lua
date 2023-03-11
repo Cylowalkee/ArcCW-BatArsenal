@@ -12,6 +12,7 @@ att.Mult_DamageMin = 1.1
 att.Mult_SightTime = 0.95
 att.Mult_Precision = 0.5
 att.Mult_Recoil = 0.9
+att.Mult_RPM = 0.6
 
 
 att.ActivateElements = {"reducedmag"}
