@@ -46,14 +46,14 @@ SWEP.Primary.ClipSize = 6-- DefaultClip is automatically set.
 
 SWEP.Recoil = 5
 SWEP.RecoilSide = 2
-SWEP.MaxRecoilBlowback = 2
+SWEP.MaxRecoilBlowback = 0
 
 SWEP.ShotgunReload = true
 SWEP.ManualAction = true
 
 SWEP.BarrelLength = 0
 
-SWEP.Delay = 240 / 60 -- 60 / RPM.
+SWEP.Delay = 60 / 240 -- 60 / RPM.
 SWEP.Num = 8 -- number of shots per trigger pull.
 SWEP.RunawayBurst = false
 SWEP.Firemodes = {
