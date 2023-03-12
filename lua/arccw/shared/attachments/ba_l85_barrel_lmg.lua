@@ -19,6 +19,7 @@ att.Mult_BipodRecoil = 0.5
 att.Mult_Recoil = 0.85
 att.Mult_Range = 1.05
 att.Mult_HipDispersion = 0.95
+att.Mult_MoveDispersion = 0.9
 
 att.Mult_RPM = 0.85
 att.Mult_SpeedMult = 0.80

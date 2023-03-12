@@ -13,6 +13,9 @@ att.Slot = "ba_l85_stock"
 
 att.Mult_SpeedMult = 0.95
 att.Mult_SightTime = 1.05
+att.Mult_SightedSpeedMult = 0.9
+
 att.Mult_Recoil = 0.95
+
 
 att.ActivateElements = {"stock_heavy"}

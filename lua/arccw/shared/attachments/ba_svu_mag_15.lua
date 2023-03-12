@@ -8,10 +8,14 @@ att.AutoStats = true
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+    "Slower reload"
 }
 att.Slot = "ba_svu_mag"
 
 att.Override_ClipSize = 15
+
+att.Mult_SpeedMult = 0.95
+att.Mult_SightTime = 1.1
 
 att.ActivateElements = {"mag_svu_15"}
 

@@ -34,5 +34,5 @@ att.HolosightPiece = "models/weapons/arccw/atts/ba_svu_pso1_hsp.mdl"
 att.HolosightMagnification = 4
 att.HolosightBlackbox = true
 
-att.Mult_SightTime = 1.08
-att.Mult_SightedSpeedMult = 0.94
+att.Mult_SightTime = 1.1
+att.Mult_SightedSpeedMult = 0.95

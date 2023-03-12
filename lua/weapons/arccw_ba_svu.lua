@@ -56,7 +56,7 @@ SWEP.MuzzleVelocity = 1800 -- projectile or phys bullet muzzle velocity
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
 
-SWEP.Recoil = 3
+SWEP.Recoil = 4
 SWEP.RecoilSide = 0.2
 
 SWEP.RecoilRise = 0.6
@@ -64,7 +64,7 @@ SWEP.RecoilPunch = 0.3
 SWEP.VisualRecoilMult = 4
 SWEP.MaxRecoilBlowback = 3
 SWEP.MaxRecoilPunch = 4
-SWEP.RecoilPunchBack = 5
+SWEP.RecoilPunchBack = 3
 SWEP.RecoilPunchBackMax = 1.5
 SWEP.RecoilPunchBackMaxSights = 2.5
 
@@ -79,7 +79,7 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 3 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 750 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 500
 
@@ -100,6 +100,7 @@ SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SpeedMult = 0.89
 SWEP.SightedSpeedMult = 0.65
+SWEP.SightTime = 0.5
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     [1] = "Bullet",
@@ -111,7 +112,7 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos =  Vector(-3.808, -11.707, 0.4),
+    Pos =  Vector(-3.808, -10.707, 0.4),
     Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -289,10 +290,10 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "Gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.4, 3.3, 0.45),
-            vang = Angle(-35, 90, 0),
+            vpos = Vector(-0.6, 2, -0.3),
+            vang = Angle(0, 90, 0),
         },
-        VMScale = Vector(0.9, 0.9, 0.9),
+        VMScale = Vector(0.7, 0.7, 0.7),
     },
 }
 
@@ -439,7 +440,7 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.8,
+        LHIKOut = 0.85,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -460,7 +461,7 @@ SWEP.Animations = {
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
-        LHIKOut = 1.5,
+        LHIKOut = 1.6,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },

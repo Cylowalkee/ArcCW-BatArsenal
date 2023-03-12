@@ -11,4 +11,10 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_svu_stock"
 
+att.Mult_SpeedMult = 0.95
+att.Mult_SightTime = 1.05
+att.Mult_SightedSpeedMult = 0.9
+
+att.Mult_Recoil = 0.95
+
 att.ActivateElements = {"stock_svu_heavy"}
