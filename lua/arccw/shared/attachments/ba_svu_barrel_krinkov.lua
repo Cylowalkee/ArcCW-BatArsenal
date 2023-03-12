@@ -14,7 +14,7 @@ att.Slot = "ba_svu_barrel"
 
 att.Mult_HipDispersion = 1.15
 att.Mult_MoveDispersion = 0.9
-att.Mult_Recoil = 1.5
+att.Mult_Recoil = 3
 att.Mult_RecoilSide = 2
 att.Mult_Range = 0.6
 

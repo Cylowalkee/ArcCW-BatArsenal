@@ -533,7 +533,7 @@ SWEP.Attachments = {
 
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = "ba_fcg",
         DefaultAttName = "Standard FCG"
     },
     {

@@ -12,7 +12,7 @@ att.Desc_Cons = {
 att.Slot = "ba_svu_barrel"
 
 att.Mult_HipDispersion = 0.8
-att.Mult_Recoil = 0.6
+att.Mult_Recoil = 0.8
 att.Mult_RecoilSide = 0.5
 att.Mult_Range = 1.4
 
