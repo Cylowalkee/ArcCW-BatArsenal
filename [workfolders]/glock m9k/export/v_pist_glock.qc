@@ -35,6 +35,7 @@ $BodyGroup "mags"
 
 $BodyGroup "stocks"
 {
+	blank
 	studio "stock-1.smd"
 	studio "stock_fab.smd"
 
