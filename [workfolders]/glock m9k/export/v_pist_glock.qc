@@ -58,8 +58,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\glock\"
 
-$attachment "1" "frame" -0.00 20.00 -0.30 rotate -0 90 0
-$attachment "2" "frame" 1.00 -5.00 0.00 rotate -30 0 0
+$attachment "1" "frame" 0.00 0.90 5.60 rotate -90 0 0
+$attachment "2" "frame" -0.50 1.40 0.00 rotate 0 135 180
 
 $CBox 0 0 0 0 0 0
 
