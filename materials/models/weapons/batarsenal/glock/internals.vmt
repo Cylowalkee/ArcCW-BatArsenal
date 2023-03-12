@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\batarsenal\glock\internals"
+	"$bumpmap" 	"models\weapons\batarsenal\glock\internals_normal"
+
+}
