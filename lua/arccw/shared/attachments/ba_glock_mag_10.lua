@@ -1,5 +1,5 @@
 att.PrintName = "10-Round Compact Magazine & Frame"
-att.Icon = Material("entities/att/acwatt_ba_svu_mag_15.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_mag_10.png", "mips smooth")
 att.Description = "Compact frame and magazine that has 10 rounds."
 
 att.SortOrder = 107
@@ -9,9 +9,12 @@ att.Desc_Pros = {
     "Faster reload"
 }
 att.Desc_Cons = {
+    "Cant accept stocks",
+    "Cant accept optics",
 }
 att.Slot = "ba_glock_mag"
 
+att.Override_ClipSize = 10
 
 att.ActivateElements = {"mag_glock_10"}
 

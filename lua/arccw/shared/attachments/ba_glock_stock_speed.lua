@@ -1,5 +1,5 @@
 att.PrintName = "Speed Stock"
-att.Icon = Material("entities/att/acwatt_ba_l85_stock_heavy.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_stock_speed.png", "mips smooth")
 att.Description = "A pistol stock that focuses on  handling."
 
 att.SortOrder = 107

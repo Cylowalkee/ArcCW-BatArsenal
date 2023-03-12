@@ -25,9 +25,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_pist_glock.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_pist_glock.mdl"
 SWEP.ViewModelFOV = 70
 
-SWEP.Damage = 27
-SWEP.DamageMin = 19 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
+SWEP.Damage = 25
+SWEP.DamageMin = 15 -- damage done at maximum range
+SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 4
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -42,7 +42,7 @@ SWEP.Recoil = 0.85
 SWEP.RecoilSide = 0.275
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 500 -- 60 / RPM.
+SWEP.Delay = 60 / 750 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -118,13 +118,13 @@ SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
     ["mag_glock_10"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
+        VMBodygroups = {{ind = 3, bg = 1},{ind = 2, bg = 2}},
     },
     ["mag_glock_33"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
     ["mag_glock_100"] = {
-        VMBodygroups = {{ind = 3, bg = 2}},
+        VMBodygroups = {{ind = 3, bg = 3}},
     },
 
     ["barrel_glock_long"] = {
@@ -146,6 +146,16 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 4, bg = 2}},
     },
 
+    ["glock_rail"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+        AttPosMods = {
+			[3] = {
+				vpos = Vector(0, -0, 4),
+                vang = Angle(90, 0, -90),
+			},
+		},
+    },
+
 }
 
 
@@ -154,30 +164,34 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Slot = {"optic_lp"},
         DefaultAttName = "Iron Sights",
-        Bone = "Body",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(-0.0, 2, 0.8),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.02, -2, 3),
+            vang = Angle(-90, -180, 90),
         },
-        CorrectiveAng = Angle( 0, 180, 0 ),
+        CorrectiveAng = Angle( 0, 0, 0 ),
+        VMScale = Vector(0.95, 0.95, 0.95),
+        ExcludeFlags = {"ba_glock_compact"},
+        InstalledEles = {"glock_rail"},
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Body",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(0, 20, -0.4),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(0, -1.26, 5.39),
+            vang = Angle(90, 0, -90),
         },
+        VMScale = Vector(0.7, 0.7, 0.7),
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Body",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -115),
+            vpos = Vector(0, -0.2, 4),
+            vang = Angle(90, 0, -90),
         },
     },
     {
@@ -185,7 +199,7 @@ SWEP.Attachments = {
         Slot = {"ba_glock_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_glock_barrel_normal.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -201,13 +215,14 @@ SWEP.Attachments = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
+        ExcludeFlags = {"ba_glock_compact"},
     },
 
     {
         PrintName = "Magazine",
         Slot = {"ba_glock_mag"},
         DefaultAttName = "17 Round Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_mag_30.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_glock_mag_17.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
@@ -227,7 +242,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = "ba_perk"
     },
 
     {
@@ -342,7 +357,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "magin.mp3", t = 35 / 40, c = ca, v = 1 },
         },
     },
     ["reload_empty_10"] = {
@@ -356,8 +371,8 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "boltforward.wav", t = 65 / 40, c = ca, v = 0.8 },
+            { s = pathGlock .. "magin.mp3", t = 35 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "boltforward.wav", t = 55 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -372,7 +387,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "magin.mp3", t = 45 / 40, c = ca, v = 1 },
         },
     },
     ["reload_empty_33"] = {
@@ -386,7 +401,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "magin.mp3", t = 45 / 40, c = ca, v = 1 },
             { s = pathGlock .. "boltforward.wav", t = 65 / 40, c = ca, v = 0.8 },
         },
     },
@@ -402,7 +417,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "magin.mp3", t = 55 / 40, c = ca, v = 1 },
         },
     },
     ["reload_empty_100"] = {
@@ -416,8 +431,9 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "magin.mp3", t = 40 / 40, c = ca, v = 1 },
-            { s = pathGlock .. "boltforward.wav", t = 65 / 40, c = ca, v = 0.8 },
+            { s = pathGlock .. "magin.mp3", t = 50 / 40, c = ca, v = 1 },
+            { s = pathGlock .. "boltback.wav", t = 78 / 40, c = ca, v = 0.8 },
+            { s = pathGlock .. "boltforward.wav", t = 90 / 40, c = ca, v = 0.8 },
         },
     },
 }

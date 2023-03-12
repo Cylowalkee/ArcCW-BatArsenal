@@ -1,8 +1,8 @@
 att.PrintName = "100-Round Drum Magazine"
-att.Icon = Material("entities/att/acwatt_ba_svu_mag_15.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_mag_100.png", "mips smooth")
 att.Description = "Cumbersome 100 round drum magazine for sustained firepower."
 
-att.SortOrder = 106
+att.SortOrder = 105
 att.AutoStats = true
 
 att.Desc_Pros = {
@@ -13,6 +13,7 @@ att.Desc_Cons = {
 
 att.Slot = "ba_glock_mag"
 
+att.Override_ClipSize = 100
 
 att.ActivateElements = {"mag_glock_100"}
 

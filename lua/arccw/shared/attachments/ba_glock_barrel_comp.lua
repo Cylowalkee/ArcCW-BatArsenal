@@ -1,5 +1,5 @@
 att.PrintName = "Competitor Barrel"
-att.Icon = Material("entities/att/acwatt_ba_l85_stock_heavy.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_barrel_comp.png", "mips smooth")
 att.Description = "Elongated barrel assembly acompanied by lighter slide allows for quick shots whithout much recoil."
 
 att.SortOrder = 107

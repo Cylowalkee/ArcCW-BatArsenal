@@ -1,5 +1,5 @@
 att.PrintName = "33-Round Stick Magazine"
-att.Icon = Material("entities/att/acwatt_ba_svu_mag_15.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_mag_33.png", "mips smooth")
 att.Description = "Long 33 round magazine."
 
 att.SortOrder = 106
@@ -13,6 +13,7 @@ att.Desc_Cons = {
 
 att.Slot = "ba_glock_mag"
 
+att.Override_ClipSize = 33
 
 att.ActivateElements = {"mag_glock_33"}
 

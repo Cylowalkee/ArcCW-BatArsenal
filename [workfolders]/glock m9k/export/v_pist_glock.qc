@@ -41,6 +41,14 @@ $BodyGroup "stocks"
 
 }
 
+$BodyGroup "rail"
+{
+	blank
+	studio "pistol_rail.smd"
+
+}
+
+
 
 $SurfaceProp "default"
 

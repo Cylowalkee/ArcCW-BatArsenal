@@ -1,5 +1,5 @@
 att.PrintName = "Auto Barrel"
-att.Icon = Material("entities/att/acwatt_ba_l85_stock_heavy.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_barrel_auto.png", "mips smooth")
 att.Description = "Light barrel and slide that allows for fully automatic fire."
 
 att.SortOrder = 107
@@ -23,6 +23,8 @@ att.Override_Firemodes = {
     }
 }
 
+att.Mult_RPM = 1200/750
+
 att.ActivateElements = {"barrel_glock_auto"}
 
-att.ActivateElements = {"no_fcg"}
+att.GivesFlags = {"no_fcg"}
