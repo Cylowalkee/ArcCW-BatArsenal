@@ -16,12 +16,12 @@ att.Mult_BipodDispersion = 0.3
 att.Mult_BipodRecoil = 0.5
 
 
-att.Mult_Recoil = 0.8
-att.Mult_Range = 1.1
+att.Mult_Recoil = 0.85
+att.Mult_Range = 1.05
 att.Mult_HipDispersion = 0.95
 
 att.Mult_RPM = 0.85
-att.Mult_SpeedMult = 0.75
-att.Mult_SightTime = 1.2
+att.Mult_SpeedMult = 0.80
+att.Mult_SightTime = 1.25
 
 att.ActivateElements = {"barrel_lmg"}

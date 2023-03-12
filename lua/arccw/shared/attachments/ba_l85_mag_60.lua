@@ -14,8 +14,8 @@ att.Slot = "ba_l85_mag"
 
 att.Override_ClipSize = 60
 
-att.Mult_SpeedMult = 0.85
-att.Mult_SightTime = 1.1
+att.Mult_SpeedMult = 0.95
+att.Mult_SightTime = 1.15
 
 att.ActivateElements = {"mag_60"}
 

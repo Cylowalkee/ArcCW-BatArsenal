@@ -58,10 +58,17 @@ SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
 
 SWEP.Recoil = 3
 SWEP.RecoilSide = 0.2
-SWEP.RecoilRise = 1
-SWEP.VisualRecoilMult = 0.1
 
-SWEP.Delay = 60 / 250 -- 60 / RPM.
+SWEP.RecoilRise = 0.6
+SWEP.RecoilPunch = 0.3
+SWEP.VisualRecoilMult = 4
+SWEP.MaxRecoilBlowback = 3
+SWEP.MaxRecoilPunch = 4
+SWEP.RecoilPunchBack = 5
+SWEP.RecoilPunchBackMax = 1.5
+SWEP.RecoilPunchBackMaxSights = 2.5
+
+SWEP.Delay = 60 / 180 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -282,10 +289,10 @@ SWEP.Attachments = {
         FreeSlot = true,
         Bone = "Gun", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(1.25, 6, 2),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.4, 3.3, 0.45),
+            vang = Angle(-35, 90, 0),
         },
-        VMScale = Vector(1.4, 1.4, 1.4),
+        VMScale = Vector(0.9, 0.9, 0.9),
     },
 }
 

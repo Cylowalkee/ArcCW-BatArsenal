@@ -33,7 +33,7 @@ SWEP.WorldModelOffset = {
 }
 
 
-SWEP.Damage = 20
+SWEP.Damage = 17
 SWEP.DamageMin = 5 -- damage done at maximum range
 SWEP.Range = 30 -- in METRES
 SWEP.Penetration = 1
@@ -45,7 +45,7 @@ SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 6-- DefaultClip is automatically set.
 
 SWEP.Recoil = 5
-SWEP.RecoilSide = 2
+SWEP.RecoilSide = 3
 SWEP.MaxRecoilBlowback = 0
 
 SWEP.ShotgunReload = true
@@ -70,7 +70,7 @@ SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 200
 
 SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
+SWEP.HipDispersion = 450 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 350
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
@@ -87,7 +87,7 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SpeedMult = 0.95
+SWEP.SpeedMult = 0.7
 SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.27
 
@@ -284,7 +284,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = "ba_perk"
     },
     {
         PrintName = "Charm",

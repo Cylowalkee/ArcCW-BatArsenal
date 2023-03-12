@@ -16,7 +16,3 @@ att.Mult_DamageMin = 1.8
 att.Mult_Penetration = 5
 att.Mult_AccuracyMOA = 0.15
 att.Mult_Range = 2
-
-att.MagReducer = true
-
-att.ActivateElements = {"reducedmag"}

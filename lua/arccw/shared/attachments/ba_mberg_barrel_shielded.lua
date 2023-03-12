@@ -13,4 +13,12 @@ att.Slot = "ba_mberg_barrel"
 
 att.Override_ClipSize = 7
 
+att.Mult_HipDispersion = 1.05
+att.Mult_Recoil = 1.05
+
+att.Mult_SpeedMult = 1.05
+att.Mult_SightTime = 0.95
+
+att.Mult_AccuracyMOA = 1.05
+
 att.ActivateElements = {"barrel_mberg_shielded"}
