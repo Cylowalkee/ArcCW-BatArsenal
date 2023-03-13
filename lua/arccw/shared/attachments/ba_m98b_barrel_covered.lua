@@ -1,6 +1,6 @@
 att.PrintName = "Covered Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_barrel_covered.png", "mips smooth")
+att.Description = "Medium sized barrel that has an elongated handguard. Heavier weight on the barrel reduces felt recoil."
 
 att.SortOrder = 107
 att.AutoStats = true

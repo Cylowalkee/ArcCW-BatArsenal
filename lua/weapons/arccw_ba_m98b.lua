@@ -115,7 +115,7 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.BarrelLength = 50
+SWEP.BarrelLength = 0
 SWEP.AttachmentElements = {
     ["barrel_m98b_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
@@ -258,28 +258,28 @@ SWEP.Attachments = {
         Slot = {"ba_m98b_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m98b_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Buttstock & Grip",
         Slot = {"ba_m98b_stock"},
-        DefaultAttName = "Standard Buttstock & Grip",
+        DefaultAttName = "Standard Stock",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m98b_stock_solid.png", "smooth mips"),
     },
     {
         PrintName = "Bolt",
         Slot = {"ba_m98b_bolt"},
-        DefaultAttName = "Standard Buttstock & Grip",
+        DefaultAttName = "Standard Bolt",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m98b_bolt_normal.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_m98b_mag"},
         DefaultAttName = "10-Round Magazine",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m98b_mag_10.png", "smooth mips"),
     },
     {
         PrintName = "Ammo Type",

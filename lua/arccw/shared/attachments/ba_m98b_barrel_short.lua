@@ -1,6 +1,6 @@
 att.PrintName = "Short Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_barrel_short.png", "mips smooth")
+att.Description = "Shortened barrel that reduces the guns weight at the cost of effective range and recoil control."
 
 att.SortOrder = 107
 att.AutoStats = true

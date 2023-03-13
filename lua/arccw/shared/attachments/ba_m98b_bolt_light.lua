@@ -1,6 +1,6 @@
 att.PrintName = "Speed Bolt"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_bolt_light.png", "mips smooth")
+att.Description = "Lighter competitor bolt that allows for faster chambering."
 
 att.SortOrder = 107
 att.AutoStats = true

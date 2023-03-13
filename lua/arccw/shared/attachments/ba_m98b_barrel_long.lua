@@ -1,6 +1,6 @@
 att.PrintName = "Long Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_barrel_long.png", "mips smooth")
+att.Description = "Elongated barrel that increases the weapons effective range."
 
 att.SortOrder = 107
 att.AutoStats = true

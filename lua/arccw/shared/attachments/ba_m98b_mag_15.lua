@@ -1,6 +1,6 @@
 att.PrintName = "15-Round Long Magazine"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_mag_15.png", "mips smooth")
+att.Description = "Elongated 15 round magazine that allows the user to fire more shots before needing to reload."
 
 att.SortOrder = 107
 att.AutoStats = true

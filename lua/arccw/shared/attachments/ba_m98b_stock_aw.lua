@@ -1,6 +1,6 @@
 att.PrintName = "Thumbhold Heavy Stock "
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_stock_aw.png", "mips smooth")
+att.Description = "Heavy thumbhold stock thats made to reduce recoil at the cost of handling."
 
 att.SortOrder = 107
 att.AutoStats = true

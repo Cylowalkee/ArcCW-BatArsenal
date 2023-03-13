@@ -1,6 +1,6 @@
 att.PrintName = "Stubby Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_barrel_stubby.png", "mips smooth")
+att.Description = "Extremely short barrel that reduces the guns weight as much as possible. Very easy to handle."
 
 att.SortOrder = 107
 att.AutoStats = true

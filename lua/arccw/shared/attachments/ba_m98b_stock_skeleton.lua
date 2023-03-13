@@ -1,6 +1,6 @@
 att.PrintName = "Skeleton Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_stock_skele.png", "mips smooth")
+att.Description = "Long skeleton stock that allows the user to aim down sights faster."
 
 att.SortOrder = 107
 att.AutoStats = true

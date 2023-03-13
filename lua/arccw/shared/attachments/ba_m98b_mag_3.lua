@@ -1,6 +1,6 @@
 att.PrintName = "3-Round Flush Magazine"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_mag_3.png", "mips smooth")
+att.Description = "Smooth 3 round light magazines that allows manouverability."
 
 att.SortOrder = 107
 att.AutoStats = true

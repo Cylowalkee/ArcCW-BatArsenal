@@ -1,6 +1,6 @@
 att.PrintName = "Stock Cap"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_stock_cap.png", "mips smooth")
+att.Description = "Modification that removes the stock and adds a sling mount making the gun extremely manouverable."
 
 att.SortOrder = 107
 att.AutoStats = true

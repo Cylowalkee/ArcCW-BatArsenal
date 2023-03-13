@@ -1,6 +1,6 @@
 att.PrintName = "Precision Bolt"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_bolt_heavy.png", "mips smooth")
+att.Description = "Heavier bolt assembly that mitigates recoil."
 
 att.SortOrder = 107
 att.AutoStats = true

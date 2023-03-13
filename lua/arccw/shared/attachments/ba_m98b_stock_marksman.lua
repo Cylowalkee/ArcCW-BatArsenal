@@ -1,6 +1,6 @@
 att.PrintName = "Marksman Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_stock_marksman.png", "mips smooth")
+att.Description = "Stock with a cheekrest and a leg to rest the gun. Reduces felt recoil."
 
 att.SortOrder = 107
 att.AutoStats = true

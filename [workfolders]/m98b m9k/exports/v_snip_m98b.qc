@@ -68,8 +68,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\m98b\"
 
-$attachment "1" "M98_Body" 0.00 0.90 5.60 rotate -90 0 0
-$attachment "2" "M98_Body" -0.50 1.40 0.00 rotate 0 135 180
+$attachment "1" "M98_Body" 0.00 -24.00 0.00 rotate 0 -90 0
+$attachment "2" "M98_Body" -1.00 -0.00 0.50 rotate -30 -180 0
 
 $CBox 0 0 0 0 0 0
 

@@ -1,6 +1,6 @@
 att.PrintName = "5-Round Short Magazine"
-att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
-att.Description = "Elongated frame and barrel that helps with recoil."
+att.Icon = Material("entities/att/acwatt_ba_m98b_mag_5.png", "mips smooth")
+att.Description = "Shortened 5 round magazine that reduces the weight load."
 
 att.SortOrder = 107
 att.AutoStats = true
