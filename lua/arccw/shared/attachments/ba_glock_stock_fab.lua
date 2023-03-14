@@ -13,7 +13,7 @@ att.Desc_Cons = {
 att.Slot = "ba_glock_stock"
 
 att.Mult_SpeedMult = 0.8
-att.Mult_SightTime = 1.15
+att.Mult_SightTime = 1.4
 att.Mult_SightedSpeedMult = 0.95
 
 att.Mult_Recoil = 0.7
