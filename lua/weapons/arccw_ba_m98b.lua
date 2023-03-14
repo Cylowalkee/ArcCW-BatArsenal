@@ -81,7 +81,7 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SightTime = 0.45
-SWEP.SpeedMult = 0.75
+SWEP.SpeedMult = 0.9
 SWEP.SightedSpeedMult = 0.25
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
