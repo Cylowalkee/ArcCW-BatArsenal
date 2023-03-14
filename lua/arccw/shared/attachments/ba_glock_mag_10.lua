@@ -16,6 +16,9 @@ att.Slot = "ba_glock_mag"
 
 att.Override_ClipSize = 10
 
+att.Mult_SpeedMult = 1.1
+att.Mult_SightTime = 0.85
+
 att.ActivateElements = {"mag_glock_10"}
 
 att.GivesFlags = {"ba_glock_compact"}

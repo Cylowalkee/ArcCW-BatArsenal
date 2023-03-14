@@ -6,12 +6,18 @@ att.SortOrder = 107
 att.AutoStats = true
 
 att.Desc_Pros = {
+    "Faster reload"
 }
 att.Desc_Cons = {
 }
 att.Slot = "ba_m98b_mag"
 
 att.Override_ClipSize = 5
+
+
+att.Mult_SpeedMult = 1.05
+att.Mult_SightTime = 0.95
+
 
 att.ActivateElements = {"mag_m98b_5"}
 

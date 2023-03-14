@@ -25,6 +25,12 @@ att.Override_Firemodes = {
 
 att.Mult_RPM = 1200/750
 
+att.Mult_Recoil = 1.1
+att.Mult_RecoilSide = 1.2
+
+att.Mult_HipDispersion = 1.1
+att.Mult_AccuracyMOA = 1.2
+
 att.ActivateElements = {"barrel_glock_auto"}
 
 att.GivesFlags = {"no_fcg"}

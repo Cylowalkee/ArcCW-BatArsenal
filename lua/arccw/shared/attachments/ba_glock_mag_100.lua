@@ -15,6 +15,9 @@ att.Slot = "ba_glock_mag"
 
 att.Override_ClipSize = 100
 
+att.Mult_SpeedMult = 0.8
+att.Mult_SightTime = 1.15
+
 att.ActivateElements = {"mag_glock_100"}
 
 att.Hook_SelectReloadAnimation = function(wep, anim)

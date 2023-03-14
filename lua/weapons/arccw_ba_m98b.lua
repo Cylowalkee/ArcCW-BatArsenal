@@ -25,9 +25,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_snip_m98b.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_snip_m98b.mdl"
 SWEP.ViewModelFOV = 70
 
-SWEP.Damage = 80
+SWEP.Damage = 70
 SWEP.DamageMin = 110 -- damage done at maximum range
-SWEP.Range = 40 -- in METRES
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 35
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -80,8 +80,8 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.35
-SWEP.SpeedMult = 0.85
+SWEP.SightTime = 0.45
+SWEP.SpeedMult = 0.75
 SWEP.SightedSpeedMult = 0.25
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag

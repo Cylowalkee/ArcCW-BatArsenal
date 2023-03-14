@@ -11,7 +11,7 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_m98b_bolt"
 
-att.Mult_CycleTime = 0.85
+att.Mult_CycleTime = 0.8
 
 att.Mult_Recoil = 1.05
 att.Mult_RecoilSide = 1.1
