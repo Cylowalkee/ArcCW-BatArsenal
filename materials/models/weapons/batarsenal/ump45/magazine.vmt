@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\batarsenal\ump45\magazine"
+	"$bumpmap" 	"models\weapons\batarsenal\ump45\magazine_normal"
+ 	"$normalmapalphaenvmapmask" "0"
+	"$nocull" "1"
+}

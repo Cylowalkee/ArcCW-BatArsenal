@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\batarsenal\ump45\mag"
+	"$bumpmap" "models\weapons\batarsenal\ump45\mag norm"
+}
