@@ -345,6 +345,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Time = 45 / 40,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.5,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipin1.mp3", t = 20 / 40, c = ca, v = 0.8 },
