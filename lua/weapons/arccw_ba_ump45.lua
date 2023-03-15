@@ -58,13 +58,6 @@ SWEP.Firemodes = {
         Mode = 2,
     },
     {
-        Mode = -2,
-        RunawayBurst = true,
-        Override_ShotRecoilTable = {
-            [1] = 0.75
-        }
-    },
-    {
         Mode = 1,
     },
     {
