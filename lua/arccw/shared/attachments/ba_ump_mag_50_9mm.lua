@@ -23,7 +23,7 @@ att.Mult_RecoilSide = 0.7
 
 att.Mult_Range = 0.7
 
-att.Mult_RPM = 800/600
+att.Mult_RPM = 800/500
 
 att.ActivateElements = {"mag_ump45_50"}
 

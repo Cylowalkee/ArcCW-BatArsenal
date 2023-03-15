@@ -51,7 +51,7 @@ SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.3
 SWEP.VisualRecoilMult = 1
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 500 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -301,6 +301,22 @@ SWEP.Attachments = {
         DefaultAttIcon = Material("entities/att/acwatt_ba_ump_mag_default.png", "smooth mips"),
     },
     {
+        PrintName = "Fire Group",
+        Slot = "ba_fcg",
+        DefaultAttName = "Standard FCG",
+        ExcludeFlags = {"no_fcg"},
+    },
+    {
+        PrintName = "Ammo Type",
+        Slot = "ba_ammo_bullet",
+        DefaultAttName = "Standard Rounds"
+    },
+    {
+        PrintName = "Perk",
+        Slot = "ba_perk"
+    },
+
+    {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
@@ -352,12 +368,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "fire_iron",
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0,
     },
     ["reload"] = {

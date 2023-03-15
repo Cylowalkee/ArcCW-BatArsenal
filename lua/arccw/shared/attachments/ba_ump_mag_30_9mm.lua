@@ -11,7 +11,7 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_ump45_mag"
 
-att.Mult_RPM = 800/600
+att.Mult_RPM = 800/500
 
 att.Mult_DamageMin = 10/15
 att.Mult_Damage = 20/30
