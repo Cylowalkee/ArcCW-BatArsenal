@@ -6,7 +6,6 @@ att.SortOrder = 107
 att.AutoStats = true
 
 att.Desc_Pros = {
-    "Faster reload"
 }
 att.Desc_Cons = {
 }

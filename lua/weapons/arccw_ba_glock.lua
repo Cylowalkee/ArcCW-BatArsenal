@@ -25,6 +25,14 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_pist_glock.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_pist_glock.mdl"
 SWEP.ViewModelFOV = 70
 
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos        =    Vector(-8.5, 4.5, -3.7),
+    ang        =    Angle(-6, 0, 180),
+    bone    =    "ValveBiped.Bip01_R_Hand",
+}
+
+
 SWEP.Damage = 25
 SWEP.DamageMin = 15 -- damage done at maximum range
 SWEP.Range = 40 -- in METRES
@@ -129,12 +137,30 @@ SWEP.AttachmentElements = {
 
     ["barrel_glock_long"] = {
         VMBodygroups = {{ind = 1, bg = 1},{ind = 2, bg = 1}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0, -1.26, 6.5),
+                vang = Angle(90, 0, -90),
+            },
+        },
     },
     ["barrel_glock_compact"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0, -1.26, 4),
+                vang = Angle(90, 0, -90),
+            },
+        },
     },
     ["barrel_glock_comp"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0, -1.26, 5.89),
+                vang = Angle(90, 0, -90),
+            },
+        },
     },
     ["barrel_glock_auto"] = {
         VMBodygroups = {{ind = 1, bg = 4}},

@@ -25,6 +25,13 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_smg_ump.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_smg_ump.mdl"
 SWEP.ViewModelFOV = 70
 
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos        =    Vector(-7.5, 3.5, -5.7),
+    ang        =    Angle(-6, 0, 180),
+    bone    =    "ValveBiped.Bip01_R_Hand",
+}
+
 SWEP.Damage = 30
 SWEP.DamageMin = 15 -- damage done at maximum range
 SWEP.Range = 65 -- in METRES
@@ -108,7 +115,7 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
+SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
@@ -279,7 +286,7 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Slot = {"ba_ump45_barrel"},
         DefaultAttName = "Standard Barrel",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_default.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Stock",

@@ -70,8 +70,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\ump45\"
 
-$Attachment "1" "smdimport" 0 -23 -0.3 rotate 0 -90 0
-$Attachment "2" "smdimport" 1 1 0 rotate -45 0 0
+$attachment "1" "smdimport" 0.00 -17.00 1.30 rotate -0 -90 0
+$attachment "2" "smdimport" -1.00 -3.50 1.20 rotate -30 -180 0
 
 $CBox 0 0 0 0 0 0
 

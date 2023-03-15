@@ -6,9 +6,10 @@ att.SortOrder = 100
 att.AutoStats = true
 
 att.Desc_Pros = {
-    "Faster reload"
+    
 }
 att.Desc_Cons = {
+    "Slower reload"
 }
 att.Slot = "ba_ump45_mag"
 
