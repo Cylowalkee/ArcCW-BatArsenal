@@ -1,5 +1,5 @@
 att.PrintName = "Long Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
 att.Description = "Elongated barrel that reduces felt recoil."
 
 att.SortOrder = 107

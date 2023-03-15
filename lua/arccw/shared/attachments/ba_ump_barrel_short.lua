@@ -1,5 +1,5 @@
 att.PrintName = "Short Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_barrel_short.png", "mips smooth")
 att.Description = "A short barrel that comes with a unique handguard. Increases manouverability at the cost of recoil control."
 
 att.SortOrder = 107

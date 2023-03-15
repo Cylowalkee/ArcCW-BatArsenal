@@ -1,5 +1,5 @@
 att.PrintName = "30-Round 9mm Magazine"
-att.Icon = Material("entities/att/acwatt_ba_m98b_mag_3.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_mag_30.png", "mips smooth")
 att.Description = "A 30-round magazine that uses 9x19 para rounds. Smaller rounds have less recoil at the cost of overall damage."
 
 att.SortOrder = 107

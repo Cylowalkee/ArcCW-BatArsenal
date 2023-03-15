@@ -1,5 +1,5 @@
 att.PrintName = "Collapsable Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_stock_collapsable.png", "mips smooth")
 att.Description = "A very light collapsable stock. Increases manouverability."
 
 att.SortOrder = 107

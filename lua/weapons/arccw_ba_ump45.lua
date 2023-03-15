@@ -279,19 +279,19 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Slot = {"ba_ump45_barrel"},
         DefaultAttName = "Standard Barrel",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_default.png", "smooth mips"),
     },
     {
-        PrintName = "Buttstock & Grip",
+        PrintName = "Stock",
         Slot = {"ba_ump45_stock"},
         DefaultAttName = "Standard Foldable Stock",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_stock_default.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_ump45_mag"},
         DefaultAttName = "25-Round Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_mag_default.png", "smooth mips"),
     },
     {
         PrintName = "Charm",

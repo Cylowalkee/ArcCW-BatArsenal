@@ -1,5 +1,5 @@
 att.PrintName = "Solid Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_stock_solid.png", "mips smooth")
 att.Description = "A solid polymer stock thats great for recoil mitigation."
 
 att.SortOrder = 107

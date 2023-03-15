@@ -1,5 +1,5 @@
 att.PrintName = "Marksman Barrel"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_barrel_sniper.png", "mips smooth")
 att.Description = "A long barrel that improves the weapons long range performance. The heavier barrel reduces the manouverability."
 
 att.SortOrder = 107

@@ -1,5 +1,5 @@
 att.PrintName = "Foldable Light Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_glock_ump_stock_light.png", "mips smooth")
 att.Description = "A light foldable stock thats based off the original model."
 
 att.SortOrder = 107

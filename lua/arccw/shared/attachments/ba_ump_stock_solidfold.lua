@@ -1,5 +1,5 @@
 att.PrintName = "Foldable Solid Stock"
-att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_ump_stock_foldsolid.png", "mips smooth")
 att.Description = "A foldable full stock with a cheek rest. Reduces felt recoil."
 
 att.SortOrder = 107
