@@ -121,14 +121,14 @@ $sequence "idle" {
 	fps 40
 }
 $sequence "fire" {
-	"anims\fire.smd"
+	"anims\fire_new.smd"
 	fadein 0.03
 	fadeout 0.03
 	fps 40
 }
 
 $sequence "fire_iron" {
-	"anims\fire_iron.smd"
+	"anims\fire_iron_new.smd"
 	fadein 0.03
 	fadeout 0.03
 	fps 40

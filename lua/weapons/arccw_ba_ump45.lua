@@ -49,7 +49,12 @@ SWEP.OpenBolt = false -- gun fires at the end of
 
 SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.3
-SWEP.VisualRecoilMult = 1
+SWEP.VisualRecoilMult = 0
+SWEP.MaxRecoilBlowback = 3
+SWEP.MaxRecoilPunch = 4
+SWEP.RecoilPunchBack = 3
+SWEP.RecoilPunchBackMax = 1.5
+SWEP.RecoilPunchBackMaxSights = 2.5
 
 SWEP.Delay = 60 / 500 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -361,12 +366,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "fire_iron",
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0,
     },
     ["reload"] = {
