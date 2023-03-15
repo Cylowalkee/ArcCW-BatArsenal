@@ -1,6 +1,6 @@
 att.PrintName = "50-Round 9mm Quadfeed Magazine"
 att.Icon = Material("entities/att/acwatt_ba_m98b_mag_3.png", "mips smooth")
-att.Description = "Smooth 3 round light magazines that allows manouverability."
+att.Description = "A 50-round quadfeed magazine that uses 9x19 para rounds. Smaller rounds have less recoil at the cost of overall damage."
 
 att.SortOrder = 100
 att.AutoStats = true
@@ -19,6 +19,8 @@ att.Mult_Damage = 20/30
 
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.7
+
+att.Mult_Range = 0.7
 
 att.Mult_RPM = 800/600
 

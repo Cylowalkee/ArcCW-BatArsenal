@@ -1,6 +1,6 @@
 att.PrintName = "45-Round Quadfeed Magazine"
 att.Icon = Material("entities/att/acwatt_ba_m98b_mag_3.png", "mips smooth")
-att.Description = "Smooth 3 round light magazines that allows manouverability."
+att.Description = "A 45-round quadfeed magazine. Allows the user to fire more shots before needing to reload."
 
 att.SortOrder = 107
 att.AutoStats = true

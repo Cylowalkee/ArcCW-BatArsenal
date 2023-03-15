@@ -59,7 +59,7 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 SWEP.Damage = 30
 SWEP.DamageMin = 18
-SWEP.Range = 70
+SWEP.Range = 95
 SWEP.Penetration = 15
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil

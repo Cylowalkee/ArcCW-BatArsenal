@@ -1,6 +1,6 @@
 att.PrintName = "Marksman Barrel"
 att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
-att.Description = "A pistol stock that focuses on recoil control."
+att.Description = "A long barrel that improves the weapons long range performance. The heavier barrel reduces the manouverability."
 
 att.SortOrder = 107
 att.AutoStats = true

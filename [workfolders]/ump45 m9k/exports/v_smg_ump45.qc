@@ -42,6 +42,26 @@ $BodyGroup "mags"
 	blank
 }
 
+$BodyGroup "railtop"
+{
+	blank
+	studio "rail_top.smd"
+}
+
+$BodyGroup "railtac"
+{
+	blank
+	studio "rail_tac.smd"
+	studio "rail_tac_short.smd"
+}
+
+$BodyGroup "railbottom"
+{
+	blank
+	studio "rail_bottom.smd"
+	studio "rail_bottom_short.smd"
+}
+
 $SurfaceProp "default"
 
 $Contents "solid"

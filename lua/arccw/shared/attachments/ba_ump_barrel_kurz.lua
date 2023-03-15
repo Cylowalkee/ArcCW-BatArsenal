@@ -1,8 +1,8 @@
 att.PrintName = "Kurz Barrel"
 att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
-att.Description = "A pistol stock that focuses on recoil control."
+att.Description = "Extreme modification that shortens the barrel. Increases manouverability at the cost of recoil control."
 
-att.SortOrder = 107
+att.SortOrder = 107 
 att.AutoStats = true
 
 att.Desc_Pros = {

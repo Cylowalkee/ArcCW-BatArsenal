@@ -151,22 +151,54 @@ SWEP.AttachmentElements = {
 
     ["barrel_ump45_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0.05, 14.6, 1.33),
+                vang = Angle(0, -90, 0),
+            },
+        }
     },
     ["barrel_ump45_sniper"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0.05, 16.6, 1.33),
+                vang = Angle(0, -90, 0),
+            },
+        }
     },
     ["barrel_ump45_short"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+            [2] = {
+				vpos = Vector(0.05, 12.6, 1.33),
+                vang = Angle(0, -90, 0),
+			},
+			[3] = {
+				vpos = Vector(0.05, 8.608, -0.124),
+				vang = Angle(0, -90, 0),
+			},
+            [4] = {
+				vpos = Vector(-0.90, 7.608, 1.55),
+                vang = Angle(-105, -90, 0),
+			},
+		},
     },
     ["barrel_ump45_kurz"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0.05, 10.8, 1.33),
+                vang = Angle(0, -90, 0),
+            },
+        }
     },
 
     ["stock_ump45_solid"] = {
         VMBodygroups = {{ind = 2, bg = 8}},
     },
 
-    ["stock_ump45_default_foldded"] = {
+    ["stock_ump45_default_folded"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
     },
 
@@ -191,6 +223,10 @@ SWEP.AttachmentElements = {
     ["stock_ump45_coll_collapsed"] = {
         VMBodygroups = {{ind = 2, bg = 7}},
     },
+
+    ["railtop"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
 }
 
 SWEP.ExtraSightDist = 4
@@ -207,6 +243,37 @@ SWEP.Attachments = {
         },
         CorrectiveAng = Angle(0, 180, 0),
         VMScale = Vector(0.95, 0.95, 0.95),
+        InstalledEles = {"railtop"},
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Slot = "muzzle",
+        Bone = "smdimport",
+        Offset = {
+            vpos = Vector(0.05, 13.6, 1.33),
+            vang = Angle(0, -90, 0),
+        },
+        VMScale = Vector(0.9, 0.9, 0.9),
+    },
+    {
+        PrintName = "Underbarrel",
+        Slot = {"foregrip"},
+        Bone = "smdimport",
+        Offset = {
+            vpos = Vector(0.05, 8.608, 0.224),
+            vang = Angle(0, -90, 0),
+        },
+    },
+    {
+        PrintName = "Tactical",
+        Slot = "tac",
+        Bone = "smdimport",
+        Offset = {
+            vpos = Vector(-0.7, 8.608, 1.78),
+            vang = Angle(-90, -90, 0),
+        },
+        VMScale = Vector(0.7, 0.7, 0.7),
     },
     {
         PrintName = "Barrel",
@@ -396,3 +463,33 @@ SWEP.Animations = {
         }
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    local atts = wep.Attachments
+    local barrel = atts[5].Installed
+    local hasUB = (atts[3].Installed != nil)
+    local hasTac = (atts[4].Installed != nil)
+    if !IsValid(vm) then return end
+    
+    if hasUB then
+        if (barrel != "ba_ump_barrel_short") then
+            vm:SetBodygroup(6,1)
+        else
+            vm:SetBodygroup(6,2)
+        end
+    else
+        vm:SetBodygroup(6,0)
+    end
+
+    if hasTac then
+        if (barrel != "ba_ump_barrel_short") then
+            vm:SetBodygroup(5,1)
+        else
+            vm:SetBodygroup(5,2)
+        end
+    else
+        vm:SetBodygroup(5,0)
+    end
+
+end

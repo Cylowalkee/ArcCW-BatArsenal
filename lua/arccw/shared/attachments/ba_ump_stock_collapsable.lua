@@ -1,6 +1,6 @@
 att.PrintName = "Collapsable Stock"
 att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
-att.Description = "A pistol stock that focuses on recoil control."
+att.Description = "A very light collapsable stock. Increases manouverability."
 
 att.SortOrder = 107
 att.AutoStats = true

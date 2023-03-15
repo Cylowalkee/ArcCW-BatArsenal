@@ -1,6 +1,6 @@
 att.PrintName = "10-Round Short Magazine"
 att.Icon = Material("entities/att/acwatt_ba_m98b_mag_3.png", "mips smooth")
-att.Description = "Smooth 3 round light magazines that allows manouverability."
+att.Description = "A 10-round short magazine Smaller weight load allows for more manouverable builds."
 
 att.SortOrder = 111
 att.AutoStats = true
