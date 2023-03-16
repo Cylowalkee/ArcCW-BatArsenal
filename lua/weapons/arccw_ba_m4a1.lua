@@ -57,8 +57,8 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
 
-SWEP.Damage = 27
-SWEP.DamageMin = 23
+SWEP.Damage = 25
+SWEP.DamageMin = 20
 SWEP.Range = 80
 SWEP.Penetration = 15
 SWEP.DamageType = DMG_BULLET
@@ -87,8 +87,8 @@ SWEP.ReducedClipSize = 10
 
 -- Recoil --
 
-SWEP.Recoil = 0.5
-SWEP.RecoilSide = 0.15
+SWEP.Recoil = 0.4
+SWEP.RecoilSide = 0.25
 
 SWEP.RecoilRise = 0.1
 SWEP.VisualRecoilMult = 1.5
@@ -127,9 +127,9 @@ SWEP.NPCWeight = 60
 -- Accuracy --
 
 SWEP.AccuracyMOA = 5
-SWEP.HipDispersion = 600
-SWEP.MoveDispersion = 150
-SWEP.JumpDispersion = 50
+SWEP.HipDispersion = 500
+SWEP.MoveDispersion = 300
+SWEP.JumpDispersion = 150
 
 SWEP.Primary.Ammo = "smg1"
 SWEP.MagID = "xcr"
@@ -211,14 +211,14 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Framerate = 40,
-        time =  60 / 40,
+        time =  80 / 40,
         LHIK = true,
         LHIKIn = 0,
         LHIKEaseOut = 0.2,
         LHIKOut = 0.6,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "boltpull.mp3", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_boltpull.mp3", t = 30 / 40, c = ca, v = 0.8 },
         },
     },
     ["draw"] = {
@@ -294,7 +294,6 @@ SWEP.Animations = {
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipin.mp3", t = 77 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_boltrelease.mp3", t = 110 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 140 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -303,7 +302,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 115 / 40,
+        Time = 119 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -312,8 +311,8 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathM4 .. "m4a1_clipin.mp3", t = 77 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty_20"] = {
@@ -329,11 +328,9 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magin.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "boltslap.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_boltrelease.mp3", t = 90 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -342,7 +339,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 139 / 40,
+        Time = 150 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -350,10 +347,9 @@ SWEP.Animations = {
         LHIKOut = 0.5,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipout.mp3", t = 23 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipin.mp3", t = 85 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 120 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty_60"] = {
@@ -361,7 +357,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 154 / 40,
+        Time = 170 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -369,12 +365,9 @@ SWEP.Animations = {
         LHIKOut = 0.45,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "pullback.wav", t = 110 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "boltslap.mp3", t = 130 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 140 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipout.mp3", t = 23 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_clipin.mp3", t = 85 / 40, c = ca, v = 0.8 },
+            { s = pathM4 .. "m4a1_boltpull.mp3", t = 125 / 40, c = ca, v = 0.8 },
         },
     },
 
