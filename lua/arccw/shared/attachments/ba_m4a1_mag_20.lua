@@ -1,5 +1,5 @@
 att.PrintName = "20-Round Short Magazine"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_mag_20.png", "mips smooth")
 att.Description = "20 round short magazine that allows for faster reload and manouvers."
 
 att.SortOrder = 107

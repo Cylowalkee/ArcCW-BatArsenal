@@ -1,5 +1,5 @@
 att.PrintName = "Short RIS Barrel"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_shortris.png", "mips smooth")
 att.Description = "Short barrel with a rail system that allows for extra attachments. Shortened weapon profile allows for faster manouvers."
 
 att.SortOrder = 107

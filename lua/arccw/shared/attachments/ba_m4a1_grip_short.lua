@@ -1,6 +1,6 @@
 att.PrintName = "Short Grip"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
-att.Description = "Elongated barrel that reduces felt recoil."
+att.Icon = Material("entities/att/acwatt_ba_m4a1_grip_short.png", "mips smooth")
+att.Description = "Shortened smooth grip that lowers weapon weight and profile."
 
 att.SortOrder = 107
 att.AutoStats = true

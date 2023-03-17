@@ -1,5 +1,5 @@
 att.PrintName = "Short Ribbed Barrel"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_short.png", "mips smooth")
 att.Description = "Short barrel with a ribbed solid handguard. Shortened weapon profile allows for faster manouvers."
 
 att.SortOrder = 107

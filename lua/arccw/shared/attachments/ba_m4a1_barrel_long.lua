@@ -1,5 +1,5 @@
 att.PrintName = "Long Ribbed Barrel"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_long.png", "mips smooth")
 att.Description = "Long barrel with a ribbed solid handguard. Elongated barrel increases the weapons effectiveness at long ranges."
 
 att.SortOrder = 107

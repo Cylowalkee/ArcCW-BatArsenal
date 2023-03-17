@@ -1,5 +1,5 @@
 att.PrintName = "Alternate Rear Sight"
-att.Icon = Material("entities/att/acwatt_ba_mberg_optic_alt.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_optic_alt.png", "mips smooth")
 att.Description = "Changes the rear sight."
 
 att.SortOrder = 107

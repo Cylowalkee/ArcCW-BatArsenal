@@ -1,5 +1,5 @@
 att.PrintName = "RIS Barrel"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_ris.png", "mips smooth")
 att.Description = "Standard barrel with a rail system that allows for extra attachments."
 
 att.SortOrder = 107

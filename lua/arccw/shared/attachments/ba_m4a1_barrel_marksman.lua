@@ -1,5 +1,5 @@
 att.PrintName = "RIS Marksman Barrel"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_marksman.png", "mips smooth")
 att.Description = "Long marksman barrel with a rail system that allows for extra attachments. Elongated barrel increases the weapons effectiveness at long ranges."
 
 att.SortOrder = 107

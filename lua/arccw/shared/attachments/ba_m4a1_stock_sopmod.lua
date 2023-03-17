@@ -1,6 +1,6 @@
 att.PrintName = "Sopmod Stock"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
-att.Description = "Elongated barrel that reduces felt recoil."
+att.Icon = Material("entities/att/acwatt_ba_m4a1_stock_sopmod.png", "mips smooth")
+att.Description = "SOPMOD tactical stock. Comfier profile lets the user aim down sights faster."
 
 att.SortOrder = 107
 att.AutoStats = true

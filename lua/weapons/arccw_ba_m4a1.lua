@@ -497,48 +497,29 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Slot = {"ba_m4a1_barrel"},
         DefaultAttName = "Standard Barrel",
-        Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_barrel_normal.png", "smooth mips"),
-        Offset = {
-            vpos = Vector(0.048, 0.2, 11),
-            vang = Angle(90, 0, -90),
-        },
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m4a1_barrel_default.png", "smooth mips"),
+
     },
 
     {
         PrintName = "Stock",
         Slot = {"ba_m4a1_stock"},
         DefaultAttName = "Standard Stock",
-        Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
-        Offset = {
-            vpos = Vector(0.048, 0.2, 11),
-            vang = Angle(90, 0, -90),
-        },
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m4a1_stock_default.png", "smooth mips"),
     },
 
     {
         PrintName = "Magazine",
         Slot = {"ba_m4a1_mag"},
         DefaultAttName = "30 Round Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_mag_30.png", "smooth mips"),
-        Bone = "Body",
-        Offset = {
-            vpos = Vector(0.048, 0.2, 11),
-            vang = Angle(90, 0, -90),
-        },
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m4a1_mag_default.png", "smooth mips"),
     },
 
     {
         PrintName = "Grip",
         Slot = {"ba_m4a1_grip"},
         DefaultAttName = "Standard Grip",
-        Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
-        Offset = {
-            vpos = Vector(0.048, 0.2, 11),
-            vang = Angle(90, 0, -90),
-        },
+        DefaultAttIcon = Material("entities/att/acwatt_ba_m4a1_grip_default.png", "smooth mips"),
     },
 
     {

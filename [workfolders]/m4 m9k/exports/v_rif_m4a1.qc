@@ -72,8 +72,8 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\m4a1\"
 
-$Attachment "1" "Bolt.001" 0 -23 -0.3 rotate 0 -90 0
-$Attachment "2" "M4" 1 1 0 rotate -45 0 0
+$attachment "1" "Bolt.001" 0.00 -0.00 2.00 rotate -90 -0 0
+$attachment "2" "M4" -1.50 1.80 1.50 rotate 0 150 -180
 
 $CBox 0 0 0 0 0 0
 

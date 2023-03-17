@@ -1,6 +1,6 @@
 att.PrintName = "Curved Grip"
-att.Icon = Material("entities/att/acwatt_ba_ump_barrel_long.png", "mips smooth")
-att.Description = "Elongated barrel that reduces felt recoil."
+att.Icon = Material("entities/att/acwatt_ba_m4a1_grip_curve.png", "mips smooth")
+att.Description = "Ergonomic curved grip that reduces overall recoil at the cost of handling."
 
 att.SortOrder = 107
 att.AutoStats = true
