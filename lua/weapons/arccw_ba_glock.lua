@@ -275,11 +275,12 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "body",
+        Bone = "frame",
         Offset = {
-            vpos = Vector(0.5, 2.286, 0),
-            vang = Angle(90, -90, -90),
+            vpos = Vector(0.4, -0.5, 3.5),
+            vang = Angle(90, 0, -90),
         },
+        VMScale = Vector(0.5, 0.5, 0.5),
     },
 }
 

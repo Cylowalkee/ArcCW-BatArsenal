@@ -313,13 +313,12 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "v_weapon.ump45_Parent",
+        Bone = "smdimport",
         Offset = {
-            vpos = Vector(-0.3, -6.25, 1), -- offset that the attachment will be relative to the bone
-            vang = Angle(-90, 0, -90),
-            wpos = Vector(4, 1.5, -4.5),
-            wang = Angle(0, -4.211, 180)
+            vpos = Vector(0.6, 1.608, 1.3),
+            vang = Angle(0, -90, 0),
         },
+        VMScale = Vector(0.6, 0.6, 0.6),
     },
 }
 

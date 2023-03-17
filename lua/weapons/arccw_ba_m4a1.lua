@@ -148,7 +148,7 @@ SWEP.BarrelLength = 0 -- Anti fun
 
 SWEP.HolsterPos = Vector(12, -1, -1)
 
-SWEP.ActivePos = Vector(0.5, 1.5, 1)
+SWEP.ActivePos = Vector(0.5, 2, 1)
 SWEP.ActiveAng = Angle(0, 0, -2)
 
 SWEP.HoldtypeHolstered = "passive"
@@ -165,12 +165,9 @@ SWEP.IronSightStruct = {
 SWEP.HolsterPos = Vector(3, -2, 0)
 SWEP.HolsterAng = Angle(-8, 25.881, 0)
 
-SWEP.CrouchPos = Vector(0, -1, 0)
-SWEP.CrouchAng = Angle(0, 0, -2)
-
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-9.5, 4, -6.5),
+    pos        =    Vector(-4.5, 3.5, -6.5),
     ang        =    Angle(-6, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -196,6 +193,85 @@ SWEP.BulletBones = {
 }
 
 SWEP.AttachmentElements = {
+    ["barrel_m4a1_longrib"] = {
+        VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.03, -1.2, 20.6),
+                vang = Angle(90, 0, -90),
+			},
+		},
+    },
+    ["barrel_m4a1_shortrib"] = {
+        VMBodygroups = {{ind = 1, bg = 4}},
+    },
+    ["barrel_m4a1_marks"] = {
+        VMBodygroups = {{ind = 1, bg = 3}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.03, -1.2, 22.7),
+                vang = Angle(90, 0, -90),
+			},
+            [4] = {
+				vpos = Vector(-1.2, -1.2, 12.5),
+                vang = Angle(90, 0, 180),
+			},
+		},
+    },
+    ["barrel_m4a1_ris"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.03, -1.2, 15.6),
+                vang = Angle(90, 0, -90),
+			},
+		},
+    },
+    ["barrel_m4a1_shortris"] = {
+        VMBodygroups = {{ind = 1, bg = 5}},
+    },
+    ["barrel_m4a1_stubby"] = {
+        VMBodygroups = {{ind = 1, bg = 6}},
+    },
+
+    ["stock_m4a1_buffer"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
+    },
+    ["stock_m4a1_solid"] = {
+        VMBodygroups = {{ind = 2, bg = 2}},
+    },
+    ["stock_m4a1_sopmod"] = {
+        VMBodygroups = {{ind = 2, bg = 3}},
+    },
+
+    ["mag_m4a1_poly"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+    },
+    ["mag_m4a1_60"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+    },
+    ["mag_m4a1_20"] = {
+        VMBodygroups = {{ind = 3, bg = 3}},
+    },
+
+    ["grip_m4a1_hk"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
+    ["grip_m4a1_short"] = {
+        VMBodygroups = {{ind = 4, bg = 2}},
+    },
+    ["grip_m4a1_curve"] = {
+        VMBodygroups = {{ind = 4, bg = 3}},
+    },
+
+    ["m4a1_altrear"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },
+
+    ["m4a1_rail"] = {
+        VMBodygroups = {{ind = 5, bg = 2}},
+    },
+
 }
 
 
@@ -210,12 +286,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Framerate = 40,
-        time =  80 / 40,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.6,
+        time =  60 / 40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_boltpull.mp3", t = 30 / 40, c = ca, v = 0.8 },
@@ -269,8 +340,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -287,8 +358,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -306,8 +377,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -324,8 +395,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.6,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -343,8 +414,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 23 / 40, c = ca, v = 0.8 },
@@ -361,8 +432,8 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.45,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.8,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM4 .. "m4a1_clipout.mp3", t = 23 / 40, c = ca, v = 0.8 },
@@ -382,43 +453,45 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
         DefaultAttName = "Iron Sights",
-        Bone = "Body",
+        Bone = "M4",
         Offset = {
-            vpos = Vector(-0.0, 2, 0.8),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.03, -2.3, 0),
+            vang = Angle(90, 0, -90),
         },
-        CorrectiveAng = Angle( 0, 180, 0 ),
-        InstalledEles = {"irons"},
+        CorrectiveAng = Angle( 0, 0, 0 ),
+        VMScale = Vector(1.1, 1.1, 1.1),
+        InstalledEles = {"m4a1_rail"},
+        GivesFlags = {"norear"},
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Body",
+        Bone = "M4",
         Offset = {
-            vpos = Vector(0, 20, -0.4),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.03, -1.2, 16),
+            vang = Angle(90, 0, -90),
         },
     },
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "Body",
+        Bone = "M4",
         Offset = {
-            vpos = Vector(0, 11, -2),
-            vang = Angle(-0, -90, -0),
+            vpos = Vector(-0.03, -0, 7.5),
+            vang = Angle(90, 0, -90),
         },
-        InstalledEles = {"bottom"},
+        RequireFlags = {"m4a1_ris"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Body",
+        Bone = "M4",
         Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -115),
+            vpos = Vector(-1.2, -1.2, 8.5),
+            vang = Angle(90, 0, 180),
         },
-        InstalledEles = {"tac"},
+        RequireFlags = {"m4a1_ris"},
     },
     {
         PrintName = "Barrel",
@@ -457,6 +530,18 @@ SWEP.Attachments = {
     },
 
     {
+        PrintName = "Grip",
+        Slot = {"ba_m4a1_grip"},
+        DefaultAttName = "Standard Grip",
+        Bone = "Body",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
+        Offset = {
+            vpos = Vector(0.048, 0.2, 11),
+            vang = Angle(90, 0, -90),
+        },
+    },
+
+    {
         PrintName = "Fire Group",
         Slot = "ba_fcg",
         DefaultAttName = "Standard FCG"
@@ -473,12 +558,41 @@ SWEP.Attachments = {
 
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = {"charm","ba_m4a1_rear"},
         FreeSlot = true,
-        Bone = "body",
+        Bone = "m4",
         Offset = {
-            vpos = Vector(0.5, 2.286, 0),
-            vang = Angle(90, -90, -90),
+            vpos = Vector(0.6, -1.5, 2.2),
+            vang = Angle(90, 0, -80),
         },
+        VMScale = Vector(0.7, 0.7, 0.7),
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = data.vm
+    local atts = wep.Attachments
+    local barrel = atts[5].Installed
+    local hasOptic = (atts[1].Installed != nil)
+    if !IsValid(vm) then return end
+
+    if hasOptic then
+        if barrel == "ba_m4a1_barrel_long" || barrel == "ba_m4a1_barrel_marksman" then
+            vm:SetBodygroup(6,4)
+        elseif barrel == "ba_m4a1_barrel_stubby" then
+            vm:SetBodygroup(6,5)
+        else
+            vm:SetBodygroup(6,3)
+        end
+    else
+        if barrel == "ba_m4a1_barrel_long" || barrel == "ba_m4a1_barrel_marksman" then
+            vm:SetBodygroup(6,1)
+        elseif barrel == "ba_m4a1_barrel_stubby" then
+            vm:SetBodygroup(6,2)
+        else
+            vm:SetBodygroup(6,0)
+        end     
+    end
+
+
+end
