@@ -12,6 +12,19 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_m4a1_barrel"
 
+att.Mult_HipDispersion = 1.175
+att.Mult_Recoil = 1.125
+att.Mult_Range = 0.925
+
+att.Mult_SpeedMult = 0.975
+att.Mult_SightedSpeedMult = 1.025
+att.Mult_SightTime = 0.925
+
+att.Mult_RPM = 1.075
+
+att.Mult_AccuracyMOA = 1.2
+
+
 att.ActivateElements = {"barrel_m4a1_shortris"}
 
 att.GivesFlags = {"m4a1_ris"}

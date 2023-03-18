@@ -24,6 +24,9 @@ att.Mult_Range = 0.7
 
 att.Mult_RPM = 800/500
 
+att.Mult_SpeedMult = 1.05
+att.Mult_SightTime = 0.9
+
 att.ActivateElements = {"mag_ump45_15"}
 
 att.Hook_GetShootSound = function(wep, sound)

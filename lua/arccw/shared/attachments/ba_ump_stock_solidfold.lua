@@ -17,10 +17,24 @@ att.ToggleStats = {
         PrintName = "Extended",
         AutoStats = true,
         ActivateElements = {"stock_ump45_solidfold"},
+
+        Mult_Recoil = 0.9,
+        Mult_RecoilSide = 0.85,
+
+        Mult_SightedSpeedMult = 0.85,
+        Mult_SpeedMult = 0.9,
+        Mult_SightTime = 1.15,
     },
     {
         PrintName = "Folded",
         AutoStats = true,
         ActivateElements = {"stock_ump45_solidfold_folded"},
+
+        Mult_Recoil = 1.3,
+        Mult_RecoilSide = 1.05,
+
+        Mult_SightedSpeedMult = 1.1,
+        Mult_SpeedMult = 1,
+        Mult_SightTime = 0.95,
     },
 }

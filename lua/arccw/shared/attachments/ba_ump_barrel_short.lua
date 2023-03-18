@@ -11,4 +11,15 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_ump45_barrel"
 
+att.Mult_HipDispersion = 1.1
+att.Mult_Recoil = 1.1
+att.Mult_Range = 0.85
+
+att.Mult_SightedSpeedMult = 1.05
+att.Mult_SightTime = 0.925
+
+att.Mult_RPM = 1.1
+
+att.Mult_AccuracyMOA = 1.1
+
 att.ActivateElements = {"barrel_ump45_short"}

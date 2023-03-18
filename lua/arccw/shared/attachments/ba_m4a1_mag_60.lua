@@ -8,10 +8,14 @@ att.AutoStats = true
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+    "Slower reload"
 }
 att.Slot = "ba_m4a1_mag"
 
 att.Override_ClipSize = 60
+
+att.Mult_SpeedMult = 0.9
+att.Mult_SightTime = 1.05
 
 att.ActivateElements = {"mag_m4a1_60"}
 

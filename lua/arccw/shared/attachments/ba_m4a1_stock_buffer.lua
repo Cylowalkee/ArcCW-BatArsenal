@@ -11,4 +11,11 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_m4a1_stock"
 
+att.Mult_Recoil = 2.1
+att.Mult_RecoilSide = 1.7
+
+att.Mult_SightedSpeedMult = 1.25
+att.Mult_SpeedMult = 1.075
+att.Mult_SightTime = 0.85
+
 att.ActivateElements = {"stock_m4a1_buffer"}

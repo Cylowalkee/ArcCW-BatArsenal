@@ -14,4 +14,8 @@ att.Slot = "ba_m4a1_barrel"
 
 att.ActivateElements = {"barrel_m4a1_ris"}
 
+att.Mult_SpeedMult = 0.975
+att.Mult_SightedSpeedMult = 0.95
+att.Mult_SightTime = 1.025
+
 att.GivesFlags = {"m4a1_ris"}

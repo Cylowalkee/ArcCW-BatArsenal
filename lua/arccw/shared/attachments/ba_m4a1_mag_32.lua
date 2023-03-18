@@ -13,4 +13,8 @@ att.Slot = "ba_m4a1_mag"
 
 att.Override_ClipSize = 32
 
+att.Mult_SpeedMult = 0.975
+att.Mult_SightTime = 1.025
+
+
 att.ActivateElements = {"mag_m4a1_poly"}

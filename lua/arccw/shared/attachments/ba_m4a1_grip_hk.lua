@@ -11,4 +11,7 @@ att.Desc_Cons = {
 }
 att.Slot = "ba_m4a1_grip"
 
+att.Mult_Recoil = 1.025
+att.Mult_RecoilSide = 0.95
+
 att.ActivateElements = {"grip_m4a1_hk"}

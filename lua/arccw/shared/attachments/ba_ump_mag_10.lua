@@ -14,6 +14,9 @@ att.Slot = "ba_ump45_mag"
 
 att.Override_ClipSize = 10
 
+att.Mult_SpeedMult = 1.05
+att.Mult_SightTime = 0.9
+
 att.ActivateElements = {"mag_ump45_10"}
 
 
