@@ -1,6 +1,6 @@
 att.PrintName = "5-Round .44 Magnum Cylinder"
-att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_long.png", "mips smooth")
-att.Description = "Long barrel with a ribbed solid handguard. Elongated barrel increases the weapons effectiveness at long ranges."
+att.Icon = Material("entities/att/acwatt_ba_python_cylinder_5.png", "mips smooth")
+att.Description = "5 round cylinder housing .44 magnum rounds. Increased stopping power at the cost of recoil."
 
 att.SortOrder = 107
 att.AutoStats = true

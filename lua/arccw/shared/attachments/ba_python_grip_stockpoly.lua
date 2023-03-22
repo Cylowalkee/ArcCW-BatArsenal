@@ -1,6 +1,6 @@
 att.PrintName = "Polymer Gripstock"
-att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_long.png", "mips smooth")
-att.Description = "Long barrel with a ribbed solid handguard. Elongated barrel increases the weapons effectiveness at long ranges."
+att.Icon = Material("entities/att/acwatt_ba_python_grip_stockpoly.png", "mips smooth")
+att.Description = "Light polymer stock that allows the user to direct recoil to the shoulder. Reduced manouverability due to the increased profile."
 
 att.SortOrder = 107
 att.AutoStats = true

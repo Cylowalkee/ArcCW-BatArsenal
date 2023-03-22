@@ -26,6 +26,14 @@ SWEP.ViewModel = "models/weapons/arccw/c_ba_pist_python.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_pist_python.mdl"
 SWEP.ViewModelFOV = 70
 
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos        =    Vector(-11, 4.7, -5.0),
+    ang        =    Angle(-6, 0, 180),
+    bone    =    "ValveBiped.Bip01_R_Hand",
+}
+
+
 SWEP.DefaultSkin = 1
 
 SWEP.Damage = 65
@@ -48,7 +56,7 @@ SWEP.VisualRecoilMult = 0.5
 
 SWEP.TriggerDelay = true
 
-SWEP.Delay = 0.5
+SWEP.Delay = 0.4
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -89,27 +97,14 @@ SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 0
 
-SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    -- [0] = "bulletchamber",
-    -- [1] = "bullet1"
-}
 
 SWEP.ProceduralRegularFire = false
 SWEP.ProceduralIronFire = false
 
-SWEP.CaseBones = {
-    [1] = "Bullet1",
-    [2] = "Bullet2",
-    [3] = "Bullet3",
-    [4] = "Bullet4",
-    [5] = "Bullet5",
-    [6] = "Bullet6",
-}
-
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.71, -6.732, 1.745),
-    Ang = Angle(0.5, -0.15, 4.5),
+    Pos = Vector(-3.71, -6.732, 1.65),
+    Ang = Angle(0.8, -0.15, 4.5),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -136,18 +131,42 @@ SWEP.ExtraSightDist = 10
 SWEP.AttachmentElements = {
     ["barrel_python_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-12.7, -2.85, -0),
+                vang = Angle(180, 0, -90),
+			},
+		},
     },
     ["barrel_python_marks"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-14, -2.85, -0),
+                vang = Angle(180, 0, -90),
+			},
+		},
     },
     ["barrel_python_brute"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
     },
     ["barrel_python_short"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-10.5, -2.85, -0),
+                vang = Angle(180, 0, -90),
+			},
+		},
     },
     ["barrel_python_snub"] = {
         VMBodygroups = {{ind = 1, bg = 5}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-7.75, -2.85, -0),
+                vang = Angle(180, 0, -90),
+			},
+		},
     },
 
     ["grip_python_ergo"] = {
@@ -180,36 +199,61 @@ SWEP.Attachments = {
         PrintName = "Optic",
         DefaultAttName = "Iron Sights",
         Slot = {"optic_lp"},
-        Bone = "Body",
+        Bone = "Barrel Low",
         Offset = {
-            vpos = Vector(0.032, -4.029, -3.604),
-            vang = Angle(-90, 0, -90),
-            wpos = Vector(8.873, 1.927, -4.648),
-            wang = Angle(0, 0, 180)
+            vpos = Vector(-6.3, -3.729, -0),
+            vang = Angle(180, 0, -90),
         },
         CorrectiveAng = nil, --Angle(90, 0, -90)
         InstalledEles = {"rail"},
+        VMScale = Vector(0.9, 0.9, 0.9),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Slot = "muzzle",
+        Bone = "Barrel Low",
+        Offset = {
+            vpos = Vector(-11.5, -2.85, -0),
+            vang = Angle(180, 0, -90),
+        },
+    },
+    {
+        PrintName = "Tactical",
+        Slot = "tac",
+        Bone = "Barrel Low",
+        Offset = {
+            vpos = Vector(-6.1, -1.8, -0),
+            vang = Angle(180, 0, -90),
+        },
+        InstalledEles = {"rail"},
+        VMScale = Vector(0.75, 0.75, 0.75),
+        ExcludeFlags = {"ba_python_marksman"},
     },
     {
         PrintName = "Barrel",
         Slot = {"ba_python_barrel"},
         DefaultAttName = "Standard Barrel",
-        Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
+        Bone = "Barrel Low",
+        Offset = {
+            vpos = Vector(0, 0, -0),
+            vang = Angle(180, 0, -90),
+        },
+        DefaultAttIcon = Material("entities/att/acwatt_ba_python_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Grip",
         Slot = {"ba_python_grip"},
         DefaultAttName = "Standard Grip",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_python_grip_default.png", "smooth mips"),
     },
     {
         PrintName = "Cylinder",
         Slot = {"ba_python_mag"},
         DefaultAttName = "6-Round .357 Cylinder",
         Bone = "Gun",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_python_cylinder_6.png", "smooth mips"),
     },
     {
         PrintName = "Charm",
@@ -253,30 +297,34 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Time = 36 / 40,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.3,
         SoundTable = {
             { s = pathPython .. "unfold.mp3", t = 0 / 40, c = ca, v = 0.8 },
         }
     },
     ["fire"] = {
         Source = "fire",
-        Time = 30 / 40,
+        Time = 25 / 40,
         MinProgress = 0.4,
     },
     ["fire_iron"] = {
         Source = "fire_iron",
-        Time = 30 / 40,
+        Time = 25 / 40,
         MinProgress = 0.4,
     },
     ["fire_dry"] = {
         Source = "fire_dry",
-        Time = 30 / 40,
+        Time = 25 / 40,
         SoundTable = {
             { s = pathPython .. "click.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
     },
     ["fire_dry_iron"] = {
         Source = "fire_dry",
-        Time = 30 / 40,
+        Time = 25 / 40,
         SoundTable = {
             { s = pathPython .. "click.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
@@ -288,8 +336,10 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_REVOLVER,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 1,
-        LHIKOut = 1,
+        LHIKIn = 0.2,
+        LHIKOut = 0.5,
+        LHIKEaseIn = 0.1,
+        LHIKEaseOut = 0.2,
         LastClip1OutTime = 1,
         SoundTable = {
             { s = pathPython .. "click.mp3", t = 10 / 40, c = ca, v = 0.8 },
@@ -319,7 +369,7 @@ SWEP.Animations = {
 }
 
 function SWEP:Hook_TranslateAnimation(anim)
-    local stocked = (self.Attachments[3].Installed == "ba_python_grip_stockwood") || (self.Attachments[3].Installed == "ba_python_grip_stockpoly")
+    local stocked = (self.Attachments[5].Installed == "ba_python_grip_stockwood") || (self.Attachments[5].Installed == "ba_python_grip_stockpoly")
     if anim == "fire_iron" and !stocked then
     return "fire" end
 end

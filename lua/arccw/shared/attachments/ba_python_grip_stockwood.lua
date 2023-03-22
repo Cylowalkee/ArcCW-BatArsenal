@@ -1,6 +1,6 @@
 att.PrintName = "Wooden Gripstock"
-att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_long.png", "mips smooth")
-att.Description = "Long barrel with a ribbed solid handguard. Elongated barrel increases the weapons effectiveness at long ranges."
+att.Icon = Material("entities/att/acwatt_ba_python_grip_stockwood.png", "mips smooth")
+att.Description = "Heavy gripstock that  excells at recoil control. Reduced manouverability due to the increased profile."
 
 att.SortOrder = 107
 att.AutoStats = true

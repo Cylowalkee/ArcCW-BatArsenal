@@ -54,7 +54,7 @@ $IllumPosition 0 0 0
 $CDMaterials "models\weapons\batarsenal\python\"
 $CDMaterials "models\weapons\batarsenal\glock\"
 
-$attachment "1" "Barrel Low" 0.00 0.90 5.60 rotate -90 0 0
+$attachment "1" "Barrel Low" -13.00 2.70 0.00 rotate -0 180 -180
 
 
 $CBox 0 0 0 0 0 0

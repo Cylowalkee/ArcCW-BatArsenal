@@ -1,6 +1,6 @@
 att.PrintName = "Snub Barrel"
-att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_long.png", "mips smooth")
-att.Description = "Long barrel with a ribbed solid handguard. Elongated barrel increases the weapons effectiveness at long ranges."
+att.Icon = Material("entities/att/acwatt_ba_python_barrel_snub.png", "mips smooth")
+att.Description = "Extremely short barrel thats designed for close quarters combat. Nimble at the cost of long range performance."
 
 att.SortOrder = 107
 att.AutoStats = true
