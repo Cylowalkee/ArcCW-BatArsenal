@@ -13,6 +13,8 @@ att.Slot = "ba_python_mag"
 
 att.Override_ClipSize = 4
 
+att.Mult_RPM = 0.8
+
 att.Mult_DamageMin = 1.3
 att.Mult_Damage = 1.2
 
