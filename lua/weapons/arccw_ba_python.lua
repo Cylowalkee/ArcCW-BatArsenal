@@ -57,7 +57,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = 0,
-        PrintName = "fcg.safe2",
+        PrintName = "LOW",
     }
 }
 
@@ -109,7 +109,7 @@ SWEP.CaseBones = {
 
 SWEP.IronSightStruct = {
     Pos = Vector(-3.71, -6.732, 1.745),
-    Ang = Angle(0.3, -0.15, 4.5),
+    Ang = Angle(0.5, -0.15, 4.5),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -134,13 +134,52 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 10
 
 SWEP.AttachmentElements = {
+    ["barrel_python_long"] = {
+        VMBodygroups = {{ind = 1, bg = 1}},
+    },
+    ["barrel_python_marks"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+    },
+    ["barrel_python_brute"] = {
+        VMBodygroups = {{ind = 1, bg = 3}},
+    },
+    ["barrel_python_short"] = {
+        VMBodygroups = {{ind = 1, bg = 4}},
+    },
+    ["barrel_python_snub"] = {
+        VMBodygroups = {{ind = 1, bg = 5}},
+    },
+
+    ["grip_python_ergo"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
+    },
+    ["grip_python_short"] = {
+        VMBodygroups = {{ind = 2, bg = 2}},
+    },
+    ["grip_python_stockwood"] = {
+        VMBodygroups = {{ind = 2, bg = 3}},
+    },
+    ["grip_python_stockpoly"] = {
+        VMBodygroups = {{ind = 2, bg = 4}},
+    },
+
+    ["cylinder_python_5"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+    },
+    ["cylinder_python_4"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+    },
+
+    ["rail"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"},
+        Slot = {"optic_lp"},
         Bone = "Body",
         Offset = {
             vpos = Vector(0.032, -4.029, -3.604),
@@ -148,7 +187,29 @@ SWEP.Attachments = {
             wpos = Vector(8.873, 1.927, -4.648),
             wang = Angle(0, 0, 180)
         },
-        CorrectiveAng = nil --Angle(90, 0, -90)
+        CorrectiveAng = nil, --Angle(90, 0, -90)
+        InstalledEles = {"rail"},
+    },
+    {
+        PrintName = "Barrel",
+        Slot = {"ba_python_barrel"},
+        DefaultAttName = "Standard Barrel",
+        Bone = "Gun",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
+    },
+    {
+        PrintName = "Grip",
+        Slot = {"ba_python_grip"},
+        DefaultAttName = "Standard Grip",
+        Bone = "Gun",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
+    },
+    {
+        PrintName = "Cylinder",
+        Slot = {"ba_python_mag"},
+        DefaultAttName = "6-Round .357 Cylinder",
+        Bone = "Gun",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
     },
     {
         PrintName = "Charm",
@@ -178,7 +239,10 @@ SWEP.ShootSoundSilenced = pathSVU .. "g3sg1-1.wav"
 -- append _empty for empty variation
 
 SWEP.Animations = {
-    ["idle"] = false,
+    ["idle"] = {
+        Source = "idle",
+        Time = 1 / 40,
+    },
     ["draw"] = {
         Source = "draw",
         Time = 27 / 40,
@@ -255,9 +319,7 @@ SWEP.Animations = {
 }
 
 function SWEP:Hook_TranslateAnimation(anim)
-    if anim == "fire_iron" then
-        if !self.Attachments[1].Installed then return "fire" end
-    elseif anim == "fire_iron_empty" then
-        if !self.Attachments[1].Installed then return "fire_empty" end
-    end
+    local stocked = (self.Attachments[3].Installed == "ba_python_grip_stockwood") || (self.Attachments[3].Installed == "ba_python_grip_stockpoly")
+    if anim == "fire_iron" and !stocked then
+    return "fire" end
 end
