@@ -13,7 +13,7 @@ SWEP.Trivia_Mechanism = "Gas-operated rotating bolt"
 SWEP.Trivia_Country = "Russian Federation"
 SWEP.Trivia_Year = 1999
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 if GetConVar("arccw_truenames"):GetBool() then
     SWEP.PrintName = SWEP.TrueName

@@ -13,7 +13,7 @@ SWEP.Trivia_Mechanism = "Bolt-Action"
 SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1997
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 if GetConVar("arccw_truenames"):GetBool() then
     SWEP.PrintName = SWEP.TrueName
@@ -24,6 +24,13 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_ba_snip_m98b.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_snip_m98b.mdl"
 SWEP.ViewModelFOV = 70
+
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos        =    Vector(-3.9, 2.7, -5.7),
+    ang        =    Angle(-6, 0, 180),
+    bone    =    "ValveBiped.Bip01_R_Hand",
+}
 
 SWEP.Damage = 70
 SWEP.DamageMin = 110 -- damage done at maximum range
