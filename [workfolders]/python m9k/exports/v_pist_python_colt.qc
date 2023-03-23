@@ -145,7 +145,7 @@ $sequence "fire_dry" {
 
 
 $sequence "reload" {
-	"anims\reload.smd"
+	"anims\reload_new.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 40
