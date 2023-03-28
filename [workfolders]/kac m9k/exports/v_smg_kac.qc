@@ -67,7 +67,7 @@ $CDMaterials "models\weapons\batarsenal\hbadger\"
 $CDMaterials "models\weapons\batarsenal\m4a1\"
 
 $Attachment "1" "Body" 0 -20.5 2.5 rotate 0 -90 0
-$Attachment "2" "Body" 0.5 -4 3 rotate -30 0 180
+$attachment "2" "Body" -1.00 -4.00 3.60 rotate -30 -180 0
 
 $CBox 0 0 0 0 0 0
 
