@@ -1,6 +1,6 @@
 att.PrintName = "20-Round Short Magazine"
-att.Icon = Material("entities/att/acwatt_ba_ump_mag_10.png", "mips smooth")
-att.Description = "A 10-round short magazine Smaller weight load allows for more manouverable builds."
+att.Icon = Material("entities/att/acwatt_ba_kac_mag_20.png", "mips smooth")
+att.Description = "A 20-round short magazine Smaller profile makes this weapon easier to handle."
 
 att.SortOrder = 111
 att.AutoStats = true

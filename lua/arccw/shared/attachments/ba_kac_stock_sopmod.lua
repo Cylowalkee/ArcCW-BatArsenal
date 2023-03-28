@@ -1,6 +1,6 @@
 att.PrintName = "Sopmod Stock"
 att.Icon = Material("entities/att/acwatt_ba_m4a1_stock_solid.png", "mips smooth")
-att.Description = "Solid stock that hugs the gun. Heavy and bulky but reduces the felt recoil."
+att.Description = "Comfy sopmod stock mounted on a buffer tube. Increases handling."
 
 att.SortOrder = 107
 att.AutoStats = true

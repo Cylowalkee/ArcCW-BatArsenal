@@ -1,6 +1,6 @@
 att.PrintName = "Badger Barrel"
-att.Icon = Material("entities/att/acwatt_ba_m4a1_barrel_short.png", "mips smooth")
-att.Description = "Short barrel with a ribbed solid handguard. Shortened weapon profile allows for faster manouvers."
+att.Icon = Material("entities/att/acwatt_ba_kac_barrel_hb.png", "mips smooth")
+att.Description = "Offbrand barrel ripped from the Honey Badger. Internally silenced and longer than stock barrel."
 
 att.SortOrder = 107
 att.AutoStats = true

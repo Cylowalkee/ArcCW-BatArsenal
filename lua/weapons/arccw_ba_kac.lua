@@ -114,7 +114,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(1, 0.5, 0.2)
+SWEP.ActivePos = Vector(1.2, -1, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)
@@ -129,7 +129,66 @@ SWEP.AttachmentBodygroups = {}
 -- ["name"] = {ind = 1, bg = 1}
 -- same as ACT3
 
+SWEP.DefaultBodygroups = "00000000000"
+
 SWEP.AttachmentElements = {
+    ["barrel_kac_short"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.1, 13.8, 3.2),
+                vang = Angle(90, -88.5, 0),
+			},
+		},
+    },
+    ["barrel_kac_long"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-0.1, 18.5, 3.3),
+                vang = Angle(90, -88.5, 0),
+			},
+		},
+    },
+    ["barrel_kac_supp"] = {
+        VMBodygroups = {{ind = 3, bg = 3}},
+    },
+    ["barrel_kac_hb"] = {
+        VMBodygroups = {{ind = 3, bg = 4}},
+    },
+
+    ["stock_kac_folded"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
+
+    ["stock_kac_badger"] = {
+        VMBodygroups = {{ind = 4, bg = 6},{ind = 0, bg = 1}},
+    },
+    ["stock_kac_badger_folded"] = {
+        VMBodygroups = {{ind = 4, bg = 7},{ind = 0, bg = 1}},
+    },
+
+    ["stock_kac_light"] = {
+        VMBodygroups = {{ind = 4, bg = 2}},
+    },
+    ["stock_kac_light_folded"] = {
+        VMBodygroups = {{ind = 4, bg = 3}},
+    },
+
+    ["stock_kac_ergo"] = {
+        VMBodygroups = {{ind = 4, bg = 4},{ind = 0, bg = 1}},
+    },
+    ["stock_kac_sopmod"] = {
+        VMBodygroups = {{ind = 4, bg = 5},{ind = 0, bg = 1}},
+    },
+
+
+    ["mag_kac_45"] = {
+        VMBodygroups = {{ind = 5, bg = 2}},
+    },
+    ["mag_kac_20"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },
 }
 
 SWEP.ExtraSightDist = 4
@@ -157,6 +216,7 @@ SWEP.Attachments = {
             vang = Angle(90, -88.5, 0),
         },
         VMScale = Vector(0.9, 0.9, 0.9),
+        ExcludeFlags = {"ba_kac_muzz"},
     },
     {
         PrintName = "Underbarrel",
@@ -181,19 +241,19 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Slot = {"ba_kac_barrel"},
         DefaultAttName = "Standard Barrel",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_kac_barrel_default.png", "smooth mips"),
     },
     {
         PrintName = "Stock",
         Slot = {"ba_kac_stock"},
         DefaultAttName = "Standard Foldable Stock",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_stock_default.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_kac_stock_default.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_kac_mag"},
         DefaultAttName = "30-Round Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_mag_default.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_kac_mag_30.png", "smooth mips"),
     },
     {
         PrintName = "Fire Group",
@@ -280,8 +340,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.2,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
@@ -294,8 +355,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.2,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
@@ -312,8 +374,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.2,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
@@ -326,8 +389,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.65,
+        LHIKEaseOut = 0.3,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
@@ -342,8 +406,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.8,
+        LHIKEaseOut = 0.4,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },
@@ -356,8 +421,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.1,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.3,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },
@@ -379,7 +445,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if hasOptic then
         if barrel == "ba_kac_barrel_long" then
             vm:SetBodygroup(1,4)
-        elseif  barrel == "ba_kac_barrel_badger" then
+        elseif  barrel == "ba_kac_barrel_hb" then
             vm:SetBodygroup(1,5)
         else
             vm:SetBodygroup(1,3)
@@ -388,7 +454,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     else
         if barrel == "ba_kac_barrel_long" then
             vm:SetBodygroup(1,1)
-        elseif  barrel == "ba_kac_barrel_badger" then
+        elseif  barrel == "ba_kac_barrel_hb" then
             vm:SetBodygroup(1,2)
         else
             vm:SetBodygroup(1,0)
