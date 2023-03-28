@@ -7,6 +7,24 @@ $BodyGroup "reciever"
 	studio "reciever_flat.smd"
 }
 
+$BodyGroup "frontiron"
+{
+	studio "ironsup_default.smd"
+	studio "ironsup_long.smd"
+	studio "ironsup_badger.smd"
+	studio "ironsdown_default.smd"
+	studio "ironsdown_long.smd"
+	studio "ironsdown_badger.smd"
+	blank
+}
+
+$BodyGroup "reariron"
+{
+	studio "rear1up_default.smd"
+	studio "rear1down_default.smd"
+	blank
+}
+
 $BodyGroup "barrel"
 {
 	studio "barrel_default.smd"
@@ -35,24 +53,6 @@ $BodyGroup "mag"
 	studio "mag_default.smd"
 	studio "mag_20.smd"
 	studio "mag_45.smd"
-	blank
-}
-
-$BodyGroup "frontiron"
-{
-	studio "ironsup_default.smd"
-	studio "ironsup_long.smd"
-	studio "ironsup_badger.smd"
-	studio "ironsdown_default.smd"
-	studio "ironsdown_long.smd"
-	studio "ironsdown_badger.smd"
-	blank
-}
-
-$BodyGroup "reariron"
-{
-	studio "rear1up_default.smd"
-	studio "rear1down_default.smd"
 	blank
 }
 

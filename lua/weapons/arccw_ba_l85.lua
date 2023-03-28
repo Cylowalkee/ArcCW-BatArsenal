@@ -57,7 +57,7 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
 
-SWEP.Damage = 30
+SWEP.Damage = 27
 SWEP.DamageMin = 20
 SWEP.Range = 95
 SWEP.Penetration = 15
@@ -87,8 +87,8 @@ SWEP.ReducedClipSize = 10
 
 -- Recoil --
 
-SWEP.Recoil = 0.5
-SWEP.RecoilSide = 0.15
+SWEP.Recoil = 0.7
+SWEP.RecoilSide = 0.3
 
 SWEP.RecoilRise = 0.1
 SWEP.VisualRecoilMult = 1.5

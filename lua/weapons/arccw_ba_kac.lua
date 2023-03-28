@@ -33,25 +33,25 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.Damage = 30
-SWEP.DamageMin = 15 -- damage done at maximum range
+SWEP.DamageMin = 20 -- damage done at maximum range
 SWEP.Range = 65 -- in METRES
-SWEP.Penetration = 4
+SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 25 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.RevolverReload = false -- cases all eject on reload
 
 SWEP.OpenBolt = false -- gun fires at the end of 
 
-SWEP.Recoil = 0.6
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 0.9
+SWEP.RecoilSide = 0.5
 SWEP.VisualRecoilMult = 0.2
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 650 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -79,16 +79,17 @@ SWEP.ShootVol = 100 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.MuzzleEffect = "muzzleflash_mp5"
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 1.5
+SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellScale = 1
+SWEP.ShellMaterial = "models/weapons/arcticcw/shell_556mm"
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.25
+SWEP.SightTime = 0.2
 
-SWEP.SpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.75
+SWEP.SpeedMult = 0.82
+SWEP.SightedSpeedMult = 0.8
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -101,8 +102,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.36, -7, 0.799),
-    Ang = Angle(0, 0, 2),
+    Pos = Vector(-2.95, -3.415, 0.48),
+    Ang = Angle(0, 0.08, 0),
     Magnification = 1.1,
     SwitchToSound = "",
 }
@@ -129,104 +130,6 @@ SWEP.AttachmentBodygroups = {}
 -- same as ACT3
 
 SWEP.AttachmentElements = {
-    ["mag_ump45_10"] = {
-        VMBodygroups = {{ind = 3, bg = 1}},
-    },
-    ["mag_ump45_45"] = {
-        VMBodygroups = {{ind = 3, bg = 2}},
-    },
-    ["mag_ump45_30"] = {
-        VMBodygroups = {{ind = 3, bg = 3}},
-    },
-    ["mag_ump45_15"] = {
-        VMBodygroups = {{ind = 3, bg = 4}},
-    },
-    ["mag_ump45_50"] = {
-        VMBodygroups = {{ind = 3, bg = 5}},
-    },
-
-    ["altrec"] = {
-        VMBodygroups = {{ind = 0, bg = 1}},
-    },
-
-    ["barrel_ump45_long"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(0.05, 14.6, 1.33),
-                vang = Angle(0, -90, 0),
-            },
-        }
-    },
-    ["barrel_ump45_sniper"] = {
-        VMBodygroups = {{ind = 1, bg = 2}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(0.05, 16.6, 1.33),
-                vang = Angle(0, -90, 0),
-            },
-        }
-    },
-    ["barrel_ump45_short"] = {
-        VMBodygroups = {{ind = 1, bg = 3}},
-        AttPosMods = {
-            [2] = {
-				vpos = Vector(0.05, 12.6, 1.33),
-                vang = Angle(0, -90, 0),
-			},
-			[3] = {
-				vpos = Vector(0.05, 8.608, -0.124),
-				vang = Angle(0, -90, 0),
-			},
-            [4] = {
-				vpos = Vector(-0.90, 7.608, 1.55),
-                vang = Angle(-105, -90, 0),
-			},
-		},
-    },
-    ["barrel_ump45_kurz"] = {
-        VMBodygroups = {{ind = 1, bg = 4}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(0.05, 10.8, 1.33),
-                vang = Angle(0, -90, 0),
-            },
-        }
-    },
-
-    ["stock_ump45_solid"] = {
-        VMBodygroups = {{ind = 2, bg = 8}},
-    },
-
-    ["stock_ump45_default_folded"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
-    },
-
-    ["stock_ump45_light"] = {
-        VMBodygroups = {{ind = 2, bg = 4}},
-    },
-    ["stock_ump45_light_folded"] = {
-        VMBodygroups = {{ind = 2, bg = 5}},
-    },
-
-    ["stock_ump45_solidfold"] = {
-        VMBodygroups = {{ind = 2, bg = 2}},
-    },
-    ["stock_ump45_solidfold_folded"] = {
-        VMBodygroups = {{ind = 2, bg = 3}},
-    },
-
-
-    ["stock_ump45_coll"] = {
-        VMBodygroups = {{ind = 2, bg = 6}},
-    },
-    ["stock_ump45_coll_collapsed"] = {
-        VMBodygroups = {{ind = 2, bg = 7}},
-    },
-
-    ["railtop"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
-    },
 }
 
 SWEP.ExtraSightDist = 4
@@ -236,61 +139,60 @@ SWEP.Attachments = {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
         Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "smdimport", -- relevant bone any attachments will be mostly referring to
+        Bone = "Body", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.05, 1.108, 3.124), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.1, 4, 4.3), -- offset that the attachment will be relative to the bone
+            vang = Angle(90, -87.5, -90),
         },
-        CorrectiveAng = Angle(0, 180, 0),
-        VMScale = Vector(0.95, 0.95, 0.95),
-        InstalledEles = {"railtop"},
+        CorrectiveAng = Angle(-4, 180, 180),
+        VMScale = Vector(1.1, 1.1, 1.1),
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "smdimport",
+        Bone = "Body",
         Offset = {
-            vpos = Vector(0.05, 13.6, 1.33),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.1, 16.4, 3.2),
+            vang = Angle(90, -88.5, 0),
         },
         VMScale = Vector(0.9, 0.9, 0.9),
     },
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "smdimport",
+        Bone = "Body",
         Offset = {
-            vpos = Vector(0.05, 8.608, 0.224),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.1, 10, 2.2),
+            vang = Angle(90, -87.5, -90),
         },
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "smdimport",
+        Bone = "body",
         Offset = {
-            vpos = Vector(-0.7, 8.608, 1.78),
-            vang = Angle(-90, -90, 0),
+            vpos = Vector(-1.15, 11, 3.25),
+            vang = Angle(-90, -92.2, -0),
         },
-        VMScale = Vector(0.7, 0.7, 0.7),
+        VMScale = Vector(0.85, 0.85, 0.85),
     },
     {
         PrintName = "Barrel",
-        Slot = {"ba_ump45_barrel"},
+        Slot = {"ba_kac_barrel"},
         DefaultAttName = "Standard Barrel",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Stock",
-        Slot = {"ba_ump45_stock"},
+        Slot = {"ba_kac_stock"},
         DefaultAttName = "Standard Foldable Stock",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ump_stock_default.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
-        Slot = {"ba_ump45_mag"},
-        DefaultAttName = "25-Round Magazine",
+        Slot = {"ba_kac_mag"},
+        DefaultAttName = "30-Round Magazine",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ump_mag_default.png", "smooth mips"),
     },
     {
@@ -313,12 +215,12 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "smdimport",
+        Bone = "body",
         Offset = {
-            vpos = Vector(0.6, 1.608, 1.3),
+            vpos = Vector(0.5, 5, 2.9),
             vang = Angle(0, -90, 0),
         },
-        VMScale = Vector(0.6, 0.6, 0.6),
+        VMScale = Vector(0.7, 0.7, 0.7),
     },
 }
 
@@ -330,11 +232,12 @@ SWEP.Attachments = {
 -- append _empty for empty variation
 
 local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
+local pathKAC = "weapons/arccw/batarsenal/kac_pdw/"
 local pathBA = "weapons/arccw/batarsenal/"
 
-SWEP.ShootSound = pathUMP .. "ump45-1.wav"
+SWEP.ShootSound = pathKAC .. "m4a1_unsil-1.wav"
 SWEP.FirstShootSound = SWEP.ShootSound
-SWEP.ShootSoundSilenced = pathBA .. "mp5-1.wav"
+SWEP.ShootSoundSilenced = pathKAC .. "m4a1-1.wav"
 
 SWEP.Animations = {
     ["idle"] = {
@@ -349,9 +252,9 @@ SWEP.Animations = {
         LHIKOut = 0.5,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltforward.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 35 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_boltback.mp3", t = 16 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_boltforward.mp3", t = 26 / 40, c = ca, v = 0.8 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 36 / 40, c = ca, v = 0.8 },
         }
     },
     ["draw"] = {
@@ -380,12 +283,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 23 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 28 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 55 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_cloth.mp3", t = 75 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 60 / 40, c = ca, v = 1 },
         }
     },
     ["reload_empty"] = {
@@ -397,13 +297,11 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 23 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 28 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 55 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltback.mp3", t = 85 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltforward.mp3", t = 97 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 60 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_boltback.mp3", t = 85 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_boltforward.mp3", t = 95 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_cloth.mp3", t = 105 / 40, c = ca, v = 0.8 },
         }
     },
@@ -417,12 +315,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 47 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 52 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_cloth.mp3", t = 60 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 55 / 40, c = ca, v = 1 },
         }
     },
     ["reload_empty_20"] = {
@@ -434,13 +329,10 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 20 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 47 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 52 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltforward.mp3", t = 75 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_boltforward.mp3", t = 67 / 40, c = ca, v = 0.8 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 77 / 40, c = ca, v = 0.8 },
         }
     },
 
@@ -453,12 +345,9 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 30 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_cloth.mp3", t = 80 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 70 / 40, c = ca, v = 1 },
         }
     },
     ["reload_empty_45"] = {
@@ -470,13 +359,11 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.5,
         SoundTable = {
-            { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout1.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipout2.mp3", t = 30 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin1.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_clipin2.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltback.mp3", t = 102 / 40, c = ca, v = 0.8 },
-            { s = pathUMP .. "ump45_boltforward.mp3", t = 115 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },
+            { s = pathUMP .. "ump45_cloth.mp3", t = 70 / 40, c = ca, v = 1 },
+            { s = pathKAC .. "m4a1_boltback.mp3", t = 99 / 40, c = ca, v = 0.8 },
+            { s = pathKAC .. "m4a1_boltforward.mp3", t = 115 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_cloth.mp3", t = 125 / 40, c = ca, v = 0.8 },
         }
     },
@@ -486,28 +373,28 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local atts = wep.Attachments
     local barrel = atts[5].Installed
-    local hasUB = (atts[3].Installed != nil)
-    local hasTac = (atts[4].Installed != nil)
+    local hasOptic = (atts[1].Installed != nil)
     if !IsValid(vm) then return end
-    
-    if hasUB then
-        if (barrel != "ba_ump_barrel_short") then
-            vm:SetBodygroup(6,1)
+
+    if hasOptic then
+        if barrel == "ba_kac_barrel_long" then
+            vm:SetBodygroup(1,4)
+        elseif  barrel == "ba_kac_barrel_badger" then
+            vm:SetBodygroup(1,5)
         else
-            vm:SetBodygroup(6,2)
+            vm:SetBodygroup(1,3)
         end
+        vm:SetBodygroup(2,1)
     else
-        vm:SetBodygroup(6,0)
+        if barrel == "ba_kac_barrel_long" then
+            vm:SetBodygroup(1,1)
+        elseif  barrel == "ba_kac_barrel_badger" then
+            vm:SetBodygroup(1,2)
+        else
+            vm:SetBodygroup(1,0)
+        end 
+        vm:SetBodygroup(2,0)    
     end
 
-    if hasTac then
-        if (barrel != "ba_ump_barrel_short") then
-            vm:SetBodygroup(5,1)
-        else
-            vm:SetBodygroup(5,2)
-        end
-    else
-        vm:SetBodygroup(5,0)
-    end
 
 end
