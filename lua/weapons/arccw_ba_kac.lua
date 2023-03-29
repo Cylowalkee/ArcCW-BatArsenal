@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "Knight .300"
 SWEP.TrueName = "KAC PDW"
-SWEP.Trivia_Class = "Submachine Gun"
+SWEP.Trivia_Class = "Personal Defense Weapon"
 SWEP.Trivia_Desc = "Personal Defense Weapon using the .300 Blackout caliber."
 SWEP.Trivia_Manufacturer = "Knight's Armament Company"
 SWEP.Trivia_Calibre = ".300 Blackout"
