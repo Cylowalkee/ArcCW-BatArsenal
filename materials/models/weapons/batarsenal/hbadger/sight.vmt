@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+     "$basetexture" "models\weapons\batarsenal\hbadger\sight"
+     "$bumpmap" "models\weapons\batarsenal\hbadger\sightn"
+
+     "$envmap" "env_cubemap"
+     "$basemapalphaenvmapmask" 1
+     "$envmaptint" "[0.1 0.1 0.1]"
+     "$normalmapalphaenvmapmask" 1
+     "$envmapfresnel" "0.7"
+
+     "$phong" 1
+     "$phongtint"                   "[0.7 0.9 1]" 
+     "$phongexponenttexture" "models\weapons\batarsenal\hbadger\sightg"
+     "$phongboost" 6
+     "$phongfresnelranges" "[0.1 0.5 1.1]"
+     "$phongalbedotint" "1"
+     "$phongalbedoboost" "38"
+
+     "$rimlight" "1"
+     "$rimlightexponent" "88"
+     "$rimlightboost""2"
+     "$rimmask" "1"
+}

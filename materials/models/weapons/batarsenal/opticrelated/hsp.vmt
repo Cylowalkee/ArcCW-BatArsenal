@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\batarsenal\opticrelated\hsp"
+	"$translucent" "1"
+	"$selfillum" "1"
+	"nodraw" "1"
+}
