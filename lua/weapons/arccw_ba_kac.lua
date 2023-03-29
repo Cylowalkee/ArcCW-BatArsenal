@@ -189,6 +189,15 @@ SWEP.AttachmentElements = {
     ["mag_kac_20"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
+
+    ["kac_noiron"] = {
+        AttPosMods = {
+			[1] = {
+				vpos = Vector(-0.1, 1, 4.1),
+            vang = Angle(90, -87.5, -90),
+			},
+		},
+    },
 }
 
 SWEP.ExtraSightDist = 4
@@ -273,7 +282,7 @@ SWEP.Attachments = {
 
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = {"charm","ba_kac_rear"},
         FreeSlot = true,
         Bone = "body",
         Offset = {
@@ -440,17 +449,23 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local atts = wep.Attachments
     local barrel = atts[5].Installed
     local hasOptic = (atts[1].Installed != nil)
+    local noIron = (atts[11].Installed == "ba_kac_optic_noirons")
     if !IsValid(vm) then return end
 
     if hasOptic then
-        if barrel == "ba_kac_barrel_long" then
-            vm:SetBodygroup(1,4)
-        elseif  barrel == "ba_kac_barrel_hb" then
-            vm:SetBodygroup(1,5)
+        if !noIron then
+            if barrel == "ba_kac_barrel_long" then
+                vm:SetBodygroup(1,4)
+            elseif  barrel == "ba_kac_barrel_hb" then
+                vm:SetBodygroup(1,5)
+            else
+                vm:SetBodygroup(1,3)
+            end
+            vm:SetBodygroup(2,1)
         else
-            vm:SetBodygroup(1,3)
+            vm:SetBodygroup(1,6)
+            vm:SetBodygroup(2,2)
         end
-        vm:SetBodygroup(2,1)
     else
         if barrel == "ba_kac_barrel_long" then
             vm:SetBodygroup(1,1)
