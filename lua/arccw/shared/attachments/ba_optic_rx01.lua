@@ -24,7 +24,7 @@ att.AdditionalSights = {
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("holosights/dot.png")
+att.HolosightReticle = Material("batarsenal/reticles/dot.png")
 att.HolosightSize = 0.7
 att.HolosightBone = "holosight"
 
@@ -32,3 +32,5 @@ att.HolosightMagnification = 1
 
 att.Mult_SightTime = 1.1
 att.Mult_SightedSpeedMult = 0.95
+
+att.Colorable = true
