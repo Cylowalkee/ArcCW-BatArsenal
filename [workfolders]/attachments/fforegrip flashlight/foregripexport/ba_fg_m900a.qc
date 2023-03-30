@@ -19,6 +19,8 @@ $CDMaterials "models\weapons\batarsenal\usc\"
 
 $CBox 0 0 0 0 0 0
 
+$attachment "1" "light" 0 0 0 rotate 0 90 0
+
 $BoneMerge "ValveBiped.Bip01_Spine4"
 $BoneMerge "ValveBiped.Bip01_L_Clavicle"
 $BoneMerge "ValveBiped.Bip01_L_UpperArm"

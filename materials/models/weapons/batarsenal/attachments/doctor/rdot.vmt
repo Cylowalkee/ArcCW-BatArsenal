@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" 	"models\wystan\attachments\doctor\linse"
+	"$baseTexture" 	"models\weapons\batarsenal\attachments\doctor\linse"
 	"$additive" "1"
 	"$selfillum" "1"	
 

@@ -26,7 +26,7 @@ att.Mult_SightTime = 1.1
 
 att.Mult_SpeedMult = 0.925
 
-att.Flashlight = false
+att.Flashlight = true
 att.FlashlightFOV = 50
 att.FlashlightFarZ = 1024 -- how far it goes
 att.FlashlightNearZ = 1 -- how far away it starts
@@ -35,3 +35,14 @@ att.FlashlightColor = Color(255, 242, 229)
 att.FlashlightTexture = "effects/flashlight001"
 att.FlashlightBrightness = 3
 att.FlashlightBone = "light"
+
+att.ToggleStats = {
+    {
+        PrintName = "On",
+        Flashlight = true
+    },
+    {
+        PrintName = "Off",
+        Flashlight = false,
+    }
+}
