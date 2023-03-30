@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/batarsenal/usc/m900a"
+	"$normalmap" "models/weapons/batarsenal/usc/m900a_normal"
+}
