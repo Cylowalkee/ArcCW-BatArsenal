@@ -1,5 +1,5 @@
 att.PrintName = "M900A Foregrip & Flashlight"
-att.Icon = Material("entities/att/acwatt_ba_foregrip_kac.png")
+att.Icon = Material("entities/att/acwatt_ba_foregrip_m900a.png")
 att.Description = "A foregrip combined with a flashlight."
 
 att.SortOrder = 1
@@ -7,6 +7,7 @@ att.SortOrder = 1
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
+    "con.light"
 }
 att.AutoStats = true
 att.Slot = "foregrip"
@@ -34,7 +35,7 @@ att.FlashlightAttenuationType = ArcCW.FLASH_ATT_LINEAR -- LINEAR, CONSTANT, QUAD
 att.FlashlightColor = Color(255, 242, 229)
 att.FlashlightTexture = "effects/flashlight001"
 att.FlashlightBrightness = 3
-att.FlashlightBone = "light"
+att.FlashlightBone = nil
 
 att.ToggleStats = {
     {
