@@ -65,7 +65,7 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\jhammer\"
 
-$Attachment "1" "body" 0.2 24.5 7 rotate 0 0 0
+$attachment "1" "body" 0.20 20.50 0.00 rotate -0 90 -0
 
 
 $CBox 0 0 0 0 0 0
