@@ -35,15 +35,15 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "000000000"
 
-SWEP.Damage = 18
-SWEP.DamageMin = 7 -- damage done at maximum range
+SWEP.Damage = 12
+SWEP.DamageMin = 5 -- damage done at maximum range
 SWEP.Range = 20 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 150 -- projectile or phys bullet muzzle velocity
 -- IN M/S
-SWEP.ChamberSize = 1 -- how many rounds can be chambered.
+SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
 
 SWEP.Recoil = 4
@@ -129,6 +129,39 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.BarrelLength = 0
 
 SWEP.AttachmentElements = {
+    ["barrel_jhammer_short"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+    },
+    ["barrel_jhammer_supp"] = {
+        VMBodygroups = {{ind = 1, bg = 3}},
+    },
+    ["barrel_jhammer_long"] = {
+        VMBodygroups = {{ind = 1, bg = 1}},
+    },
+
+    ["mag_jhammer_23mm"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+    },
+    ["mag_jhammer_20g"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+    },
+
+    ["hg_jhammer_heavy"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
+    },
+    ["hg_jhammer_light"] = {
+        VMBodygroups = {{ind = 2, bg = 2}},
+    },
+
+    ["rail"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
+    ["tac"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },
+    ["bottom"] = {
+        VMBodygroups = {{ind = 6, bg = 1}},
+    },
 }
 
 SWEP.ShellRotateAngle = Angle(180, 180, 0)
@@ -139,53 +172,54 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_sniper", "optic_lp","ba_svu_optic"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "Gun", -- relevant bone any attachments will be mostly referring to
+        Slot = {"optic", "optic_sniper", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
+        Bone = "body", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.05, -1, 2.5),
-            vang = Angle(0, 90, 0),
+            vpos = Vector(0.1, -0, -2.3),
+            vang = Angle(0, 92, 178),
         },
-        CorrectiveAng = Angle(0, 180, 0),
+        CorrectiveAng = Angle(0, 184, 5),
         VMScale = Vector(1, 1, 1),
+        InstalledEles = {"rail"},
     },
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "Gun",
+        Bone = "grip",
         Offset = {
-            vpos = Vector(0, -7, -1.2),
-            vang = Angle(-0, 90, -0),
+            vpos = Vector(0, -2, 1.2),
+            vang = Angle(-0, 90, -180),
         },
-        InstalledEles = {"railbottom"},
+        InstalledEles = {"bottom"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Gun",
+        Bone = "body",
         Offset = {
-            vpos = Vector(1, -4, -0),
-            vang = Angle(-0, 90, -103),
+            vpos = Vector(-0.8, 2, -0.2),
+            vang = Angle(-0, 92, 78),
         },
-        InstalledEles = {"railtac"},
+        InstalledEles = {"tac"},
     },
     {
         PrintName = "Barrel",
-        Slot = {"ba_svu_barrel"},
+        Slot = {"ba_jhammer_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Gun",
         DefaultAttIcon = Material("entities/att/acwatt_ba_svu_barrel_normal.png", "smooth mips"),
     },
     {
-        PrintName = "Buttstock & Grip",
-        Slot = {"ba_svu_stock"},
-        DefaultAttName = "Standard Buttstock & Grip",
+        PrintName = "Handguard",
+        Slot = {"ba_jhammer_hg"},
+        DefaultAttName = "Standard Handguard",
         Bone = "Gun",
         DefaultAttIcon = Material("entities/att/acwatt_ba_svu_stock_normal.png", "smooth mips"),
     },
     {
-        PrintName = "Magazine",
-        Slot = {"ba_svu_mag"},
-        DefaultAttName = "10-Round Magazine",
+        PrintName = "Cylinder",
+        Slot = {"ba_jhammer_mag"},
+        DefaultAttName = "10-Round 12 Gauge Cylinder",
         Bone = "Gun",
         DefaultAttIcon = Material("entities/att/acwatt_ba_svu_mag_10.png", "smooth mips"),
     },
@@ -196,7 +230,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ba_ammo_bullet",
+        Slot = "ba_ammo_shotgun",
         DefaultAttName = "Standard Rounds"
     },
     {
@@ -237,9 +271,7 @@ SWEP.Animations = {
         LHIKOut = 0.6,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_clipin.mp3", t = 11 / 40, c = ca, v = 0.8 },
-            { s = pathSVU .. "g3sg1_slide.mp3", t = 33 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 55 / 40, c = ca, v = 0.8 },
+            { s = pathJH .. "pumpforward.wav", t = 11 / 40, c = ca, v = 0.8 },
         },
     },
     ["draw"] = {
@@ -249,13 +281,11 @@ SWEP.Animations = {
         Source = {"fire"},
         Framerate = 40,
         Time = 40 / 40,
-        ShellEjectAt = 0.01,
     },
     ["fire_iron"] = {
         Source = {"fire_iron"},
         Framerate = 40,
         Time = 40 / 40,
-        ShellEjectAt = 0.01,
     },
 
     -- reloads --
@@ -267,10 +297,10 @@ SWEP.Animations = {
         Framerate = 40,
         Time = 161 / 40,
         LHIK = true,
-        LHIKIn = 0.2,
-        LHIKEaseIn = 0.1,
+        LHIKIn = 0.9,
+        LHIKEaseIn = 0.35,
         LHIKEaseOut = 0.2,
-        LHIKOut = 0.85,
+        LHIKOut = 1.5,
         SoundTable = {
             { s = pathJH .. "pumpback.wav", t =3 / 40, c = ca, v = 0.8 },
             { s = pathJH .. "clipout.mp3", t =40 / 40, c = ca, v = 0.8 },
@@ -287,8 +317,8 @@ SWEP.Animations = {
         Framerate = 40,
         Time = 161 / 40,
         LHIK = true,
-        LHIKIn = 0.2,
-        LHIKEaseIn = 0.2,
+        LHIKIn = 0.9,
+        LHIKEaseIn = 0.35,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.5,
         SoundTable = {
