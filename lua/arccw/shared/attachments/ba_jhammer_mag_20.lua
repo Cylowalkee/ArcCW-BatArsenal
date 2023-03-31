@@ -23,4 +23,6 @@ att.Mult_Range = 0.85
 
 att.Mult_RPM = 300/240
 
+att.Mult_ShootPitch = 1.25
+
 att.ActivateElements = {"mag_jhammer_20g"}
