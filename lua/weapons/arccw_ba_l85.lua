@@ -31,7 +31,7 @@ end
 -- Trivia --
 
 SWEP.Trivia_Class = "Carbine"
-SWEP.Trivia_Desc = "British bulpup service rifle. Good at dealing with targets from short to medium ranges."
+SWEP.Trivia_Desc = "British bullpup service rifle. Good at dealing with targets from short to medium ranges."
 SWEP.Trivia_Manufacturer = "RSAF"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas Operated, Rotating Bolt"
