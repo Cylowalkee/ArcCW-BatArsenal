@@ -299,25 +299,25 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         Framerate = 40,
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_empty"] = {
         Source = {"fire_empty"},
         Framerate = 40,
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_iron"] = {
         Source = {"fire_iron"},
         Framerate = 40,
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_empty_iron"] = {
         Source = {"fire_empty_iron"},
         Framerate = 40,
-        Time = 30 / 40,
+        Time = 20 / 40,
         ShellEjectAt = 0.01,
     },
 

@@ -139,7 +139,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 1},{ind = 2, bg = 1}},
         AttPosMods = {
             [2] = {
-                vpos = Vector(0, -1.26, 6.5),
+                vpos = Vector(0, -1.26, 6.0),
                 vang = Angle(90, 0, -90),
             },
         },
@@ -148,7 +148,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
             [2] = {
-                vpos = Vector(0, -1.26, 4),
+                vpos = Vector(0, -1.26, 3.5),
                 vang = Angle(90, 0, -90),
             },
         },
@@ -157,7 +157,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 3}},
         AttPosMods = {
             [2] = {
-                vpos = Vector(0, -1.26, 5.89),
+                vpos = Vector(0, -1.26, 5.69),
                 vang = Angle(90, 0, -90),
             },
         },
@@ -206,7 +206,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "frame",
         Offset = {
-            vpos = Vector(0, -1.26, 5.39),
+            vpos = Vector(0, -1.26, 4.39),
             vang = Angle(90, 0, -90),
         },
         VMScale = Vector(0.7, 0.7, 0.7),
