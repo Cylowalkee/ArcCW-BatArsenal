@@ -49,7 +49,7 @@ SWEP.OpenBolt = false -- gun fires at the end of
 
 SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.3
-SWEP.VisualRecoilMult = 0.2
+SWEP.RecoilPunch = .2
 
 SWEP.Delay = 60 / 500 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.

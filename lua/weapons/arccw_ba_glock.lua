@@ -99,9 +99,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.63, -1.5, 1.1),
-    Ang = Angle(0, 0.1, 5),
+    Pos = Vector(-2.63, -1.5, 1.05),
+    Ang = Angle(0.2, 0.1, 5),
     Magnification = 1.1,
+	ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
