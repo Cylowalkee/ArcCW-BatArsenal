@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	$basetexture "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/scar/scar_diff_gray"
+	$bumpmap "models/weapons/batarsenal/scar/scar_bump"
+
+
+	$rimlight 1
+	$rimlightexponent 88
+	$rimlightboost 1
+}
