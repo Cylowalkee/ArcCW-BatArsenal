@@ -70,6 +70,8 @@ $Contents "solid"
 $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\scar\"
+$CDMaterials "models\weapons\batarsenal\kac\"
+$CDMaterials "models\weapons\batarsenal\m4a1\"
 
 $attachment "1" "gun" 0.00 -0.00 2.00 rotate -90 -0 0
 $attachment "2" "gun" -1.50 1.80 1.50 rotate 0 150 -180
@@ -181,6 +183,20 @@ $sequence "reload_30" {
 
 $sequence "reload_30_empty" {
 	"anims\reload_empty_30.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
+$sequence "reload_10" {
+	"anims\reload_10.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
+
+$sequence "reload_10_empty" {
+	"anims\reload_empty_10.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 40
