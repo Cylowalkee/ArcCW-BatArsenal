@@ -517,10 +517,10 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "Body",
+        Bone = "gun",
         Offset = {
-            vpos = Vector(0, 20, -0.4),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-0.0, -0.3, 14.9),
+            vang = Angle(90, 0, -90),
         },
     },
     {
@@ -531,17 +531,15 @@ SWEP.Attachments = {
             vpos = Vector(-0.0, 0.75, 5),
             vang = Angle(90, 0, -90),
         },
-        InstalledEles = {"bottom"},
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Body",
+        Bone = "gun",
         Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -115),
+            vpos = Vector(-0.9, -0.2, 7.5),
+            vang = Angle(90, 0, 180),
         },
-        InstalledEles = {"tac"},
     },
     {
         PrintName = "Barrel",
@@ -599,10 +597,10 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "body",
+        Bone = "gun",
         Offset = {
-            vpos = Vector(0.5, 2.286, 0),
-            vang = Angle(90, -90, -90),
+            vpos = Vector(0.5, 0.8, 1),
+            vang = Angle(90, 0, -90),
         },
     },
 }
