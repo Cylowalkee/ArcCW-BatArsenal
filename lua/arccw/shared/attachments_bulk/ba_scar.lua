@@ -20,6 +20,15 @@ att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 30
 
+att.Mult_DamageMin = 17/25
+att.Mult_Damage = 28/37
+
+att.Mult_Recoil = 0.8
+
+att.Mult_Range = 0.75
+
+att.Mult_ShootPitch = 1.1
+
 att.ActivateElements = {"mag_scar_30l","scar_l"}
 
 ArcCW.LoadAttachmentType(att, "ba_scar_mag_30l")
@@ -39,6 +48,15 @@ att.Slot = "ba_scar_mag"
 att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 45
+
+att.Mult_DamageMin = 17/25
+att.Mult_Damage = 28/37
+
+att.Mult_Recoil = 0.8
+
+att.Mult_Range = 0.75
+
+att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_45l","scar_l"}
 
@@ -63,6 +81,15 @@ att.Slot = "ba_scar_mag"
 att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 60
+
+att.Mult_DamageMin = 17/25
+att.Mult_Damage = 28/37
+
+att.Mult_Recoil = 0.8
+
+att.Mult_Range = 0.75
+
+att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_60l","scar_l"}
 
@@ -111,7 +138,13 @@ att.Override_ClipSize = 10
 att.Mult_DamageMin = 65/25
 att.Mult_Damage = 40/37
 
+att.Mult_Recoil = 1.1
+att.Mult_HipDispersion = 0.95
+att.Mult_MoveDispersion = 1.1
+
 att.Mult_Range = 1.5
+
+att.Mult_ShootPitch = 0.8
 
 att.Override_Firemodes = {
     {

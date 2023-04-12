@@ -526,10 +526,10 @@ SWEP.Attachments = {
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "Body",
+        Bone = "gun",
         Offset = {
-            vpos = Vector(0, 11, -2),
-            vang = Angle(-0, -90, -0),
+            vpos = Vector(-0.0, 0.75, 5),
+            vang = Angle(90, 0, -90),
         },
         InstalledEles = {"bottom"},
     },
