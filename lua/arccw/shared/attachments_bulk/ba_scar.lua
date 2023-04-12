@@ -108,6 +108,11 @@ att.Slot = "ba_scar_mag"
 
 att.Override_ClipSize = 10
 
+att.Mult_DamageMin = 65/25
+att.Mult_Damage = 40/37
+
+att.Mult_Range = 1.5
+
 att.Override_Firemodes = {
     {
         Mode = 1,
