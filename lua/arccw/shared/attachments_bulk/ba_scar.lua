@@ -31,6 +31,10 @@ att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_30l","scar_l"}
 
+att.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_l"
+end
+
 ArcCW.LoadAttachmentType(att, "ba_scar_mag_30l")
 
 local att = {}
