@@ -8,7 +8,7 @@ local att = {}
 
 att.PrintName = "30-Round 5.56mm Magazine"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_mag_30l.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -41,7 +41,7 @@ local att = {}
 
 att.PrintName = "45-Round 5.56mm Magazine"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_mag_45l.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -74,7 +74,7 @@ local att = {}
 
 att.PrintName = "60-Round 5.56mm Magazine"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_mag_60l.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -107,7 +107,7 @@ local att = {}
 
 att.PrintName = "30-Round 7.62mm Magazine"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_mag_30h.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -127,9 +127,9 @@ ArcCW.LoadAttachmentType(att, "ba_scar_mag_30h")
 
 local att = {}
 
-att.PrintName = "10-Round 7.62mm SPP Magazine"
+att.PrintName = "10-Round 7.62mm Marksman Magazine"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_mag_10h.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -175,7 +175,7 @@ local att = {}
 
 att.PrintName = "Short Barrel"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_barrel_short.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -193,7 +193,7 @@ local att = {}
 
 att.PrintName = "Long Barrel"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_barrel_long.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -211,7 +211,7 @@ local att = {}
 
 att.PrintName = "Marksman Barrel"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_barrel_sniper.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -231,7 +231,7 @@ local att = {}
 
 att.PrintName = "Marksman Stock"
 
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_stock_sniper.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -247,7 +247,7 @@ local att = {}
 
 
 att.PrintName = "Light Collapsable Stock"
-att.Icon = Material("", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_scar_stock_light.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true

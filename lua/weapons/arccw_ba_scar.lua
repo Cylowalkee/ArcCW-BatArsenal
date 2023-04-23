@@ -591,7 +591,7 @@ SWEP.Attachments = {
         Slot = {"ba_scar_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_scar_barrel_normal.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -599,11 +599,11 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Buttstock",
+        PrintName = "Stock",
         Slot = {"ba_scar_stock"},
         DefaultAttName = "Standard Stock",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_scar_stock_default.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -614,7 +614,7 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"ba_scar_mag"},
         DefaultAttName = "20 Round 7.62mm Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_mag_30.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_scar_mag_20h.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
