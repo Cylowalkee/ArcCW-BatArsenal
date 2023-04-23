@@ -14,7 +14,7 @@ SWEP.ShellPitch = 90
 
 SWEP.MuzzleEffectAttachment = 1
 SWEP.CaseEffectAttachment = 2
-SWEP.CamAttachment = 3
+SWEP.CamAttachment = 4
 SWEP.TracerNum = 5
 SWEP.TracerCol = Color(25, 255, 25)
 SWEP.TracerWidth = 1
@@ -314,8 +314,8 @@ SWEP.Animations = {
         Time = 20 / 40,
         ShellEjectAt = 0.01,
     },
-    ["fire_empty_iron"] = {
-        Source = {"fire_empty_iron"},
+    ["fire_iron_empty"] = {
+        Source = {"fire_iron_empty"},
         Framerate = 40,
         Time = 20 / 40,
         ShellEjectAt = 0.01,
@@ -324,11 +324,11 @@ SWEP.Animations = {
     -- reloads --
 
     ["reload"] = {
-        Source = "reload_30_wet",
+        Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 123 / 40,
+        Time = 113 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -343,7 +343,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty"] = {
-        Source = "reload_30_dry",
+        Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, 
         LastClip1OutTime = 2,
         Framerate = 40,
@@ -364,7 +364,7 @@ SWEP.Animations = {
     },
 
     ["reload_20"] = {
-        Source = "reload_20_wet",
+        Source = "reload_20",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
@@ -382,7 +382,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_20"] = {
-        Source = "reload_20_dry",
+        Source = "reload_20_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
@@ -403,7 +403,7 @@ SWEP.Animations = {
     },
 
     ["reload_60"] = {
-        Source = "reload_60_wet",
+        Source = "reload_60",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
@@ -422,7 +422,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_60"] = {
-        Source = "reload_60_dry",
+        Source = "reload_60_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
