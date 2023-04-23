@@ -61,7 +61,7 @@ $IllumPosition 0 0 0
 $CDMaterials "models\weapons\batarsenal\l85a2\"
 
 $Attachment "1" "Body" 0 -23 -0.3 rotate 0 -90 0
-$Attachment "2" "Body" 1 1 0 rotate -45 0 0
+$attachment "2" "Body" -1.00 1.00 0.00 rotate -45 -180 -180
 $Attachment "3" "camera" 0 0 0 rotate 0 0 0
 
 $CBox 0 0 0 0 0 0
