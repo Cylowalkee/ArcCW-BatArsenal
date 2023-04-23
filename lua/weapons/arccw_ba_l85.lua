@@ -156,8 +156,8 @@ SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.IronSightStruct = {
-     Pos = Vector(-3.28, -2.439, 0.44),
-     Ang = Angle(0, 0, 0),
+     Pos = Vector(-3.2, -2.439, 0.1),
+     Ang = Angle(0, -0.2, 1.5),
      Magnification = 1,
      ViewModelFOV = 70,
 }
@@ -299,25 +299,25 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         Framerate = 40,
-        Time = 20 / 40,
+        Time = 30 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_empty"] = {
         Source = {"fire_empty"},
         Framerate = 40,
-        Time = 20 / 40,
+        Time = 30 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_iron"] = {
         Source = {"fire_iron"},
         Framerate = 40,
-        Time = 20 / 40,
+        Time = 30 / 40,
         ShellEjectAt = 0.01,
     },
     ["fire_iron_empty"] = {
         Source = {"fire_iron_empty"},
         Framerate = 40,
-        Time = 20 / 40,
+        Time = 30 / 40,
         ShellEjectAt = 0.01,
     },
 
@@ -338,8 +338,7 @@ SWEP.Animations = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magin.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 80 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 70 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty"] = {
@@ -357,9 +356,9 @@ SWEP.Animations = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magin.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 80 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "boltpull.mp3", t = 105 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 120 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "aug_clipin.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "boltslap.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 110 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -368,7 +367,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 115 / 40,
+        Time = 100 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -386,7 +385,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 129 / 40,
+        Time = 120 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -396,9 +395,9 @@ SWEP.Animations = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magin.mp3", t = 60 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 70 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "boltslap.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 105 / 40, c = ca, v = 0.8 },
         },
     },
 
@@ -407,7 +406,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 139 / 40,
+        Time = 120 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -416,9 +415,8 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 100 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magin.mp3", t = 75 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 90 / 40, c = ca, v = 0.8 },
         },
     },
     ["reload_empty_60"] = {
@@ -426,7 +424,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 40,
-        Time = 154 / 40,
+        Time = 140 / 40,
         LHIK = true,
         LHIKIn = 0.2,
         LHIKEaseIn = 0.2,
@@ -435,11 +433,9 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathL85 .. "magout.mp3", t = 25 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "magin.mp3", t = 70 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "aug_clipin.mp3", t = 90 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "pullback.wav", t = 110 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "boltslap.mp3", t = 130 / 40, c = ca, v = 0.8 },
-            { s = pathL85 .. "cloth.mp3", t = 140 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "magin.mp3", t = 75 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "aug_clipin.mp3", t = 102 / 40, c = ca, v = 0.8 },
+            { s = pathL85 .. "boltslap.mp3", t = 102 / 40, c = ca, v = 0.8 },
         },
     },
 
