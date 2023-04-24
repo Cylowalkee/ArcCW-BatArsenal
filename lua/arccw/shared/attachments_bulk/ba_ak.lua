@@ -12,7 +12,7 @@ local att = {}
 
 att.PrintName = "30-Round 9x19mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_30l.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_9mm_30.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -20,7 +20,12 @@ att.Desc_Cons = {}
 att.Desc_Neutrals = {}
 att.Slot = "ba_ak_mag"
 
-att.Mult_RPM = 700/600 --650 rpm
+att.Mult_RPM = 700/600 --700 rpm
+
+att.Override_Ammo = "pistol"
+
+att.Override_ShellModel = "models/shells/shell_9mm.mdl"
+att.Override_ShellScale = 1
 
 att.Mult_DamageMin = 10/28
 att.Mult_Damage = 15/37
@@ -29,9 +34,9 @@ att.Mult_Recoil = 0.4
 
 att.Mult_Range = 0.6
 
-att.Mult_ShootPitch = 0.9
+att.Mult_ShootPitch = 1.5
 
-att.ActivateElements = {"mag_ak_9mm"}
+att.ActivateElements = {"mag_ak_9mm","vityaz"}
 
 att.Hook_GetShootSound = function(wep, sound)
     if wep:GetBuff_Override("Silencer") then
@@ -54,7 +59,7 @@ local att = {}
 
 att.PrintName = "30-Round 5.45x39mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_30l.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_30.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -63,6 +68,10 @@ att.Desc_Neutrals = {}
 att.Slot = "ba_ak_mag"
 
 att.Mult_RPM = 650/600 --650 rpm
+
+att.Override_Ammo = "smg1"
+
+att.Override_ShellScale = 0.7
 
 att.Mult_DamageMin = 18/28
 att.Mult_Damage = 28/37
@@ -73,7 +82,7 @@ att.Mult_Range = 0.75
 
 att.Mult_ShootPitch = 1.1
 
-att.ActivateElements = {"mag_ak_545_30"}
+att.ActivateElements = {"mag_ak_545_30","ak74"}
 
 att.Hook_GetShootSound = function(wep, sound)
     if wep:GetBuff_Override("Silencer") then
@@ -89,7 +98,7 @@ local att = {}
 
 att.PrintName = "60-Round 5.45x39mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_45l.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_60.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -101,6 +110,10 @@ att.Override_ClipSize = 60
 
 att.Mult_RPM = 650/600 --650 rpm
 
+att.Override_ShellScale = 0.7
+
+att.Override_Ammo = "smg1"
+
 att.Mult_DamageMin = 18/28
 att.Mult_Damage = 28/37
 
@@ -110,7 +123,7 @@ att.Mult_Range = 0.75
 
 att.Mult_ShootPitch = 1.1
 
-att.ActivateElements = {"mag_ak_545_60"}
+att.ActivateElements = {"mag_ak_545_60","ak74"}
 
 att.Hook_GetShootSound = function(wep, sound)
     if wep:GetBuff_Override("Silencer") then
@@ -130,7 +143,7 @@ local att = {}
 
 att.PrintName = "20-Round 5x45x39mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_60l.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_20.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -142,6 +155,10 @@ att.Override_ClipSize = 20
 
 att.Mult_RPM = 650/600 --650 rpm
 
+att.Override_ShellScale = 0.7
+
+att.Override_Ammo = "smg1"
+
 att.Mult_DamageMin = 18/28
 att.Mult_Damage = 28/37
 
@@ -151,7 +168,7 @@ att.Mult_Range = 0.75
 
 att.Mult_ShootPitch = 1.1
 
-att.ActivateElements = {"mag_ak_545_20"}
+att.ActivateElements = {"mag_ak_545_20","ak74"}
 
 
 att.Hook_GetShootSound = function(wep, sound)
@@ -172,7 +189,7 @@ local att = {}
 
 att.PrintName = "45-Round 7.62x39mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_30h.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_45.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -194,7 +211,7 @@ local att = {}
 
 att.PrintName = "15-Round 7.62x39mm Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_mag_10h.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_mag_15.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -218,7 +235,7 @@ local att = {}
 
 att.PrintName = "Short Wooden Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_barrel_short.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_barrel_u.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -236,7 +253,7 @@ local att = {}
 
 att.PrintName = "Short Polymer Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_barrel_short.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_barrel_pu.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -254,7 +271,7 @@ local att = {}
 
 att.PrintName = "Long Wooden Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_barrel_long.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_barrel_long.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -272,7 +289,7 @@ local att = {}
 
 att.PrintName = "Polymer Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_barrel_sniper.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_barrel_poly.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -291,7 +308,7 @@ local att = {}
 
 att.PrintName = "Polymer Stock"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_stock_sniper.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_stock_poly.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -307,7 +324,7 @@ local att = {}
 
 att.PrintName = "No Stock"
 
-att.Icon = Material("entities/att/acwatt_ba_scar_stock_sniper.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_stock_no.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -323,7 +340,7 @@ local att = {}
 
 
 att.PrintName = "Skeleton Foldable Stock"
-att.Icon = Material("entities/att/acwatt_ba_scar_stock_light.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_stock_skele.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true
@@ -357,7 +374,7 @@ local att = {}
 
 
 att.PrintName = "Ultralight Foldable Stock"
-att.Icon = Material("entities/att/acwatt_ba_scar_stock_light.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_ak_stock_amd.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true

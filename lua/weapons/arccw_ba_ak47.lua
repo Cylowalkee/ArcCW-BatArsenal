@@ -22,7 +22,7 @@ SWEP.TracerWidth = 1
 -- Name --
 
 SWEP.PrintName = "Molotok 762" 
-SWEP.TrueName = "AK47" 
+SWEP.TrueName = "AK-47" 
 
 if GetConVar("arccw_truenames"):GetBool() then
     SWEP.PrintName = SWEP.TrueName
@@ -195,6 +195,17 @@ SWEP.BulletBones = {
 
 SWEP.AttachmentElements = {
 
+    ["vityaz"] = {
+        NameChange = "Molotok 9",
+        TrueNameChange = "Vityaz-9",
+    },
+
+    ["ak74"] = {
+        NameChange = "Molotok 545",
+        TrueNameChange = "AK-74",
+    },
+    
+
     ["barrel_ak_poly"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
     },
@@ -204,7 +215,13 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4.2, -7.317, 0.55),
             Ang = Angle(0, 0.04, 1.6),
             Magnification = 1,
-        }
+        },
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-12.8, 0, 0.31),
+                vang = Angle(-0, -180, 90),
+			},
+		},
     },
     ["barrel_ak_pu"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
@@ -212,7 +229,13 @@ SWEP.AttachmentElements = {
             Pos = Vector(-4.2, -7.317, 0.55),
             Ang = Angle(0, 0.04, 1.6),
             Magnification = 1,
-        }
+        },
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-12.5, 0, 0.31),
+                vang = Angle(-0, -180, 90),
+			},
+		},
     },
     ["barrel_ak_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
@@ -551,7 +574,7 @@ SWEP.Attachments = {
         Slot = {"ba_ak_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ak_barrel_default.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -563,7 +586,7 @@ SWEP.Attachments = {
         Slot = {"ba_ak_stock"},
         DefaultAttName = "Standard Wood Stock",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_stock_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ak_stock_default.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -574,7 +597,7 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Slot = {"ba_ak_mag"},
         DefaultAttName = "30 Round 7.62x39mm Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_l85_mag_30.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_ak_mag_30.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),

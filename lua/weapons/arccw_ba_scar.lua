@@ -125,7 +125,7 @@ SWEP.HipDispersion = 600
 SWEP.MoveDispersion = 150
 SWEP.JumpDispersion = 50
 
-SWEP.Primary.Ammo = "smg1"
+SWEP.Primary.Ammo = "ar2"
 SWEP.MagID = "xcr"
 
 -- Speed mult --

@@ -20,6 +20,8 @@ att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 30
 
+att.Override_Ammo = "smg1"
+
 att.Mult_DamageMin = 17/25
 att.Mult_Damage = 28/37
 
@@ -53,6 +55,8 @@ att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 45
 
+att.Override_Ammo = "smg1"
+
 att.Mult_DamageMin = 17/25
 att.Mult_Damage = 28/37
 
@@ -85,6 +89,8 @@ att.Slot = "ba_scar_mag"
 att.Mult_RPM = 625/500 --625 rpm
 
 att.Override_ClipSize = 60
+
+att.Override_Ammo = "smg1"
 
 att.Mult_DamageMin = 17/25
 att.Mult_Damage = 28/37
