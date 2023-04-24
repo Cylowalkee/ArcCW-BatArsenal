@@ -180,7 +180,7 @@ local pathBA = "weapons/arccw/batarsenal/"
 
 
 SWEP.ShootSound =  pathAK .. "ak47-1.wav"
-SWEP.ShootSoundSilenced = pathBA .. "asval-1.wav"
+SWEP.ShootSoundSilenced = pathAK .. "firesil.wav"
 --SWEP.DistantShootSound = 
 
 --SWEP.ShootPitchVariation = 0
@@ -239,6 +239,12 @@ SWEP.AttachmentElements = {
     },
     ["barrel_ak_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+			[2] = {
+				vpos = Vector(-25, 0, 0.36),
+                vang = Angle(-0, -180, 90),
+			},
+		},
     },
 
     ["stock_ak_poly"] = {
@@ -291,7 +297,7 @@ SWEP.AttachmentElements = {
     },
 
     ["tac"] = {
-        VMBodygroups = {{ind = 6, bg = 1}},
+        VMBodygroups = {{ind = 7, bg = 1}},
     },
 
 
@@ -562,10 +568,10 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "Body",
+        Bone = "gun",
         Offset = {
-            vpos = Vector(-0.95, 10, -0),
-            vang = Angle(-0, -90, -115),
+            vpos = Vector(-8, -0.2, -1),
+            vang = Angle(-0, -180, 00),
         },
         InstalledEles = {"tac"},
     },
