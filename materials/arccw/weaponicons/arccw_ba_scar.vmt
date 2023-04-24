@@ -1,6 +1,6 @@
 UnlitGeneric
 {
-	$basetexture "../addons/ArcCW-BatArsenal/materials/arccw/weaponicons/arccw_ba_glock"
+	$basetexture "../addons/ArcCW-BatArsenal/materials/arccw/weaponicons/arccw_ba_scar"
 
 	$translucent 1
 }

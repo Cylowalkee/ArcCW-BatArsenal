@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models\weapons\batarsenal\ak47\F2"
+                "$bumpmap" 	"models\weapons\batarsenal\ak47\F2_nor"
+	"$phong" 			"1"
+	"$phongexponent" 		"35"
+	"$phongboost" 			"1.7"	
+	"$phongfresnelranges"		"[1.5 10.1 7.1]"
+}
