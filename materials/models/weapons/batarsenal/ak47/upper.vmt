@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\v_models\Thanez_AK\Upper"
-	"$bumpmap" 	"models\weapons\v_models\Thanez_AK\Upper_Normal"
+	"$baseTexture" "models\weapons\batarsenal\ak47\Upper"
+	"$bumpmap" 	"models\weapons\batarsenal\ak47\Upper_Normal"
 	//"$halflambert" 	"1"
  	//"$phong" "1"
 	//"$phongexponent" "25"
