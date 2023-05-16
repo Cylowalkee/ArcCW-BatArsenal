@@ -10,7 +10,7 @@ SWEP.Trivia_Desc = "Personal Defense Weapon using the .300 Blackout caliber."
 SWEP.Trivia_Manufacturer = "Knight's Armament Company"
 SWEP.Trivia_Calibre = ".300 Blackout"
 SWEP.Trivia_Mechanism = "Gas Operated, Rotating Bolt"
-SWEP.Trivia_Country = "USA"
+SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 2006
 
 SWEP.Slot = 2

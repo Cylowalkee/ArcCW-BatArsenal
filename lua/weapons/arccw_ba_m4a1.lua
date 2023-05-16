@@ -35,7 +35,7 @@ SWEP.Trivia_Desc = "American assault rifle that maintains its damage at range."
 SWEP.Trivia_Manufacturer = "Colt"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas Operated, Rotating Bolt"
-SWEP.Trivia_Country = "America"
+SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1994
 
 -- Weapon slot --

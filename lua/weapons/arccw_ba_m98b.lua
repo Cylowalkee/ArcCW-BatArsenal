@@ -10,7 +10,7 @@ SWEP.Trivia_Desc = "Modular high caliber sniper rifle. Uses the deadly .338 Lapu
 SWEP.Trivia_Manufacturer = "Barrett Firearms Manufacturing"
 SWEP.Trivia_Calibre = ".338 Lapua"
 SWEP.Trivia_Mechanism = "Bolt-Action"
-SWEP.Trivia_Country = "USA"
+SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1997
 
 SWEP.Slot = 3

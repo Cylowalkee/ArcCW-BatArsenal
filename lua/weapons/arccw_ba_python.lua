@@ -10,7 +10,7 @@ SWEP.Trivia_Desc = "A reliable 357 revolver. Packs a punch and allows unorthodox
 SWEP.Trivia_Manufacturer = "Colt's Manifacturing"
 SWEP.Trivia_Calibre = ".357 Magnum"
 SWEP.Trivia_Mechanism = "Double Action"
-SWEP.Trivia_Country = "USA"
+SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 1955
 
 SWEP.Slot = 1
