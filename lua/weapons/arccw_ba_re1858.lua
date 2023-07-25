@@ -85,7 +85,7 @@ SWEP.CamAttachment = 2
 SWEP.SightTime = 0.1
 
 SWEP.SpeedMult = 1
-SWEP.SightedSpeedMult = 0.75
+SWEP.SightedSpeedMult = 0.9
 
 SWEP.BarrelLength = 0
 
@@ -217,6 +217,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.6,
     },
     ["draw"] = {
         Source = "draw",
@@ -224,14 +225,17 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.6,
     },
     ["fire"] = {
         Source = "fire",
         Time = 50 / 40,
+        MinProgress = 0.5,
     },
     ["fire_stocked"] = {
         Source = "fire_stock",
         Time = 50 / 40,
+        MinProgress = 0.5,
     },
     ["reload"] = {
         Source = "reload",
