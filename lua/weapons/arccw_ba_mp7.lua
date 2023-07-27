@@ -142,8 +142,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
             [2] = {
-                vpos = Vector(0.05, 14.6, 1.33),
-                vang = Angle(0, -90, 0),
+				vpos = Vector(-11, 0.15, -0.05),
+				vang = Angle(0, 180, 0),
             },
         }
     },
@@ -151,8 +151,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
             [2] = {
-                vpos = Vector(0.05, 14.6, 1.33),
-                vang = Angle(0, -90, 0),
+				vpos = Vector(-8, 0.15, -0.05),
+				vang = Angle(0, 180, 0),
             },
         }
     },
@@ -177,43 +177,40 @@ SWEP.Attachments = {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
         Slot = {"optic", "optic_lp","ba_mp7_optic"}, -- what kind of attachments can fit here, can be string or table
-        Bone = "smdimport", -- relevant bone any attachments will be mostly referring to
+        Bone = "mp7_root", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.05, 1.108, 3.124), -- offset that the attachment will be relative to the bone
-            vang = Angle(0, -90, 0),
+            vpos = Vector(2, 0.15, 2),
+            vang = Angle(0, 180, 0),
         },
-        CorrectiveAng = Angle(0, 180, 0),
-        VMScale = Vector(0.95, 0.95, 0.95),
+        CorrectiveAng = Angle(0, 0, 0),
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
-        Bone = "smdimport",
+        Bone = "mp7_root",
         Offset = {
-            vpos = Vector(0.05, 13.6, 1.33),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-9.5, 0.15, -0.05),
+            vang = Angle(0, 180, 0),
         },
-        VMScale = Vector(0.9, 0.9, 0.9),
     },
     {
         PrintName = "Underbarrel",
         Slot = {"foregrip"},
-        Bone = "smdimport",
+        Bone = "mp7_root",
         Offset = {
-            vpos = Vector(0.05, 8.608, 0.224),
-            vang = Angle(0, -90, 0),
+            vpos = Vector(-6, 0.15, -1),
+            vang = Angle(0, 180, 0),
         },
     },
     {
         PrintName = "Tactical",
         Slot = "tac",
-        Bone = "smdimport",
+        Bone = "mp7_root",
         Offset = {
-            vpos = Vector(-0.7, 8.608, 1.78),
-            vang = Angle(-90, -90, 0),
+            vpos = Vector(-5, -0.7, -0.3),
+            vang = Angle(0, 180, -90),
         },
-        VMScale = Vector(0.7, 0.7, 0.7),
     },
     {
         PrintName = "Barrel",
@@ -253,7 +250,7 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "smdimport",
+        Bone = "mp7_root",
         Offset = {
             vpos = Vector(0.6, 1.608, 1.3),
             vang = Angle(0, -90, 0),
@@ -275,7 +272,7 @@ local pathBA = "weapons/arccw/batarsenal/"
 
 SWEP.ShootSound = pathUMP .. "ump45-1.wav"
 SWEP.FirstShootSound = SWEP.ShootSound
-SWEP.ShootSoundSilenced = pathMP7 .. "usp-1.wav"
+SWEP.ShootSoundSilenced = pathBA .. "mp5-1.wav"
 
 SWEP.Animations = {
     ["idle"] = {

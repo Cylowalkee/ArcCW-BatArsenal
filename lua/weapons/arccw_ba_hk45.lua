@@ -100,7 +100,7 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.34, -9.268, 0.84),
+    Pos = Vector(-3.34, -5.268, 0.84),
     Ang = Angle(0, -0.1, 2),
     Magnification = 1.1,
 	ViewModelFOV = 75,
@@ -182,10 +182,10 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "frame",
         Offset = {
-            vpos = Vector(0, -1.26, 4.39),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(-6.5, -1.75, 0),
+            vang = Angle(180, 0, -90),
         },
-        VMScale = Vector(0.7, 0.7, 0.7),
+        VMScale = Vector(0.9, 0.9, 0.9),
     },
     {
         PrintName = "Tactical",
