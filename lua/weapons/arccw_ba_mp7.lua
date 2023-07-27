@@ -284,7 +284,8 @@ SWEP.Animations = {
         Time = 42 / 30,
         LHIK = true,
         LHIKIn = 0,
-        LHIKOut = 0.5,
+        LHIKOut = 0.7,
+        LHIKEaseOut = 0.4,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_boltback.mp3", t = 10 / 30, c = ca, v = 0.8 },
