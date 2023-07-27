@@ -138,7 +138,16 @@ SWEP.AttachmentElements = {
 
 
 
-    ["barrel_ump45_long"] = {
+    ["barrel_mp7_long"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(0.05, 14.6, 1.33),
+                vang = Angle(0, -90, 0),
+            },
+        }
+    },
+    ["barrel_mp7_short"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
             [2] = {
@@ -147,6 +156,17 @@ SWEP.AttachmentElements = {
             },
         }
     },
+
+    ["stock_mp7_coll"] = {
+        VMBodygroups = {{ind = 3, bg = 1}},
+    },
+    ["stock_mp7_solid"] = {
+        VMBodygroups = {{ind = 3, bg = 2}},
+    },
+    ["stock_mp7_no"] = {
+        VMBodygroups = {{ind = 3, bg = 3}},
+    },
+
    
 }
 
