@@ -131,7 +131,26 @@ SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
     },
-  
+
+    ["barrel_re1858_long"] = {
+        VMBodygroups = {{ind = 1, bg = 1}},
+    },
+    ["barrel_re1858_short"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+    },
+    ["barrel_re1858_snub"] = {
+        VMBodygroups = {{ind = 1, bg = 3}},
+    },
+
+    ["grip_re1858_woodstock"] = {
+        VMBodygroups = {{ind = 2, bg = 3}},
+    },
+    ["grip_re1858_polystock"] = {
+        VMBodygroups = {{ind = 2, bg = 2}},
+    },
+    ["grip_re1858_poly"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
+    },
 }
 
 
@@ -211,7 +230,7 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["draw_stocked"] = {
+    ["draw_stock"] = {
         Source = "draw_stock",
         Time = 50 / 40,
         SoundTable = {
@@ -232,7 +251,7 @@ SWEP.Animations = {
         Time = 50 / 40,
         MinProgress = 0.5,
     },
-    ["fire_stocked"] = {
+    ["fire_stock"] = {
         Source = "fire_stock",
         Time = 50 / 40,
         MinProgress = 0.5,
@@ -254,7 +273,7 @@ SWEP.Animations = {
             { s = pathPython .. "unfold.mp3", t = 114 / 40, c = ca, v = 1 },
         },
     },
-    ["reload_stocked"] = {
+    ["reload_stock"] = {
         Source = "reload_stocked",
         Time = 160 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
