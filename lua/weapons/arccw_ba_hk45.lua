@@ -129,6 +129,13 @@ SWEP.DefaultBodygroups = "000000000"
 SWEP.AttachmentElements = {
     ["hk45c"] = {
         VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 2}, {ind = 3, bg = 2}},
+        AttPosMods = {
+            [2] = {
+				vpos = Vector(-5.8, -1.75, 0),
+				vang = Angle(180, 0, -90),
+            },
+        },
+		NameChange = "HK45C"
     },
     ["mag_hk45_12"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
@@ -136,9 +143,21 @@ SWEP.AttachmentElements = {
 
     ["barrel_hk45_comp"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
+        AttPosMods = {
+            [2] = {
+				vpos = Vector(-6.8, -1.75, 0),
+				vang = Angle(180, 0, -90),
+            },
+        }
     },
     ["barrel_hk45_long"] = {
         VMBodygroups = {{ind = 2, bg = 2},{ind = 1, bg = 3}},
+        AttPosMods = {
+            [2] = {
+				vpos = Vector(-7.9, -1.75, 0),
+				vang = Angle(180, 0, -90),
+            },
+        }
     },
 
     ["stock_hk45_light"] = {
@@ -182,7 +201,7 @@ SWEP.Attachments = {
         Slot = "muzzle",
         Bone = "frame",
         Offset = {
-            vpos = Vector(-6.5, -1.75, 0),
+            vpos = Vector(-6.8, -1.75, 0),
             vang = Angle(180, 0, -90),
         },
         VMScale = Vector(0.9, 0.9, 0.9),
