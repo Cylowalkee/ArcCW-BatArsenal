@@ -6,12 +6,12 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Kralle-4.6"
 SWEP.TrueName = "MP7"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "A boxy .45 ACP submachine gun. Cheap to manufacture and can be configured to use 9x19 para rounds."
+SWEP.Trivia_Desc = "Futuristic low caliber personal defense weapon (PDW) that features a high magazine capacity and shreds through body armor."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
-SWEP.Trivia_Calibre = ".45 ACP"
-SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
+SWEP.Trivia_Calibre = "4.6x30mm PDW"
+SWEP.Trivia_Mechanism = "Gas-Operated Short Stroke"
 SWEP.Trivia_Country = "Germany"
-SWEP.Trivia_Year = 1998
+SWEP.Trivia_Year = 1999
 
 SWEP.Slot = 2
 
