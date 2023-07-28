@@ -10,7 +10,7 @@ local att = {}
 
 att.PrintName = "Short Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_u.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_barrel_short.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -27,7 +27,7 @@ local att = {}
 
 att.PrintName = "Snubnose Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_u.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_barrel_stubby.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -44,7 +44,7 @@ local att = {}
 
 att.PrintName = "Long Heavy Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_long.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_barrel_heavy.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -64,7 +64,7 @@ local att = {}
 
 att.PrintName = "Polymer Grip"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_no.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_grip_normal.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -80,7 +80,7 @@ local att = {}
 
 
 att.PrintName = "Heavy Wooden Gripstock"
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_skele.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_grip_woodstock.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true
@@ -103,7 +103,7 @@ local att = {}
 
 
 att.PrintName = "Polymer Gripstock"
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_skele.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_re1858_grip_polystock.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true
