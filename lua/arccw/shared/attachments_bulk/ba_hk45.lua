@@ -12,7 +12,7 @@ local att = {}
 
 att.PrintName = "12 Round .45ACP Magazine"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_mag_9mm_30.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_mag_12.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -36,7 +36,7 @@ local att = {}
 
 att.PrintName = "8 Round 45ACP HK45C Conversion"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_30.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_mag_8.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -63,7 +63,7 @@ local att = {}
 
 att.PrintName = "Competitor Slide"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_u.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_barrel_comp.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -81,7 +81,7 @@ local att = {}
 
 att.PrintName = "Long Slide"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_pu.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_barrel_long.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -103,7 +103,7 @@ local att = {}
 
 att.PrintName = "Light Wire Stock"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_poly.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_stock_light.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -119,7 +119,7 @@ local att = {}
 
 att.PrintName = "Padded Pistol Stock"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_no.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_stock_medium.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}

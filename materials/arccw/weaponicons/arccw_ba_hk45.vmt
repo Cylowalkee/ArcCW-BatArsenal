@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+	$basetexture "../addons/ArcCW-BatArsenal/materials/arccw/weaponicons/arccw_ba_hk45"
+
+	$translucent 1
+}
