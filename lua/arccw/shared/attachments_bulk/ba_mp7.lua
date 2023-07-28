@@ -13,7 +13,7 @@ local att = {}
 
 att.PrintName = "20-Round 4.6x30mm Stick Mag"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_20.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_mag_20.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -35,7 +35,7 @@ local att = {}
 
 att.PrintName = "60-Round 4.6x30mm Drum Mag"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_mag_545_20.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_mag_60.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -59,7 +59,7 @@ local att = {}
 
 att.PrintName = "Short Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_u.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_barrel_short.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -78,7 +78,7 @@ local att = {}
 
 att.PrintName = "Long Shrouded Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_barrel_long.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_barrel_long.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -98,7 +98,7 @@ local att = {}
 
 att.PrintName = "Collapsed Stock"
 
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_poly.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_stock_folded.png", "smooth mips")
 att.AutoStats = true
 att.Description = ""
 att.Desc_Pros = {}
@@ -130,7 +130,7 @@ local att = {}
 
 
 att.PrintName = "Solid Heavy Stock"
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_skele.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_stock_solid.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true
@@ -151,7 +151,7 @@ local att = {}
 ------ MISC ------
 
 att.PrintName = "Pistol Sights"
-att.Icon = Material("entities/att/acwatt_ba_ak_stock_skele.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_mp7_optic_alt.png", "smooth mips")
 att.Description = ""
 
 att.AutoStats = true
@@ -164,8 +164,9 @@ att.Slot = "ba_mp7_optic"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-10.52, -2, 0.2),
+        Pos = Vector(0, 10, -0.6),
         Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
     }
 }
 

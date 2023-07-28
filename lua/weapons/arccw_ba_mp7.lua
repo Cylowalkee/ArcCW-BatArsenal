@@ -27,7 +27,7 @@ SWEP.ViewModelFOV = 70
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-7.5, 3.5, -5.7),
+    pos        =    Vector(-10.2, 4.5, -5.7),
     ang        =    Angle(-6, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
@@ -50,6 +50,8 @@ SWEP.OpenBolt = false -- gun fires at the end of
 SWEP.Recoil = 0.6
 SWEP.RecoilSide = 0.1
 SWEP.RecoilPunch = .1
+
+SWEP.CamAttachment = 3
 
 SWEP.Delay = 60 / 950 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -216,19 +218,19 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Slot = {"ba_mp7_barrel"},
         DefaultAttName = "Standard Barrel",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_mp7_barrel_normal.png", "smooth mips"),
     },
     {
         PrintName = "Stock",
         Slot = {"ba_mp7_stock"},
         DefaultAttName = "Standard Collapsable Stock",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_stock_default.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_mp7_stock_normal.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_mp7_mag"},
         DefaultAttName = "40 Round 4.6x30mm Stick Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_ump_mag_default.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_mp7_mag_40.png", "smooth mips"),
     },
     {
         PrintName = "Fire Group",
