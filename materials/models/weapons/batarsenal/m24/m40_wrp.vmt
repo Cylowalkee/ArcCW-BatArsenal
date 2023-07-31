@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\weapons\batarsenal\m24\m40_wrp"
+	"$bumpmap"					"models\weapons\batarsenal\m24\m40_wrp_n"
+
+	"$phong"	"1"
+	"$phongexponent"	"3"
+	"$phongalbedotint"	"1"
+	"$phongboost"	"0.1"
+	"$phongfresnelranges"	"[1 1 1]"	
+	"$nocull" "1"		
+}
