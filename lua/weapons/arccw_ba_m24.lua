@@ -129,11 +129,11 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.BarrelLength = 0
 SWEP.AttachmentElements = {
-    ["barrel_m98b_long"] = {
+    ["barrel_m24_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
 			[2] = {
-				vpos = Vector(0.0, 25, 0.2),
+				vpos = Vector(-0.06, 27, 0.85),
                 vang = Angle(-90, -90, 90),
 			},
             [4] = {
@@ -142,11 +142,11 @@ SWEP.AttachmentElements = {
 			},
 		},
     },
-    ["barrel_m98b_sniper"] = {
+    ["barrel_m24_longg"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(0.0, 25, 0.2),
+				vpos = Vector(-0.06, 27, 0.85),
                 vang = Angle(-90, -90, 90),
 			},
 			[4] = {
@@ -155,29 +155,21 @@ SWEP.AttachmentElements = {
 			},
 		},
     },
-    ["barrel_m98b_cover"] = {
+
+    ["barrel_m24_short"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
         AttPosMods = {
-			[4] = {
-				vpos = Vector(-0.93, 13, 0.1),
-                vang = Angle(-90, -90, 0),
-			},
-		},
-    },
-    ["barrel_m98b_short"] = {
-        VMBodygroups = {{ind = 1, bg = 4}},
-        AttPosMods = {
 			[2] = {
-				vpos = Vector(0.0, 16, 0.2),
+				vpos = Vector(-0.06, 15, 0.85),
                 vang = Angle(-90, -90, 90),
 			},
 		},
     },
-    ["barrel_m98b_stubby"] = {
-        VMBodygroups = {{ind = 1, bg = 5}},
+    ["barrel_m24_exec"] = {
+        VMBodygroups = {{ind = 1, bg = 4}},
         AttPosMods = {
 			[2] = {
-				vpos = Vector(0.0, 12, 0.2),
+				vpos = Vector(-0.06, 12, 0.85),
                 vang = Angle(-90, -90, 90),
 			},
 			[4] = {
@@ -187,34 +179,21 @@ SWEP.AttachmentElements = {
 		},
     },
 
-    ["stock_m98b_marksman"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
-    },
-    ["stock_m98b_skele"] = {
-        VMBodygroups = {{ind = 4, bg = 2}},
-    },
-    ["stock_m98b_cap"] = {
-        VMBodygroups = {{ind = 4, bg = 3}},
-    },
-    ["stock_m98b_aw"] = {
-        VMBodygroups = {{ind = 4, bg = 4}},
-    },
-
-    ["mag_m98b_15"] = {
+    ["stock_m24_short"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
     },
-    ["mag_m98b_5"] = {
+    ["stock_m24_ghil"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
-    ["mag_m98b_3"] = {
+    ["stock_m24_pad"] = {
         VMBodygroups = {{ind = 3, bg = 3}},
     },
 
-    ["bolt_m98b_heavy"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
-    },
-    ["bolt_m98b_light"] = {
+    ["mag_m24_15"] = {
         VMBodygroups = {{ind = 2, bg = 2}},
+    },
+    ["mag_m24_5"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
     },
 
 }
