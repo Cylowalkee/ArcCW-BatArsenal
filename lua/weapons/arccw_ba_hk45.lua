@@ -249,7 +249,7 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Slot = {"ba_hk45_mag"},
-        DefaultAttName = "10 Round .45ACP Magazine",
+        DefaultAttName = "10 Round Magazine",
         DefaultAttIcon = Material("entities/att/acwatt_ba_hk45_mag_10.png", "smooth mips"),
         Bone = "Body",
         Offset = {

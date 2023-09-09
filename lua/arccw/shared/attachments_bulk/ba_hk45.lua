@@ -12,7 +12,7 @@ local name_real = "[HK45] "
 
 att = {}
 
-att.AbbrevName = "12 Round .45ACP Magazine"
+att.AbbrevName = "12 Round Magazine"
 att.PrintName = name_fake .. att.AbbrevName
 if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
@@ -20,13 +20,19 @@ end
 
 att.Icon = Material("entities/att/acwatt_ba_hk45_mag_12.png", "smooth mips")
 att.AutoStats = true
-att.Description = ""
+att.Description = "Slightly heavier magazine that holds a few more rounds."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
 att.Slot = "ba_hk45_mag"
 
 att.Override_ClipSize = 12
+
+att.Mult_SpeedMult = 0.98
+att.Mult_SightTime = 1.1
+
+att.Mult_HipDispersion = 1.1
+att.Mult_SightedSpeedMult = 0.9
 
 att.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_12"
@@ -40,17 +46,35 @@ ArcCW.LoadAttachmentType(att, "ba_hk45_mag_12")
 
 att = {}
 
-att.PrintName = "8 Round 45ACP HK45C Conversion"
+att.PrintName = "8 Round Compact Kit"
 
 att.Icon = Material("entities/att/acwatt_ba_hk45_mag_8.png", "smooth mips")
 att.AutoStats = true
-att.Description = ""
+att.Description = "Magazine, slide and frame assembly that is more compact."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
 att.Slot = "ba_hk45_mag"
 
 att.Override_ClipSize = 8
+
+att.Mult_RPM = 1.11
+
+att.Mult_Recoil = 1.15
+att.Mult_RecoilSide = 1.5
+
+att.Mult_Range = 0.85
+att.Mult_RangeMin = 1.45
+
+att.Mult_SightTime = 0.75
+
+att.Mult_HipDispersion = 0.6
+att.Mult_MoveDispersion = 0.75
+
+att.Mult_SpeedMult = 1.05
+att.Mult_SightedSpeedMult = 1.15
+
+att.Mult_AccuracyMOA = 1.25
 
 att.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_8"
@@ -59,7 +83,6 @@ end
 att.ActivateElements = {"hk45c"}
 att.GivesFlags = {"ba_hk45_compact"}
 att.ExcludeFlags = {"ba_hk45_long"}
-
 
 ArcCW.LoadAttachmentType(att, "ba_hk45_mag_8")
 
