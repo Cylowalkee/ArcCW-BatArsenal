@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Cobra Magnum"
 SWEP.TrueName = "Colt Python"
 SWEP.Trivia_Class = "Revolver"
-SWEP.Trivia_Desc = "Reliable magnum revolver able to load various cartridges.\nDon't even bother asking if they're feeling lucky."
+SWEP.Trivia_Desc = "Reliable magnum revolver with a heavy trigger pull.\nDon't even bother asking if they're feeling lucky."
 SWEP.Trivia_Manufacturer = "Colt's Manifacturing"
 SWEP.Trivia_Calibre = ".357 Magnum"
 SWEP.Trivia_Mechanism = "Double Action"
@@ -64,12 +64,12 @@ SWEP.Delay = 60 / 150
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
-        PrintName = "DACT",
+        PrintName = "fcg.dact",
         Mode = 1,
     },
     {
         Mode = 0,
-        PrintName = "LOW",
+        PrintName = "fcg.safe2",
     }
 }
 
@@ -116,7 +116,7 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "normal"
-SWEP.HoldtypeActive = "pistol"
+SWEP.HoldtypeActive = "revolver"
 SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
