@@ -98,7 +98,7 @@ SWEP.SightTime = 0.26
 
 SWEP.SpeedMult = 0.98
 SWEP.SightedSpeedMult = 0.5
-SWEP.ShootSpeedMult = 0.7
+SWEP.ShootSpeedMult = 0.8
 
 SWEP.BarrelLength = 0
 

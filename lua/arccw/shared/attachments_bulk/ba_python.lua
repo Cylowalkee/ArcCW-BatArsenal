@@ -205,7 +205,7 @@ end
 att.Icon = Material("entities/att/acwatt_ba_python_cylinder_4.png", "mips smooth")
 att.Description = "4 round cylinder housing .500 S&W Magnum rounds.\nSignificantly increased stopping power and range, but has a heavy trigger pull and strong recoil."
 
-att.SortOrder = 107
+att.SortOrder = 4
 att.AutoStats = true
 
 att.Desc_Pros = {
@@ -228,6 +228,8 @@ att.Mult_RecoilSide = 1.5
 
 att.Mult_Range = 1.2
 
+att.Mult_Penetration = 2
+att.Mult_ShootSpeedMult = 0.8
 
 att.ActivateElements = {"cylinder_python_4"}
 ArcCW.LoadAttachmentType(att, "ba_python_cylinder_4")
@@ -245,7 +247,7 @@ end
 att.Icon = Material("entities/att/acwatt_ba_python_cylinder_5.png", "mips smooth")
 att.Description = "5 round cylinder housing .44 Magnum rounds.\nIncreased stopping power at the cost of recoil and a heavier trigger pull."
 
-att.SortOrder = 107
+att.SortOrder = 5
 att.AutoStats = true
 
 att.Desc_Pros = {
@@ -268,8 +270,50 @@ att.Mult_RecoilSide = 1.25
 
 att.Mult_Range = 1.1
 
+att.Mult_Penetration = 1.5
+att.Mult_ShootSpeedMult = 0.9
+
+
 att.ActivateElements = {"cylinder_python_5"}
 ArcCW.LoadAttachmentType(att, "ba_python_cylinder_5")
+
+
+-----------------------------------
+-- ba_python_cylinder_38
+-----------------------------------
+att = {}
+
+att.AbbrevName = "6-Round .38 Special Cylinder"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+att.Icon = Material("entities/att/acwatt_ba_python_cylinder_6.png", "mips smooth")
+att.Description = "Lower caliber cartridge that requires a shorter trigger pull."
+
+att.SortOrder = 6
+att.AutoStats = true
+
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.Slot = "ba_python_mag"
+
+att.Mult_TriggerDelayTime = 0.5
+
+-- att.Mult_RPM = 1.15
+
+att.Mult_DamageMin = 0.85
+att.Mult_Damage = 0.85
+
+att.Mult_Recoil = 0.9
+att.Mult_ShootSpeedMult = 1.1
+
+att.Mult_Penetration = 0.75
+
+att.ActivateElements = {"cylinder_python_38"}
+ArcCW.LoadAttachmentType(att, "ba_python_cylinder_38")
 
 -----------------------------------
 -- ba_python_grip_ergo
