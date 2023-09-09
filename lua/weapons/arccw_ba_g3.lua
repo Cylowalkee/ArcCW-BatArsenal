@@ -193,15 +193,21 @@ SWEP.AttachmentElements = {
     ["barrel_g3_combat"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
     },
+    ["barrel_g3_psg"] = {
+        VMBodygroups = {{ind = 1, bg = 5}},
+    },
 
-    ["stock_g3_collapse"] = {
+    ["stock_g3_psg"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
     },
-    ["stock_g3_collapse_coll"] = {
+    ["stock_g3_collapse"] = {
         VMBodygroups = {{ind = 2, bg = 2}},
     },
-    ["stock_g3_no"] = {
+    ["stock_g3_collapse_coll"] = {
         VMBodygroups = {{ind = 2, bg = 3}},
+    },
+    ["stock_g3_no"] = {
+        VMBodygroups = {{ind = 2, bg = 4}},
     },
 
     ["mag_g3_10"] = {
@@ -214,6 +220,13 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 3, bg = 3}},
     },
 
+    ["grip_g3_psg"] = {
+        VMBodygroups = {{ind = 4, bg = 1}},
+    },
+
+    ["rear"] = {
+        VMBodygroups = {{ind = 5, bg = 1}},
+    },
 
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
@@ -326,6 +339,45 @@ SWEP.Animations = {
             { s = pathG3 .. "boltpull.mp3", t = 61 / 30, c = ca, v = 0.8 },
             { s = pathG3 .. "boltforward.mp3", t = 67 / 30, c = ca, v = 0.8 },
             { s = pathL85 .. "cloth.mp3", t = 74 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    ["reload_10"] = {
+        Source = "reload_10",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 66 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 47 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_10"] = {
+        Source = "reload_10_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 81 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "boltpull.mp3", t = 53 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "boltforward.mp3", t = 59 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 65 / 30, c = ca, v = 0.8 },
         },
     },
 
