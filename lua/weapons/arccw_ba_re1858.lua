@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - Bat Arsenal" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Showstopper Model 58"
+SWEP.PrintName = "Showstopper"
 SWEP.TrueName = "Remington Model 1858"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "Cap and ball revolver that sells itself on manouverability."
+SWEP.Trivia_Desc = "Antique revolver that still packs a punch.\nHighly manuverable, but accuracy and ranged performance is poor."
 SWEP.Trivia_Manufacturer = "Remington Arms"
 SWEP.Trivia_Calibre = "Powder & Ball Cartridge"
 SWEP.Trivia_Mechanism = "Single-Action"
@@ -32,11 +32,12 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-
-SWEP.Damage = 55
-SWEP.DamageMin = 30 -- damage done at maximum range
-SWEP.Range = 40 -- in METRES
+SWEP.Damage = 60
+SWEP.DamageMin = 25 -- damage done at maximum range
+SWEP.Range = 60
+SWEP.RangeMin = 10
 SWEP.Penetration = 6
+
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 350 -- projectile or phys bullet muzzle velocity
@@ -47,14 +48,15 @@ SWEP.ChamberSize = 0 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 6 -- DefaultClip is automatically set.
 
 SWEP.Recoil = 1.1
-SWEP.RecoilSide = 0.3
+SWEP.RecoilSide = 0.85
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 100 -- 60 / RPM.
+SWEP.Delay = 60 / 65 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 1,
+        PrintName = "fcg.sact",
     },
     {
         Mode = 0
@@ -64,9 +66,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 150
 
-SWEP.AccuracyMOA = 20 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.AccuracyMOA = 15 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 120 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 80
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "ppa" -- the magazine pool this gun draws from
@@ -82,10 +84,11 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 
 SWEP.CamAttachment = 2
 
-SWEP.SightTime = 0.1
+SWEP.SightTime = 0.12
 
 SWEP.SpeedMult = 1
-SWEP.SightedSpeedMult = 0.9
+SWEP.SightedSpeedMult = 0.85
+SWEP.ShootSpeedMult = 0.85
 
 SWEP.BarrelLength = 0
 
@@ -100,10 +103,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos        =    Vector(-4.3, -3.902, 1),
+    Pos        =    Vector(-4.3, -2, 1),
     Ang        =    Angle(0, 0, 3),
     Magnification = 1.1,
-	ViewModelFOV = 75,
+    ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -215,8 +218,8 @@ SWEP.Attachments = {
 }
 
 local pathGlock = "weapons/arccw/batarsenal/glock/"
-local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
-local pathHK = "weapons/arccw/batarsenal/hk45/"
+-- local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
+-- local pathHK = "weapons/arccw/batarsenal/hk45/"
 local pathKAC = "weapons/arccw/batarsenal/kac_pdw/"
 local pathBA = "weapons/arccw/batarsenal/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
@@ -244,7 +247,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
-        MinProgress = 0.6,
+        MinProgress = 0.8,
     },
     ["fire"] = {
         Source = "fire",

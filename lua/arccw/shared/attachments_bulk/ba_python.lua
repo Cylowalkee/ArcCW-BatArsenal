@@ -1,12 +1,19 @@
 local att = {}
 
+local name_fake = "[Cobra Magnum] "
+local name_real = "[Colt Python] "
 
 -----------------------------------
 -- ba_python_barrel_brute
 -----------------------------------
 att = {}
 
-att.PrintName = "Brute Barrel"
+att.AbbrevName = "Brute Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_python_barrel_brute.png", "mips smooth")
 att.Description = "Slim barrel that shaves off weight while keeping the same length.\nSlightly improves handling at the cost of recoil."
 
@@ -35,7 +42,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_barrel_brute")
 -----------------------------------
 att = {}
 
-att.PrintName = "Long Barrel"
+att.AbbrevName = "Long Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_barrel_long.png", "mips smooth")
 att.Description = "Long and heavy barrel that increases the weapons performance at range."
 
@@ -66,7 +77,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_barrel_long")
 -----------------------------------
 att = {}
 
-att.PrintName = "Marksman Barrel"
+att.AbbrevName = "Marksman Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_barrel_marksman.png", "mips smooth")
 att.Description = "Elongated barrel with a wooden hanguard. Increased range performance."
 
@@ -107,7 +122,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_barrel_marksman")
 -----------------------------------
 att = {}
 
-att.PrintName = "Short Barrel"
+att.AbbrevName = "Short Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_barrel_short.png", "mips smooth")
 att.Description = "Barrel with reduced length and weight.\nSlightly improves handling and hipfire performance."
 
@@ -140,7 +159,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_barrel_short")
 -----------------------------------
 att = {}
 
-att.PrintName = "Snub Barrel"
+att.AbbrevName = "Snub Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_barrel_snub.png", "mips smooth")
 att.Description = "Extremely short barrel favored by detectives.\nHandling and hipfire spread is improved at the cost of ranged effectiveness."
 
@@ -174,7 +197,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_barrel_snub")
 -----------------------------------
 att = {}
 
-att.PrintName = "4-Round .500 S&W Magnum Cylinder"
+att.AbbrevName = "4-Round .500 S&W Magnum Cylinder"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_cylinder_4.png", "mips smooth")
 att.Description = "4 round cylinder housing .500 S&W Magnum rounds.\nSignificantly increased stopping power and range, but has a heavy trigger pull and strong recoil."
 
@@ -210,7 +237,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_cylinder_4")
 -----------------------------------
 att = {}
 
-att.PrintName = "5-Round .44 Magnum Cylinder"
+att.AbbrevName = "5-Round .44 Magnum Cylinder"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_cylinder_5.png", "mips smooth")
 att.Description = "5 round cylinder housing .44 Magnum rounds.\nIncreased stopping power at the cost of recoil and a heavier trigger pull."
 
@@ -245,7 +276,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_cylinder_5")
 -----------------------------------
 att = {}
 
-att.PrintName = "Polymer Grip"
+att.AbbrevName = "Polymer Grip"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_grip_poly.png", "mips smooth")
 att.Description = "Light polymer grip that makes the weapon easier to move while aiming."
 
@@ -269,7 +304,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_grip_ergo")
 -----------------------------------
 att = {}
 
-att.PrintName = "Slim Grip"
+att.AbbrevName = "Slim Grip"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_grip_short.png", "mips smooth")
 att.Description = "Slim grip that increases the manouverability of the weapon at the cost of handling and recoil control."
 
@@ -293,9 +332,13 @@ ArcCW.LoadAttachmentType(att, "ba_python_grip_short")
 -----------------------------------
 att = {}
 
-att.PrintName = "Polymer Gripstock"
+att.AbbrevName = "Polymer Gripstock"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_grip_stockpoly.png", "mips smooth")
-att.Description = "Light polymer stock that allows the user to direct recoil to the shoulder. Reduced manouverability due to the increased profile."
+att.Description = "Light polymer stock providing some stability when firing.\nReduced manouverability due to the increased profile."
 
 att.SortOrder = 2
 att.AutoStats = true
@@ -327,7 +370,11 @@ ArcCW.LoadAttachmentType(att, "ba_python_grip_stockpoly")
 -----------------------------------
 att = {}
 
-att.PrintName = "Wooden Gripstock"
+att.AbbrevName = "Wooden Gripstock"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 att.Icon = Material("entities/att/acwatt_ba_python_grip_stockwood.png", "mips smooth")
 att.Description = "Heavy gripstock that excels at recoil control.\nReduced manouverability due to the increased profile."
 
