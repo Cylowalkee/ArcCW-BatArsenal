@@ -356,4 +356,5 @@ att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.9
 
 att.ActivateElements = {"stock_glock_light"}
+
 ArcCW.LoadAttachmentType(att, "ba_glock_stock_speed")

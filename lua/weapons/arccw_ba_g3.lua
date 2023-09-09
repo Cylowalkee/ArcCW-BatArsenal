@@ -21,8 +21,8 @@ SWEP.TracerWidth = 1
 
 -- Name --
 
-SWEP.PrintName = "Automatisiert Gewehr 762" 
-SWEP.TrueName = "G3" 
+SWEP.PrintName = "Automatisiert Gewehr 7.62"
+SWEP.TrueName = "G3"
 
 if GetConVar("arccw_truenames"):GetBool() then
     SWEP.PrintName = SWEP.TrueName
@@ -30,10 +30,10 @@ end
 
 -- Trivia --
 
-SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Soviet assault rifle. Iconic and hard hitting."
+SWEP.Trivia_Class = "Battle Rifle"
+SWEP.Trivia_Desc = "Accurate battle rifle with an enduring design.\nEffective at range, but has punishing recoil in automatic firemode."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
-SWEP.Trivia_Calibre = "	7.62×51mm NATO"
+SWEP.Trivia_Calibre = "7.62×51mm NATO"
 SWEP.Trivia_Mechanism = "Roller-delayed blowback"
 SWEP.Trivia_Country = "Germany"
 SWEP.Trivia_Year = 1964
@@ -41,12 +41,6 @@ SWEP.Trivia_Year = 1964
 -- Weapon slot --
 
 SWEP.Slot = 2
-
--- Weapon's manufacturer real name --
-
-if GetConVar("arccw_truenames"):GetBool() then
-end
-
 
 -- Viewmodel / Worldmodel / Model FOV / Animations --
 
@@ -57,9 +51,10 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
 
-SWEP.Damage = 37
+SWEP.Damage = 42
 SWEP.DamageMin = 28
-SWEP.Range = 95
+SWEP.Range = 300
+SWEP.RangeMin = 60
 SWEP.Penetration = 15
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil
@@ -67,16 +62,7 @@ SWEP.PhysBulletMuzzleVelocity = 960
 
 -- slight tomfoolery --
 
-SWEP.BodyDamageMults = 
-{
-    [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1.25,
-    [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 0.9,
-    [HITGROUP_RIGHTARM] = 0.9,
-    [HITGROUP_LEFTLEG] = 0.85,
-    [HITGROUP_RIGHTLEG] = 0.85,
-}
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
 
 -- Mag size --
 
@@ -94,17 +80,17 @@ SWEP.RecoilPunch = .2
 
 -- Firerate / Firemodes --
 
-SWEP.Delay = 60 / 600
+SWEP.Delay = 60 / 550
 SWEP.Num = 1
 SWEP.Firemodes = {
     {
-        Mode = 2,
-    },
-    {
         Mode = 1,
         Override_ShotRecoilTable = {
-            [1] = 0.3,
-        },
+            [1] = 0.75,
+        }
+    },
+    {
+        Mode = 2,
     },
 }
 
@@ -116,7 +102,7 @@ SWEP.ProceduralIronFire = false
 
 SWEP.ReloadInSights = false
 
--- NPC stuff -- 
+-- NPC stuff --
 
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 60
@@ -124,9 +110,8 @@ SWEP.NPCWeight = 60
 -- Accuracy --
 
 SWEP.AccuracyMOA = 5
-SWEP.HipDispersion = 600
+SWEP.HipDispersion = 650
 SWEP.MoveDispersion = 150
-SWEP.JumpDispersion = 50
 
 SWEP.Primary.Ammo = "ar2"
 SWEP.MagID = "xcr"
@@ -153,10 +138,10 @@ SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.IronSightStruct = {
-     Pos = Vector(-2.44, -2.317, 0.85),
-     Ang = Angle(0, -0.3, 0),
-     Magnification = 1,
-     ViewModelFOV = 60,
+    Pos = Vector(-2.44, -2.317, 0.85),
+    Ang = Angle(0, -0.3, 0),
+    Magnification = 1,
+    ViewModelFOV = 60,
 }
 
 SWEP.HolsterPos = Vector(3, -2, 0)
@@ -175,14 +160,14 @@ local pathAK = "weapons/arccw/batarsenal/ak47/"
 local pathG3 = "weapons/arccw/batarsenal/hk_g3/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
 local pathJH = "weapons/arccw/batarsenal/jackhammer/"
-local path98 = "weapons/arccw/batarsenal/m98b/"
-local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
-local pathBA = "weapons/arccw/batarsenal/"
+-- local path98 = "weapons/arccw/batarsenal/m98b/"
+-- local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
+-- local pathBA = "weapons/arccw/batarsenal/"
 
 
 SWEP.ShootSound =  pathG3 .. "galil-1.wav"
 SWEP.ShootSoundSilenced = pathAK .. "firesil.wav"
---SWEP.DistantShootSound = 
+--SWEP.DistantShootSound =
 
 --SWEP.ShootPitchVariation = 0
 
@@ -196,32 +181,27 @@ SWEP.BulletBones = {
 
 SWEP.AttachmentElements = {
 
-    
-
     ["barrel_g3_shorthg"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
     },
     ["barrel_g3_short"] = {
-        VMBodygroups = {{ind = 1, bg = 3}},
+        VMBodygroups = {{ind = 1, bg = 2}},
     },
     ["barrel_g3_long"] = {
-        VMBodygroups = {{ind = 1, bg = 3}},
+        VMBodygroups = {{ind = 1, bg = 1}},
     },
     ["barrel_g3_combat"] = {
-        VMBodygroups = {{ind = 1, bg = 3}},
+        VMBodygroups = {{ind = 1, bg = 4}},
     },
-
-
-
 
     ["stock_g3_collapse"] = {
-        VMBodygroups = {{ind = 2, bg = 4}},
+        VMBodygroups = {{ind = 2, bg = 1}},
     },
     ["stock_g3_collapse_coll"] = {
-        VMBodygroups = {{ind = 2, bg = 4}},
+        VMBodygroups = {{ind = 2, bg = 2}},
     },
     ["stock_g3_no"] = {
-        VMBodygroups = {{ind = 2, bg = 5}},
+        VMBodygroups = {{ind = 2, bg = 3}},
     },
 
     ["mag_g3_10"] = {
@@ -231,10 +211,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 3, bg = 2}},
     },
     ["mag_g3_50"] = {
-        VMBodygroups = {{ind = 3, bg = 2}},
+        VMBodygroups = {{ind = 3, bg = 3}},
     },
 
-    
+
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
     },
@@ -246,9 +226,6 @@ SWEP.AttachmentElements = {
     ["tac"] = {
         VMBodygroups = {{ind = 7, bg = 1}},
     },
-
-
-
 }
 
 
@@ -332,7 +309,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_20_empty",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, 
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         LastClip1OutTime = 2,
         Framerate = 30,
         Time = 91 / 30,
@@ -361,10 +338,10 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Slot = {"optic", "optic_lp"},
         DefaultAttName = "Iron Sights",
-        Bone = "gun",
+        Bone = "smdimport",
         Offset = {
-            vpos = Vector(2, -2.4, 0.1),
-            vang = Angle(-0, -180, 90),
+            vpos = Vector(-0, -1, 2),
+            vang = Angle(0, 90, 0),
         },
         CorrectiveAng = Angle( 0, 0, 0 ),
         InstalledEles = {"rail"},
@@ -402,7 +379,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-        Slot = {"ba_ak_barrel"},
+        Slot = {"ba_g3_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ak_barrel_default.png", "smooth mips"),
@@ -414,8 +391,8 @@ SWEP.Attachments = {
 
     {
         PrintName = "Stock",
-        Slot = {"ba_ak_stock"},
-        DefaultAttName = "Standard Wood Stock",
+        Slot = {"ba_g3_stock"},
+        DefaultAttName = "Standard Stock",
         Bone = "Body",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ak_stock_default.png", "smooth mips"),
         Offset = {
@@ -426,8 +403,8 @@ SWEP.Attachments = {
 
     {
         PrintName = "Magazine",
-        Slot = {"ba_ak_mag"},
-        DefaultAttName = "30 Round 7.62x39mm Magazine",
+        Slot = {"ba_g3_mag"},
+        DefaultAttName = "20 Round Magazine",
         DefaultAttIcon = Material("entities/att/acwatt_ba_ak_mag_30.png", "smooth mips"),
         Bone = "Body",
         Offset = {

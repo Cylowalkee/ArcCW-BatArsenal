@@ -2,7 +2,7 @@ ArcCW.BA = {}
 
 ArcCW.BA.BodyDamageMults = {
     [HITGROUP_HEAD] = 3.5,
-    [HITGROUP_CHEST] = 1,
+    [HITGROUP_CHEST] = 1.2,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
