@@ -325,6 +325,9 @@ att.Mult_RecoilSide = 0.75
 
 att.Mult_MoveDispersion = 0.5
 
+att.Mult_DrawTime = 1.5
+att.Mult_HolsterTime = 1.5
+
 att.ActivateElements = {"stock_glock_fab"}
 ArcCW.LoadAttachmentType(att, "ba_glock_stock_fab")
 
@@ -360,6 +363,9 @@ att.Mult_MoveDispersion = 0.85
 
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.9
+
+att.Mult_DrawTime = 1.25
+att.Mult_HolsterTime = 1.25
 
 att.ActivateElements = {"stock_glock_light"}
 

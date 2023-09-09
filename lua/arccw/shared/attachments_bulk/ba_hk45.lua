@@ -181,7 +181,7 @@ end
 
 att.Icon = Material("entities/att/acwatt_ba_hk45_stock_light.png", "smooth mips")
 att.AutoStats = true
-att.Description = ""
+att.Description = "A pistol stock that focuses on handling."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
@@ -195,6 +195,9 @@ att.Mult_MoveDispersion = 0.85
 
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.9
+
+att.Mult_DrawTime = 1.25
+att.Mult_HolsterTime = 1.25
 
 att.ActivateElements = {"stock_hk45_light"}
 
@@ -210,7 +213,7 @@ end
 
 att.Icon = Material("entities/att/acwatt_ba_hk45_stock_medium.png", "smooth mips")
 att.AutoStats = true
-att.Description = ""
+att.Description = "A pistol stock that focuses on recoil control."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
@@ -224,6 +227,9 @@ att.Mult_Recoil = 0.5
 att.Mult_RecoilSide = 0.75
 
 att.Mult_MoveDispersion = 0.5
+
+att.Mult_DrawTime = 1.5
+att.Mult_HolsterTime = 1.5
 
 att.ActivateElements = {"stock_hk45_med"}
 

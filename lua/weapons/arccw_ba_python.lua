@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - Bat Arsenal" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Cobra 357"
+SWEP.PrintName = "Cobra Magnum"
 SWEP.TrueName = "Colt Python"
 SWEP.Trivia_Class = "Revolver"
-SWEP.Trivia_Desc = "A reliable 357 revolver. Packs a punch and allows unorthodox cylinder modifications."
+SWEP.Trivia_Desc = "Reliable magnum revolver able to load various cartridges.\nDon't even bother asking if they're feeling lucky."
 SWEP.Trivia_Manufacturer = "Colt's Manifacturing"
 SWEP.Trivia_Calibre = ".357 Magnum"
 SWEP.Trivia_Mechanism = "Double Action"
@@ -33,13 +33,16 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-
 SWEP.DefaultSkin = 1
 
-SWEP.Damage = 65
-SWEP.DamageMin = 35 -- damage done at maximum range
-SWEP.Range = 40 -- in METRES
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
+
+SWEP.Damage = 60
+SWEP.DamageMin = 35
+SWEP.Range = 80
+SWEP.RangeMin = 12
 SWEP.Penetration = 10
+
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 500 -- projectile or phys bullet muzzle velocity
@@ -56,7 +59,8 @@ SWEP.VisualRecoilMult = 0.5
 
 SWEP.TriggerDelay = true
 
-SWEP.Delay = 0.4
+SWEP.Delay = 60 / 150
+
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -72,9 +76,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = {"weapon_pistol", "weapon_357"}
 SWEP.NPCWeight = 75
 
-SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 8 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "357" -- what ammo type the gun uses
 SWEP.MagID = "python" -- the magazine pool this gun draws from
@@ -90,10 +94,11 @@ SWEP.CaseEffectAttachment = 0 -- which attachment to put the case effect on
 
 SWEP.RevolverReload = true
 
-SWEP.SightTime = 0.28
+SWEP.SightTime = 0.26
 
-SWEP.SpeedMult = 0.975
-SWEP.SightedSpeedMult = 0.75
+SWEP.SpeedMult = 0.98
+SWEP.SightedSpeedMult = 0.5
+SWEP.ShootSpeedMult = 0.7
 
 SWEP.BarrelLength = 0
 
@@ -106,7 +111,7 @@ SWEP.IronSightStruct = {
     Pos = Vector(-3.71, -2, 1.5),
     Ang = Angle(1.0, -0.15, 4.5),
     Magnification = 1.1,
-	ViewModelFOV = 75,
+    ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -133,20 +138,20 @@ SWEP.AttachmentElements = {
     ["barrel_python_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-12.7, -2.85, -0),
+            [2] = {
+                vpos = Vector(-12.7, -2.85, -0),
                 vang = Angle(180, 0, -90),
-			},
-		},
+            },
+        },
     },
     ["barrel_python_marks"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-14, -2.85, -0),
+            [2] = {
+                vpos = Vector(-14, -2.85, -0),
                 vang = Angle(180, 0, -90),
-			},
-		},
+            },
+        },
     },
     ["barrel_python_brute"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
@@ -154,20 +159,20 @@ SWEP.AttachmentElements = {
     ["barrel_python_short"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-10.5, -2.85, -0),
+            [2] = {
+                vpos = Vector(-10.5, -2.85, -0),
                 vang = Angle(180, 0, -90),
-			},
-		},
+            },
+        },
     },
     ["barrel_python_snub"] = {
         VMBodygroups = {{ind = 1, bg = 5}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-7.75, -2.85, -0),
+            [2] = {
+                vpos = Vector(-7.75, -2.85, -0),
                 vang = Angle(180, 0, -90),
-			},
-		},
+            },
+        },
     },
 
     ["grip_python_ergo"] = {
@@ -273,7 +278,7 @@ SWEP.Attachments = {
 local pathPython = "weapons/arccw/batarsenal/coltpython/"
 local pathSVU = "weapons/arccw/batarsenal/svu/"
 
-SWEP.ShootSound = pathPython.. "python-1.wav"
+SWEP.ShootSound = pathPython .. "python-1.wav"
 SWEP.ShootSoundSilenced = pathSVU .. "g3sg1-1.wav"
 
 -- draw
@@ -293,7 +298,8 @@ SWEP.Animations = {
         Time = 27 / 40,
         SoundTable = {
             { s = pathPython .. "clipdraw.mp3", t = 0 / 40, c = ca, v = 0.8 },
-        }
+        },
+        MinProgress = 0.4,
     },
     ["ready"] = {
         Source = "ready",
@@ -357,15 +363,19 @@ SWEP.Animations = {
             { s = pathPython .. "blick.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
         MinProgress = 0.2,
+
+        Mult = 0.75,
     },
 
     ["untrigger"] = {
         Source = "fix",
         Time = 10 / 40,
-        SoundTable = {
-            { s = pathPython .. "blickrev.mp3", t = 0 / 40, c = ca, v = 0.8 },
-        },
+        -- SoundTable = {
+        --     { s = pathPython .. "blickrev.mp3", t = 0 / 40, c = ca, v = 0.8 },
+        -- },
         MinProgress = 0.2,
+
+        Mult = 0.75,
     },
 }
 

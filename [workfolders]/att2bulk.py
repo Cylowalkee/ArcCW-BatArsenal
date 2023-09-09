@@ -1,4 +1,4 @@
-prefix = "ba_glock*"   # Atts with this prefix in lua name will be packed. Uses wildcards ( *_ak_* )
+prefix = "ba_python*"   # Atts with this prefix in lua name will be packed. Uses wildcards ( *_ak_* )
 arc = 0                      # 0 for ArcCW bulk atts, 1 for ARC9 bulk atts
 
 import glob

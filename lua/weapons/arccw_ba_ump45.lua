@@ -27,15 +27,16 @@ SWEP.ViewModelFOV = 70
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos        =    Vector(-7.5, 3.5, -5.7),
+    pos        =    Vector(-7.5, 2, -5.7),
     ang        =    Angle(-6, 0, 180),
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-SWEP.Damage = 30
-SWEP.DamageMin = 15 -- damage done at maximum range
-SWEP.Range = 65 -- in METRES
-SWEP.Penetration = 4
+SWEP.Damage = 35
+SWEP.DamageMin = 15
+SWEP.Range = 65
+SWEP.RangeMin = 15
+SWEP.Penetration = 5
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity
@@ -47,11 +48,11 @@ SWEP.RevolverReload = false -- cases all eject on reload
 
 SWEP.OpenBolt = false -- gun fires at the end of 
 
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.65
 SWEP.RecoilSide = 0.3
-SWEP.RecoilPunch = .2
+SWEP.RecoilPunch = 0.4
 
-SWEP.Delay = 60 / 500 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -171,18 +172,18 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 3}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(0.05, 12.6, 1.33),
+                vpos = Vector(0.05, 12.6, 1.33),
                 vang = Angle(0, -90, 0),
-			},
-			[3] = {
-				vpos = Vector(0.05, 8.608, -0.124),
-				vang = Angle(0, -90, 0),
-			},
+            },
+            [3] = {
+                vpos = Vector(0.05, 8.608, -0.124),
+                vang = Angle(0, -90, 0),
+            },
             [4] = {
-				vpos = Vector(-0.90, 7.608, 1.55),
+                vpos = Vector(-0.90, 7.608, 1.55),
                 vang = Angle(-105, -90, 0),
-			},
-		},
+            },
+        },
     },
     ["barrel_ump45_kurz"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
@@ -489,7 +490,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local hasUB = (atts[3].Installed != nil)
     local hasTac = (atts[4].Installed != nil)
     if !IsValid(vm) then return end
-    
+
     if hasUB then
         if (barrel != "ba_ump_barrel_short") then
             vm:SetBodygroup(6,1)
