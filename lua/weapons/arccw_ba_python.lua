@@ -262,6 +262,15 @@ SWEP.Attachments = {
         DefaultAttIcon = Material("entities/att/acwatt_ba_python_cylinder_6.png", "smooth mips"),
     },
     {
+        PrintName = "Ammo Type",
+        Slot = "ba_ammo_bullet",
+        DefaultAttName = "Standard Rounds"
+    },
+    {
+        PrintName = "Perk",
+        Slot = "ba_perk"
+    },
+    {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,

@@ -140,6 +140,21 @@ $sequence "reload_20_empty" {
 	fps 30
 }
 
+$sequence "reload_10" {
+	"anims\reload_10.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
+
+$sequence "reload_10_empty" {
+	"anims\reload_10_empty.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
+
+
 
 
 $sequence "ready" {

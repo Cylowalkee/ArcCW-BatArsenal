@@ -85,6 +85,33 @@ att.ActivateElements = {"barrel_g3_long"}
 ArcCW.LoadAttachmentType(att, "ba_g3_barrel_long")
 
 -----------------------------------
+-- ba_g3_barrel_psg
+-----------------------------------
+att = {}
+
+att.AbbrevName = "Sniper Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
+att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Description = ""
+
+att.SortOrder = 1
+att.AutoStats = true
+
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.Slot = "ba_g3_barrel"
+
+att.ActivateElements = {"barrel_g3_psg","grip_g3_psg","rear"}
+
+ArcCW.LoadAttachmentType(att, "ba_g3_barrel_psg")
+
+-----------------------------------
 -- ba_g3_barrel_combat
 -----------------------------------
 att = {}
@@ -153,6 +180,34 @@ att.ToggleStats = {
 ArcCW.LoadAttachmentType(att, "ba_g3_stock_collapsible")
 
 -----------------------------------
+-- ba_g3_stock_psg
+-----------------------------------
+att = {}
+
+att.AbbrevName = "Sniper Stock"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
+att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Description = ""
+
+att.SortOrder = 3
+att.AutoStats = true
+att.Free = true
+
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.Slot = "ba_g3_stock"
+
+att.ActivateElements = {"stock_g3_psg"}
+
+ArcCW.LoadAttachmentType(att, "ba_g3_stock_psg")
+
+-----------------------------------
 -- ba_g3_stock_no
 -----------------------------------
 att = {}
@@ -205,6 +260,10 @@ att.Slot = "ba_g3_mag"
 att.Override_ClipSize = 10
 
 att.ActivateElements = {"mag_g3_10"}
+
+att.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_10"
+end
 
 ArcCW.LoadAttachmentType(att, "ba_g3_mag_10")
 
