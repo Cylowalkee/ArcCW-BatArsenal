@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Schnellfeuer 9mm"
 SWEP.TrueName = "Glock 17"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "Lightweight polymer pistol with high capacity.\nFavored by cops and robbers alike."
+SWEP.Trivia_Desc = "Lightweight polymer pistol with high capacity.\nEasy to use, and favored by cops and robbers alike."
 SWEP.Trivia_Manufacturer = "Gaston Glock"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Recoil-Operated"
@@ -38,7 +38,7 @@ SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
 SWEP.Damage = 30
 SWEP.DamageMin = 12
 SWEP.RangeMin = 10
-SWEP.Range = 50
+SWEP.Range = 60
 SWEP.Penetration = 7
 
 SWEP.DamageType = DMG_BULLET

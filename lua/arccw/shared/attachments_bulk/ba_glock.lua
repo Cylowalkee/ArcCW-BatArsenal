@@ -81,10 +81,10 @@ att.Desc_Cons = {
 att.Slot = "ba_glock_barrel"
 
 att.Mult_Recoil = 1.1
-att.Mult_RecoilSide = 1.15
-att.Mult_Range = 1.15
+att.Mult_RecoilSide = 1.25
+att.Mult_Range = 1.25
 
-att.Mult_AccuracyMOA = 0.75
+att.Mult_AccuracyMOA = 0.6
 
 att.Mult_HipDispersion = 1.25
 att.Mult_MoveDispersion = 0.75
@@ -197,7 +197,7 @@ att.Mult_SightedSpeedMult = 0.9
 att.Mult_RPM = 0.75
 
 att.Mult_HipDispersion = 1.5
-att.Mult_AccuracyMOA = 0.5
+att.Mult_AccuracyMOA = 0.75
 
 att.ActivateElements = {"barrel_glock_long"}
 att.GivesFlags = {"ba_glock_long"}
@@ -233,10 +233,10 @@ att.Override_ClipSize = 100
 -- att.Mult_ReloadTime = 1.25
 
 att.Mult_SpeedMult = 0.9
-att.Mult_SightTime = 1.25
+att.Mult_SightTime = 1.3
 
-att.Mult_HipDispersion = 1.5
-att.Mult_SightedSpeedMult = 0.8
+att.Mult_HipDispersion = 1.6
+att.Mult_SightedSpeedMult = 0.7
 
 att.ActivateElements = {"mag_glock_100"}
 
@@ -276,7 +276,7 @@ att.Override_ClipSize = 33
 att.Mult_SpeedMult = 0.96
 att.Mult_SightTime = 1.1
 
-att.Mult_HipDispersion = 1.25
+att.Mult_HipDispersion = 1.2
 att.Mult_SightedSpeedMult = 0.9
 
 att.ActivateElements = {"mag_glock_33"}

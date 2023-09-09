@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - Bat Arsenal" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Leistung-Pistole .45ACP"
+SWEP.PrintName = "Leistung-Pistole .45 ACP"
 SWEP.TrueName = "HK45"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "Polimer pistol firing powerful .45ACP cartridges."
+SWEP.Trivia_Desc = "Ergonomic pistol firing a powerful caliber.\nAccurate, but damage falls off significantly."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Short Recoil-Operated"
@@ -32,11 +32,14 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
+-- 3 shot to kill at 20m
+-- 4 shot to kill at 33m
+SWEP.Damage = 34
+SWEP.DamageMin = 8 -- damage done at maximum range
+SWEP.Range = 60 -- in METRES
+SWEP.RangeMin = 20
+SWEP.Penetration = 10
 
-SWEP.Damage = 35
-SWEP.DamageMin = 20 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
-SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 350 -- projectile or phys bullet muzzle velocity
@@ -46,11 +49,11 @@ SWEP.CanFireUnderwater = false
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
 
-SWEP.Recoil = 1.1
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 1.25
+SWEP.RecoilSide = 0.4
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 400 -- 60 / RPM.
+SWEP.Delay = 60 / 360 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -64,9 +67,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 150
 
-SWEP.AccuracyMOA = 20 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.AccuracyMOA = 12 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 120
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "ppa" -- the magazine pool this gun draws from
@@ -103,7 +106,7 @@ SWEP.IronSightStruct = {
     Pos = Vector(-3.34, -5.268, 0.84),
     Ang = Angle(0, -0.1, 2),
     Magnification = 1.1,
-	ViewModelFOV = 75,
+    ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -131,11 +134,11 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 2}, {ind = 3, bg = 2}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-5.8, -1.75, 0),
-				vang = Angle(180, 0, -90),
+                vpos = Vector(-5.8, -1.75, 0),
+                vang = Angle(180, 0, -90),
             },
         },
-		NameChange = "HK45C"
+        NameChange = "HK45C"
     },
     ["mag_hk45_12"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
@@ -145,8 +148,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-6.8, -1.75, 0),
-				vang = Angle(180, 0, -90),
+                vpos = Vector(-6.8, -1.75, 0),
+                vang = Angle(180, 0, -90),
             },
         }
     },
@@ -154,8 +157,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 2},{ind = 1, bg = 3}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-7.9, -1.75, 0),
-				vang = Angle(180, 0, -90),
+                vpos = Vector(-7.9, -1.75, 0),
+                vang = Angle(180, 0, -90),
             },
         }
     },
@@ -170,11 +173,11 @@ SWEP.AttachmentElements = {
     ["rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
         AttPosMods = {
-			[3] = {
-				vpos = Vector(-6, 0.4, 0),
+            [3] = {
+                vpos = Vector(-6, 0.4, 0),
                 vang = Angle(180, 0, -90),
-			},
-		},
+            },
+        },
     },
 
 }
@@ -279,7 +282,7 @@ SWEP.Attachments = {
     },
 }
 
-local pathGlock = "weapons/arccw/batarsenal/glock/"
+-- local pathGlock = "weapons/arccw/batarsenal/glock/"
 local pathHK = "weapons/arccw/batarsenal/hk45/"
 local pathBA = "weapons/arccw/batarsenal/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
