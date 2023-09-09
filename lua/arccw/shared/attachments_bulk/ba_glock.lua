@@ -68,7 +68,7 @@ if GetConVar("arccw_truenames"):GetBool() then
 end
 
 att.Icon = Material("entities/att/acwatt_ba_glock_barrel_comp.png", "mips smooth")
-att.Description = "Extended barrel and ring sight for competition shooting.\nImproves range and accuracy, but worsens recoil and hipfire performance."
+att.Description = "Extended barrel and ring sight for competition shooting.\nSignificant performance increase at the cost of fire rate."
 
 att.SortOrder = 107
 att.AutoStats = true
@@ -80,13 +80,16 @@ att.Desc_Cons = {
 
 att.Slot = "ba_glock_barrel"
 
-att.Mult_Recoil = 1.1
-att.Mult_RecoilSide = 1.25
-att.Mult_Range = 1.25
+att.Mult_RPM = 0.6
 
-att.Mult_AccuracyMOA = 0.6
+att.Mult_SightTime = 0.9
 
-att.Mult_HipDispersion = 1.25
+att.Mult_Recoil = 0.9
+att.Mult_RecoilSide = 0.75
+att.Mult_Range = 1.4
+
+att.Mult_AccuracyMOA = 0.5
+
 att.Mult_MoveDispersion = 0.75
 
 att.ActivateElements = {"barrel_glock_comp"}
@@ -194,7 +197,7 @@ att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75
 
 att.Mult_Range = 1.5
-att.Mult_RangeMin = 2
+att.Mult_RangeMin = 1.5
 
 att.Mult_SightTime = 1.15
 att.Mult_SpeedMult = 0.95

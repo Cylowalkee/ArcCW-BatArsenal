@@ -114,18 +114,23 @@ end
 
 att.Icon = Material("entities/att/acwatt_ba_hk45_barrel_comp.png", "smooth mips")
 att.AutoStats = true
-att.Description = "Extended barrel and compensator cuts for competition shooting.\nImproves damage falloff and spread while moving, but worsens recoil."
+att.Description = "Extended barrel and compensator cuts for competition shooting.\nSignificant performance increase at the cost of fire rate."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
 att.Slot = "ba_hk45_barrel"
 
-att.Mult_Range = 1.5
-att.Mult_RangeMin = 0.66667
-att.Mult_MoveDispersion = 0.8
+att.Mult_RPM = 0.7
 
-att.Mult_Recoil = 1.15
-att.Mult_RecoilSide = 1.25
+att.Mult_SightTime = 0.9
+
+att.Mult_Range = 1.5
+att.Mult_MoveDispersion = 0.75
+
+att.Mult_Recoil = 0.9
+att.Mult_RecoilSide = 0.75
+
+att.Mult_AccuracyMOA = 0.75
 
 att.ActivateElements = {"barrel_hk45_comp"}
 
@@ -158,7 +163,7 @@ att.Mult_SightTime = 1.15
 att.Mult_SpeedMult = 0.95
 att.Mult_SightedSpeedMult = 0.9
 
-att.Mult_RPM = 0.85
+att.Mult_RPM = 0.9
 
 att.Mult_HipDispersion = 1.2
 att.Mult_AccuracyMOA = 0.75

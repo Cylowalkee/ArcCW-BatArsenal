@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "Showstopper"
 SWEP.TrueName = "Remington Model 1858"
-SWEP.Trivia_Class = "Pistol"
+SWEP.Trivia_Class = "Revolver"
 SWEP.Trivia_Desc = "Antique revolver that still packs a punch.\nHighly manuverable, but accuracy and ranged performance is poor."
 SWEP.Trivia_Manufacturer = "Remington Arms"
 SWEP.Trivia_Calibre = "Powder & Ball Cartridge"
