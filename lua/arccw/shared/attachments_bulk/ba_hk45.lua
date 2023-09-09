@@ -43,18 +43,23 @@ att.ActivateElements = {"mag_hk45_12"}
 
 ArcCW.LoadAttachmentType(att, "ba_hk45_mag_12")
 
+--- BARRELS ---
 
 att = {}
 
-att.PrintName = "8 Round Compact Kit"
+att.AbbrevName = "Compact Slide & Frame"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
 
-att.Icon = Material("entities/att/acwatt_ba_hk45_mag_8.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_hk45_barrel_c.png", "smooth mips")
 att.AutoStats = true
-att.Description = "Magazine, slide and frame assembly that is more compact."
+att.Description = "Compact kit with a reduced frame and smaller magazine.\nSignificantly more manuverable, but range is reduced and recoil is stronger."
 att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
-att.Slot = "ba_hk45_mag"
+att.Slot = "ba_hk45_barrel"
 
 att.Override_ClipSize = 8
 
@@ -63,12 +68,12 @@ att.Mult_RPM = 1.11
 att.Mult_Recoil = 1.15
 att.Mult_RecoilSide = 1.5
 
-att.Mult_Range = 0.85
-att.Mult_RangeMin = 1.45
+att.Mult_Range = 0.8
+att.Mult_SightTime = 0.65
+att.Mult_DrawTime = 0.75
+att.Mult_HolsterTime = 0.75
 
-att.Mult_SightTime = 0.75
-
-att.Mult_HipDispersion = 0.6
+att.Mult_HipDispersion = 0.85
 att.Mult_MoveDispersion = 0.75
 
 att.Mult_SpeedMult = 1.05
@@ -82,11 +87,22 @@ end
 
 att.ActivateElements = {"hk45c"}
 att.GivesFlags = {"ba_hk45_compact"}
-att.ExcludeFlags = {"ba_hk45_long"}
 
-ArcCW.LoadAttachmentType(att, "ba_hk45_mag_8")
+local slotinfo = {
+    [6] = {"8 Round Magazine", Material("entities/att/acwatt_ba_hk45_mag_8.png", "smooth mips")},
+}
+att.Hook_GetDefaultAttName = function(wep, slot)
+    if slotinfo[slot] then
+        return slotinfo[slot][1]
+    end
+end
+att.Hook_GetDefaultAttIcon = function(wep, slot)
+    if slotinfo[slot] then
+        return slotinfo[slot][2]
+    end
+end
 
---- BARRELS ---
+ArcCW.LoadAttachmentType(att, "ba_hk45_barrel_short")
 
 att = {}
 
@@ -111,7 +127,6 @@ att.Mult_MoveDispersion = 0.8
 att.Mult_Recoil = 1.15
 att.Mult_RecoilSide = 1.25
 
-
 att.ActivateElements = {"barrel_hk45_comp"}
 
 ArcCW.LoadAttachmentType(att, "ba_hk45_barrel_comp")
@@ -131,6 +146,8 @@ att.Desc_Pros = {}
 att.Desc_Cons = {}
 att.Desc_Neutrals = {}
 att.Slot = "ba_hk45_barrel"
+
+-- att.Mult_DamageMin = 10 / 8
 
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75

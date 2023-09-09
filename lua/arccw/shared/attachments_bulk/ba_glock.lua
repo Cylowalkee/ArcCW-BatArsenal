@@ -117,6 +117,8 @@ att.Desc_Cons = {
 
 att.Slot = "ba_glock_barrel"
 
+att.Mult_RPM = 1.15
+
 att.Override_ClipSize = 10
 
 att.Mult_Recoil = 1.25
@@ -125,9 +127,11 @@ att.Mult_RecoilSide = 1.5
 att.Mult_Range = 0.75
 att.Mult_RangeMin = 2
 
-att.Mult_SightTime = 0.75
+att.Mult_SightTime = 0.5
+att.Mult_DrawTime = 0.6
+att.Mult_HolsterTime = 0.6
 
-att.Mult_HipDispersion = 0.85
+att.Mult_HipDispersion = 0.5
 att.Mult_MoveDispersion = 0.5
 
 att.Mult_SpeedMult = 1.05
@@ -135,7 +139,6 @@ att.Mult_SightedSpeedMult = 1.15
 
 -- att.Mult_ReloadTime = 0.85
 
--- att.Mult_RPM = 1.25
 
 att.Mult_AccuracyMOA = 1.25
 
@@ -159,6 +162,7 @@ att.Hook_GetDefaultAttIcon = function(wep, slot)
         return slotinfo[slot][2]
     end
 end
+
 ArcCW.LoadAttachmentType(att, "ba_glock_barrel_compact")
 
 -----------------------------------
@@ -183,6 +187,8 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.Slot = "ba_glock_barrel"
+
+-- att.Mult_DamageMin = 15 / 12
 
 att.Mult_Recoil = 0.85
 att.Mult_RecoilSide = 0.75

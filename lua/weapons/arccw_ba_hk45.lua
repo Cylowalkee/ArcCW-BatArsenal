@@ -231,7 +231,6 @@ SWEP.Attachments = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
-        ExcludeFlags = {"ba_hk45_compact"},
     },
 
     {
@@ -256,6 +255,7 @@ SWEP.Attachments = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
+        ExcludeFlags = {"ba_hk45_compact"},
     },
     {
         PrintName = "Fire Group",
@@ -316,6 +316,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.4,
     },
     ["draw"] = {
         Source = "draw",
@@ -323,6 +324,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.4,
     },
     ["fire"] = {
         Source = "fire",
