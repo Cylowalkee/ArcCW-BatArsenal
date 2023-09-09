@@ -55,7 +55,7 @@ SWEP.Recoil = 0.85
 SWEP.RecoilSide = 0.275
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 550 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -323,6 +323,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.4,
     },
     ["draw"] = {
         Source = "draw",
@@ -330,6 +331,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
         },
+        MinProgress = 0.4,
     },
     ["fire"] = {
         Source = "fire",
