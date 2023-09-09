@@ -35,9 +35,10 @@ SWEP.WorldModelOffset = {
 SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
 
 -- 4 shot to kill at ~20m
-SWEP.Damage = 30
+-- 5 shot to kill at ~35m
+SWEP.Damage = 28
 SWEP.DamageMin = 12
-SWEP.RangeMin = 10
+SWEP.RangeMin = 12
 SWEP.Range = 60
 SWEP.Penetration = 7
 

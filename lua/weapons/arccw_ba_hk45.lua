@@ -32,6 +32,8 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
+
 -- 3 shot to kill at 20m
 -- 4 shot to kill at 33m
 SWEP.Damage = 34
@@ -89,6 +91,7 @@ SWEP.SightTime = 0.2
 
 SWEP.SpeedMult = 1
 SWEP.SightedSpeedMult = 0.75
+SWEP.ShootSpeedMult = 0.8
 
 SWEP.BarrelLength = 0
 
