@@ -1,14 +1,21 @@
 local att = {}
 
+local name_fake = "[Schnellfeuer 9mm] "
+local name_real = "[Glock 17] "
 
 -----------------------------------
 -- ba_glock_barrel_auto
 -----------------------------------
 att = {}
 
-att.PrintName = "Auto Barrel"
+att.AbbrevName = "Automatic Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_barrel_auto.png", "mips smooth")
-att.Description = "Light barrel and slide that allows for fully automatic fire."
+att.Description = "Military issue slide with compensator cuts and an auto sear.\nSignificantly increases rate of fire at the cost of everything else."
 
 att.SortOrder = 107
 att.AutoStats = true
@@ -41,6 +48,8 @@ att.Mult_RecoilSide = 2
 att.Mult_HipDispersion = 1.25
 att.Mult_AccuracyMOA = 2
 
+att.Mult_ShootSpeedMult = 0.75
+
 att.ActivateElements = {"barrel_glock_auto"}
 
 att.GivesFlags = {"no_fcg"}
@@ -52,7 +61,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_barrel_auto")
 -----------------------------------
 att = {}
 
-att.PrintName = "Competitor Barrel"
+att.AbbrevName = "Competitor Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_barrel_comp.png", "mips smooth")
 att.Description = "Extended barrel and ring sight for competition shooting.\nImproves range and accuracy, but worsens recoil and hipfire performance."
 
@@ -72,8 +86,8 @@ att.Mult_Range = 1.15
 
 att.Mult_AccuracyMOA = 0.75
 
-att.Mult_HipDispersion = 1.15
-att.Mult_MoveDispersion = 0.9
+att.Mult_HipDispersion = 1.25
+att.Mult_MoveDispersion = 0.75
 
 att.ActivateElements = {"barrel_glock_comp"}
 
@@ -85,10 +99,9 @@ ArcCW.LoadAttachmentType(att, "ba_glock_barrel_comp")
 att = {}
 
 att.AbbrevName = "Compact Barrel & Frame"
-
-att.PrintName = "Schnellfeuer 9mm " .. att.AbbrevName
+att.PrintName = name_fake .. att.AbbrevName
 if GetConVar("arccw_truenames"):GetBool() then
-    att.PrintName = "Glock 17 " .. att.AbbrevName
+    att.PrintName = name_real .. att.AbbrevName
 end
 
 att.Icon = Material("entities/att/acwatt_ba_glock_barrel_compact.png", "mips smooth")
@@ -120,7 +133,7 @@ att.Mult_MoveDispersion = 0.5
 att.Mult_SpeedMult = 1.05
 att.Mult_SightedSpeedMult = 1.15
 
-att.Mult_ReloadTime = 0.85
+-- att.Mult_ReloadTime = 0.85
 
 -- att.Mult_RPM = 1.25
 
@@ -153,7 +166,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_barrel_compact")
 -----------------------------------
 att = {}
 
-att.PrintName = "Longarm Barrel"
+att.AbbrevName = "Longarm Barrel"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_barrel_long.png", "mips smooth")
 att.Description = "Extended barrel and slide assembly.\nReduces recoil and improves range, but handling is worse."
 
@@ -191,7 +209,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_barrel_long")
 -----------------------------------
 att = {}
 
-att.PrintName = "100-Round Drum Magazine"
+att.AbbrevName = "100-Round Drum Magazine"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_mag_100.png", "mips smooth")
 att.Description = "Cumbersome 100 round drum magazine for sustained firepower."
 
@@ -207,7 +230,7 @@ att.Slot = "ba_glock_mag"
 
 att.Override_ClipSize = 100
 
-att.Mult_ReloadTime = 1.25
+-- att.Mult_ReloadTime = 1.25
 
 att.Mult_SpeedMult = 0.9
 att.Mult_SightTime = 1.25
@@ -227,7 +250,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_mag_100")
 -----------------------------------
 att = {}
 
-att.PrintName = "33-Round Stick Magazine"
+att.AbbrevName = "33-Round Stick Magazine"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_mag_33.png", "mips smooth")
 att.Description = "\"Big Stick\" magazine with increased capacity.\nNegatively impacts handling."
 
@@ -243,7 +271,7 @@ att.Slot = "ba_glock_mag"
 
 att.Override_ClipSize = 33
 
-att.Mult_ReloadTime = 1.15
+-- att.Mult_ReloadTime = 1.15
 
 att.Mult_SpeedMult = 0.96
 att.Mult_SightTime = 1.1
@@ -263,7 +291,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_mag_33")
 -----------------------------------
 att = {}
 
-att.PrintName = "FAB Stock"
+att.AbbrevName = "FAB Stock"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_stock_fab.png", "mips smooth")
 att.Description = "A pistol stock that focuses on recoil control."
 
@@ -294,7 +327,12 @@ ArcCW.LoadAttachmentType(att, "ba_glock_stock_fab")
 -----------------------------------
 att = {}
 
-att.PrintName = "Speed Stock"
+att.AbbrevName = "Speed Stock"
+att.PrintName = name_fake .. att.AbbrevName
+if GetConVar("arccw_truenames"):GetBool() then
+    att.PrintName = name_real .. att.AbbrevName
+end
+
 att.Icon = Material("entities/att/acwatt_ba_glock_stock_speed.png", "mips smooth")
 att.Description = "A pistol stock that focuses on handling."
 

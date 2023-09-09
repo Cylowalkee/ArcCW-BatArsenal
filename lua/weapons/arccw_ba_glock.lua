@@ -89,6 +89,7 @@ SWEP.SightTime = 0.18
 
 SWEP.SpeedMult = 1
 SWEP.SightedSpeedMult = 0.75
+SWEP.ShootSpeedMult = 0.8
 
 SWEP.BarrelLength = 0
 
@@ -381,8 +382,7 @@ SWEP.Animations = {
 
     ["reload_10"] = {
         Source = "reload_10",
-        -- Time = 65 / 40,
-        Time = 72 / 40,
+        Time = 65 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -396,8 +396,7 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_10_empty",
-        -- Time = 82 / 40,
-        Time = 92 / 40,
+        Time = 82 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -413,8 +412,7 @@ SWEP.Animations = {
 
     ["reload_33"] = {
         Source = "reload_33",
-        Time = 72 / 40,
-        -- Time = 80 / 40,
+        Time = 80 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -428,8 +426,7 @@ SWEP.Animations = {
     },
     ["reload_empty_33"] = {
         Source = "reload_33_empty",
-        Time = 72 / 40,
-        -- Time = 100 / 40,
+        Time = 100 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -445,8 +442,7 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_100",
-        Time = 72 / 40,
-        -- Time = 90 / 40,
+        Time = 90 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -460,8 +456,7 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_100_empty",
-        Time = 92 / 40,
-        -- Time = 110 / 40,
+        Time = 110 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
