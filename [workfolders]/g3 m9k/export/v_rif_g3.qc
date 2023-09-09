@@ -13,12 +13,14 @@ $BodyGroup "barrel"
 	studio "barrel_short.smd"
 	studio "barrel_shorthg.smd"
 	studio "barrel_combat.smd"
+	studio "barrel_psg1.smd"
 	blank
 }
 
 $BodyGroup "stock"
 {
 	studio "stock_def.smd"
+	studio "stock_psg1.smd"
 	studio "stock_collapsable.smd"
 	studio "stock_collapsable_coll.smd"
 	blank
@@ -32,6 +34,18 @@ $BodyGroup "mags"
 	studio "mag_50.smd"
 }
 
+$BodyGroup "grip"
+{
+	studio "grip_def.smd"
+	studio "grip_psg.smd"
+}
+
+$BodyGroup "rear"
+{
+	studio "rear.smd"
+	blank
+}
+
 
 
 $SurfaceProp "default"
@@ -41,6 +55,7 @@ $Contents "solid"
 $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\g3\"
+$CDMaterials "models\weapons\batarsenal\psg1\"
 
 $attachment "1" "smdimport" -22.00 -0.40 0.00 rotate 0 -180 180
 $attachment "2" "smdimport" -2.00 0.00 -1.00 rotate 45 90 0
