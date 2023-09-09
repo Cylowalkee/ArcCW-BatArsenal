@@ -1,0 +1,21 @@
+ArcCW.BA = {}
+
+ArcCW.BA.BodyDamageMults = {
+    [HITGROUP_HEAD] = 3.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.8,
+    [HITGROUP_RIGHTLEG] = 0.8,
+}
+
+ArcCW.BA.BodyDamageMults_Shotgun = {
+    [HITGROUP_HEAD] = 1.25,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.8,
+    [HITGROUP_RIGHTLEG] = 0.8,
+}

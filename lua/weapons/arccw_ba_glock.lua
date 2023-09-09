@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Schnellfeuer 9mm"
 SWEP.TrueName = "Glock 17"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "9mm self-loading pistol with reliable mechanism. "
+SWEP.Trivia_Desc = "Lightweight polymer pistol with high capacity.\nFavored by cops and robbers alike."
 SWEP.Trivia_Manufacturer = "Gaston Glock"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Recoil-Operated"
@@ -32,11 +32,15 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
 
-SWEP.Damage = 25
-SWEP.DamageMin = 15 -- damage done at maximum range
-SWEP.Range = 40 -- in METRES
-SWEP.Penetration = 4
+-- 4 shot to kill at ~20m
+SWEP.Damage = 30
+SWEP.DamageMin = 12
+SWEP.RangeMin = 10
+SWEP.Range = 50
+SWEP.Penetration = 7
+
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 350 -- projectile or phys bullet muzzle velocity
@@ -50,7 +54,7 @@ SWEP.Recoil = 0.85
 SWEP.RecoilSide = 0.275
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 750 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -64,9 +68,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 150
 
-SWEP.AccuracyMOA = 20 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 15 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 200 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "ppa" -- the magazine pool this gun draws from
@@ -81,7 +85,7 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.2
+SWEP.SightTime = 0.18
 
 SWEP.SpeedMult = 1
 SWEP.SightedSpeedMult = 0.75
@@ -102,7 +106,7 @@ SWEP.IronSightStruct = {
     Pos = Vector(-2.63, -1.5, 1.05),
     Ang = Angle(0.2, 0.1, 5),
     Magnification = 1.1,
-	ViewModelFOV = 75,
+    ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -176,11 +180,11 @@ SWEP.AttachmentElements = {
     ["glock_rail"] = {
         VMBodygroups = {{ind = 5, bg = 1}},
         AttPosMods = {
-			[3] = {
-				vpos = Vector(0, -0, 4),
+            [3] = {
+                vpos = Vector(0, -0, 4),
                 vang = Angle(90, 0, -90),
-			},
-		},
+            },
+        },
     },
 
 }
@@ -255,6 +259,7 @@ SWEP.Attachments = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
+        ExcludeFlags = {"ba_glock_compact"},
     },
     {
         PrintName = "Fire Group",
@@ -376,7 +381,8 @@ SWEP.Animations = {
 
     ["reload_10"] = {
         Source = "reload_10",
-        Time = 65 / 40,
+        -- Time = 65 / 40,
+        Time = 72 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -390,7 +396,8 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_10_empty",
-        Time = 82 / 40,
+        -- Time = 82 / 40,
+        Time = 92 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -406,7 +413,8 @@ SWEP.Animations = {
 
     ["reload_33"] = {
         Source = "reload_33",
-        Time = 80 / 40,
+        Time = 72 / 40,
+        -- Time = 80 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -420,7 +428,8 @@ SWEP.Animations = {
     },
     ["reload_empty_33"] = {
         Source = "reload_33_empty",
-        Time = 100 / 40,
+        Time = 72 / 40,
+        -- Time = 100 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -436,7 +445,8 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_100",
-        Time = 90 / 40,
+        Time = 72 / 40,
+        -- Time = 90 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
@@ -450,7 +460,8 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_100_empty",
-        Time = 110 / 40,
+        Time = 92 / 40,
+        -- Time = 110 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         FrameRate = 40,
         LHIK = true,
