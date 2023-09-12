@@ -3,10 +3,10 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - Bat Arsenal" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Kralle-4.6"
+SWEP.PrintName = "Kralle 4.6"
 SWEP.TrueName = "MP7"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Futuristic low caliber personal defense weapon (PDW) that features a high magazine capacity and shreds through body armor."
+SWEP.Trivia_Desc = "Futuristic compact personal defense weapon.\nSpecialized ammunition performs well over range."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = "4.6x30mm PDW"
 SWEP.Trivia_Mechanism = "Gas-Operated Short Stroke"
@@ -32,28 +32,32 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-SWEP.Damage = 30
-SWEP.DamageMin = 15 -- damage done at maximum range
-SWEP.Range = 65 -- in METRES
-SWEP.Penetration = 4
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
+
+SWEP.Damage = 25
+SWEP.DamageMin = 18 -- damage done at maximum range
+SWEP.Range = 90 -- in METRES
+SWEP.RangeMin = 20
+
+SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity
+SWEP.MuzzleVelocity = 500 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 40 -- DefaultClip is automatically set.
 
 SWEP.RevolverReload = false -- cases all eject on reload
 
-SWEP.OpenBolt = false -- gun fires at the end of 
+SWEP.OpenBolt = false -- gun fires at the end of
 
-SWEP.Recoil = 0.6
-SWEP.RecoilSide = 0.1
-SWEP.RecoilPunch = .1
+SWEP.Recoil = 0.5
+SWEP.RecoilSide = 0.4
+SWEP.RecoilPunch = .25
 
 SWEP.CamAttachment = 3
 
-SWEP.Delay = 60 / 950 -- 60 / RPM.
+SWEP.Delay = 60 / 900 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -70,11 +74,11 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 150
 
-SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 9 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 280 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150
 
-SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 100 -- volume of shoot sound
@@ -91,6 +95,7 @@ SWEP.SightTime = 0.25
 
 SWEP.SpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.75
+SWEP.ShootSpeedMult = 0.8
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -144,8 +149,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-11, 0.15, -0.05),
-				vang = Angle(0, 180, 0),
+                vpos = Vector(-11, 0.15, -0.05),
+                vang = Angle(0, 180, 0),
             },
         }
     },
@@ -153,8 +158,8 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-8, 0.15, -0.05),
-				vang = Angle(0, 180, 0),
+                vpos = Vector(-8, 0.15, -0.05),
+                vang = Angle(0, 180, 0),
             },
         }
     },
@@ -169,7 +174,7 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 3, bg = 3}},
     },
 
-   
+
 }
 
 SWEP.ExtraSightDist = 4
@@ -223,13 +228,13 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         Slot = {"ba_mp7_stock"},
-        DefaultAttName = "Standard Collapsable Stock",
+        DefaultAttName = "Standard Stock",
         DefaultAttIcon = Material("entities/att/acwatt_ba_mp7_stock_normal.png", "smooth mips"),
     },
     {
         PrintName = "Magazine",
         Slot = {"ba_mp7_mag"},
-        DefaultAttName = "40 Round 4.6x30mm Stick Magazine",
+        DefaultAttName = "40 Round Magazine",
         DefaultAttIcon = Material("entities/att/acwatt_ba_mp7_mag_40.png", "smooth mips"),
     },
     {
@@ -272,7 +277,7 @@ local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
 local pathMP7 = "weapons/arccw/batarsenal/mp7/"
 local pathBA = "weapons/arccw/batarsenal/"
 
-SWEP.ShootSound = pathUMP .. "ump45-1.wav"
+SWEP.ShootSound = pathMP7 .. "mp7-1.wav"
 SWEP.FirstShootSound = SWEP.ShootSound
 SWEP.ShootSoundSilenced = pathBA .. "mp5-1.wav"
 
@@ -439,7 +444,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local hasOP = (atts[1].Installed != nil)
 
     if !IsValid(vm) then return end
-    
+
     if hasOP then
             vm:SetBodygroup(4,1)
 
