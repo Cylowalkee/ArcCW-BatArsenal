@@ -132,51 +132,51 @@ SWEP.AttachmentElements = {
     ["barrel_m24_long"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-0.06, 27, 0.85),
+            [2] = {
+                vpos = Vector(-0.06, 27, 0.85),
                 vang = Angle(-90, -90, 90),
-			},
+            },
             [4] = {
-				vpos = Vector(-0.93, 13, 0.1),
+                vpos = Vector(-0.93, 13, 0.1),
                 vang = Angle(-90, -90, 0),
-			},
-		},
+            },
+        },
     },
     ["barrel_m24_longg"] = {
         VMBodygroups = {{ind = 1, bg = 2}},
         AttPosMods = {
             [2] = {
-				vpos = Vector(-0.06, 27, 0.85),
+                vpos = Vector(-0.06, 27, 0.85),
                 vang = Angle(-90, -90, 90),
-			},
-			[4] = {
-				vpos = Vector(-0.93, 14, 0.1),
+            },
+            [4] = {
+                vpos = Vector(-0.93, 14, 0.1),
                 vang = Angle(-90, -90, 0),
-			},
-		},
+            },
+        },
     },
 
     ["barrel_m24_short"] = {
         VMBodygroups = {{ind = 1, bg = 3}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-0.06, 15, 0.85),
+            [2] = {
+                vpos = Vector(-0.06, 15, 0.85),
                 vang = Angle(-90, -90, 90),
-			},
-		},
+            },
+        },
     },
     ["barrel_m24_exec"] = {
         VMBodygroups = {{ind = 1, bg = 4}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-0.06, 12, 0.85),
+            [2] = {
+                vpos = Vector(-0.06, 12, 0.85),
                 vang = Angle(-90, -90, 90),
-			},
-			[4] = {
-				vpos = Vector(-0.93, 7, 0.1),
+            },
+            [4] = {
+                vpos = Vector(-0.93, 7, 0.1),
                 vang = Angle(-90, -90, 0),
-			},
-		},
+            },
+        },
     },
 
     ["stock_m24_short"] = {
@@ -290,7 +290,7 @@ SWEP.Attachments = {
 local pathM98 = "weapons/arccw/batarsenal/m98b/"
 local pathSVU = "weapons/arccw/batarsenal/svu/"
 local pathM24 = "weapons/arccw/batarsenal/m24/"
-local path590 = "weapons/arccw/batarsenal/mberg590/"
+-- local path590 = "weapons/arccw/batarsenal/mberg590/"
 
 SWEP.ShootSound = pathM24 .. "awp1.wav"
 SWEP.ShootSoundSilenced = pathSVU .. "g3sg1-1.wav"
@@ -302,7 +302,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        Time = 40/40,
+        Time = 40 / 40,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.6,
@@ -314,21 +314,21 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Time = 30/30,
+        Time = 30 / 30,
         SoundTable = {
             { s = pathM24 .. "m24_boltforward.mp3", t = 6 / 30, c = ca, v = 0.8 },
         },
     },
     ["fire"] = {
         Source = "fire",
-        Time = 18/30,
-        MinProgress = 12/30,
+        Time = 18 / 30,
+        MinProgress = 12 / 30,
     },
     ["cycle"] = {
         Source = "chamber",
-        Time = 35/30,
-        MinProgress = 30/30,
-        ShellEjectAt = 12/30,
+        Time = 35 / 30,
+        MinProgress = 30 / 30,
+        ShellEjectAt = 12 / 30,
         SoundTable = {
             { s = pathM24 .. "m24_boltback.mp3", t = 11 / 30, c = ca, v = 0.8 },
             { s = pathM24 .. "m24_boltforward.mp3", t = 16 / 30, c = ca, v = 0.8 },
@@ -337,14 +337,14 @@ SWEP.Animations = {
 
     ["fire_iron"] = {
         Source = "fire_iron",
-        Time = 18/30,
-        MinProgress = 12/30,
+        Time = 18 / 30,
+        MinProgress = 12 / 30,
     },
     ["cycle_iron"] = {
         Source = "chamber_iron",
-        Time = 35/30,
-        MinProgress = 30/30,
-        ShellEjectAt = 12/30,
+        Time = 35 / 30,
+        MinProgress = 30 / 30,
+        ShellEjectAt = 12 / 30,
         SoundTable = {
             { s = pathM24 .. "m24_boltback.mp3", t = 11 / 30, c = ca, v = 0.8 },
             { s = pathM24 .. "m24_boltforward.mp3", t = 16 / 30, c = ca, v = 0.8 },
@@ -369,8 +369,8 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathM24 .. "m24_magin.mp3", t = 10 / 30, c = ca, v = 0.8 },
             { s = pathM24 .. "m24_magout.mp3", t = 11 / 30, c = ca, v = 0.8 },
-
         },
+        NoCamReset = true,
     },
     ["sgreload_finish"] = {
         Source = "reload_end",
@@ -381,6 +381,7 @@ SWEP.Animations = {
         SoundTable = {
             { s = pathM24 .. "m24_boltforward.mp3", t = 6 / 30, c = ca, v = 0.8 },
         },
+        NoCamReset = true,
     },
 
 }
