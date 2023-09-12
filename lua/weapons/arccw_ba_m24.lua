@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Longarm 7.62"
 SWEP.TrueName = "M24 SWS"
 SWEP.Trivia_Class = "Sniper Rifle"
-SWEP.Trivia_Desc = "Slim and light bolt action rifle. 7.62x51mm bullets allow for lethal precision."
+SWEP.Trivia_Desc = "Slim bolt action rifle with a fast bolt pull.\nGood handling and mobility, but has a slow reload."
 SWEP.Trivia_Manufacturer = "Remington Arms"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"
 SWEP.Trivia_Mechanism = "Bolt-Action"
@@ -32,10 +32,14 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-SWEP.Damage = 70
-SWEP.DamageMin = 110 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
-SWEP.Penetration = 35
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
+
+SWEP.Damage = 80
+SWEP.DamageMin = 60
+SWEP.Range = 400
+SWEP.RangeMin = 40
+
+SWEP.Penetration = 24
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 4000 -- projectile or phys bullet muzzle velocity
@@ -52,11 +56,11 @@ SWEP.RecoilPunchBack = 0.1
 SWEP.RecoilPunchBackMax = 1.5
 SWEP.RecoilPunchBackMaxSights = 2.5
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 120 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
-        PrintName = "BOLT",
+        PrintName = "fcg.bolt",
         Mode = 1,
     },
     {
@@ -70,11 +74,11 @@ SWEP.NPCWeight = 25
 SWEP.ManualAction = true
 SWEP.ShotgunReload = true
 
-SWEP.AccuracyMOA = 0.05 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.AccuracyMOA = 0.5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 1000 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100
 
-SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "hs338" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 140 -- volume of shoot sound
@@ -88,9 +92,10 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.45
-SWEP.SpeedMult = 0.75
-SWEP.SightedSpeedMult = 0.25
+SWEP.SightTime = 0.4
+SWEP.SpeedMult = 0.85
+SWEP.SightedSpeedMult = 0.5
+SWEP.ShootSpeedMult = 0.65
 
 SWEP.ExtraSightDist = 5
 
