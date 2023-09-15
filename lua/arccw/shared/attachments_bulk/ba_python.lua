@@ -262,8 +262,8 @@ att.Mult_TriggerDelayTime = 1.3
 
 att.Mult_RPM = 0.9
 
-att.Mult_DamageMin = 1.15
-att.Mult_Damage = 1.15
+att.Mult_DamageMin = 1.2
+att.Mult_Damage = 1.2
 
 att.Mult_Recoil = 1.25
 att.Mult_RecoilSide = 1.25
