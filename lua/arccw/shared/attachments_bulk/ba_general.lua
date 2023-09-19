@@ -1,6 +1,5 @@
 local att = {}
 
-
 -----------------------------------
 -- ba_frangible
 -----------------------------------
@@ -29,7 +28,7 @@ att = {}
 
 att.PrintName = "Subsonic"
 att.Icon = Material("entities/att/acwatt_ammo_lowpower.png", "mips smooth")
-att.Description = "Low velocity ammunition with reduced power."
+att.Description = "Low velocity ammunition with reduced kick and range."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
@@ -38,13 +37,61 @@ att.AutoStats = true
 att.Slot = {"ba_ammo_bullet", "ba_ammo_shotgun"}
 att.SortOrder = 2
 
-att.Mult_Damage = 0.95
-att.Mult_DamageMin = 0.95
 att.Mult_Recoil = 0.85
 att.Mult_ShootVol = 0.8
+att.Mult_Range = 0.8
 -- att.Override_TracerNum = 0
 
 ArcCW.LoadAttachmentType(att, "ba_lowpower")
+
+-----------------------------------
+-- ba_match
+-----------------------------------
+att = {}
+
+att.PrintName = "Match Grade"
+att.Icon = Material("entities/att/acwatt_ammo_match.png", "mips smooth")
+att.Description = "Precise but less lethal bullets for competition shooting."
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.AutoStats = true
+att.Slot = "ba_ammo_bullet"
+att.SortOrder = 1
+
+att.Mult_AccuracyMOA = 0.7
+att.Mult_Range = 1.15
+att.Mult_Damage = 0.95
+att.Mult_DamageMin = 0.95
+
+ArcCW.LoadAttachmentType(att, "ba_match")
+
+-----------------------------------
+-- ba_tmj
+-----------------------------------
+att = {}
+
+att.PrintName = "Steel Core"
+att.Icon = Material("entities/att/acwatt_ammo_tmj.png", "mips smooth")
+att.Description = "Heavy bullets with better long range performance."
+att.Desc_Pros = {
+}
+att.Desc_Cons = {
+}
+att.AutoStats = true
+att.Slot = "ba_ammo_bullet"
+att.SortOrder = 3
+
+att.Mult_Damage = 0.9
+att.Mult_DamageMin = 1.15
+att.Mult_Penetration = 1.5
+-- att.Mult_AccuracyMOA = 0.9
+
+ArcCW.LoadAttachmentType(att, "ba_tmj")
+
+-----------------------------------------------------------
+-- Shotgun
 
 -----------------------------------
 -- ba_magnum
@@ -69,29 +116,6 @@ att.Mult_Range = 0.8
 att.Mult_Recoil = 1.2
 att.Mult_AccuracyMOA = 1.5
 ArcCW.LoadAttachmentType(att, "ba_magnum")
-
------------------------------------
--- ba_match
------------------------------------
-att = {}
-
-att.PrintName = "Match Grade"
-att.Icon = Material("entities/att/acwatt_ammo_match.png", "mips smooth")
-att.Description = "Precise bullets for competition shooting."
-att.Desc_Pros = {
-}
-att.Desc_Cons = {
-}
-att.AutoStats = true
-att.Slot = "ba_ammo_bullet"
-att.SortOrder = 1
-
-att.Mult_AccuracyMOA = 0.7
--- att.Mult_Recoil = 0.9
--- att.Mult_RPM = 0.9
-att.Mult_Range = 0.85
-
-ArcCW.LoadAttachmentType(att, "ba_match")
 
 -----------------------------------
 -- ba_sabot
@@ -142,26 +166,3 @@ att.Mult_DamageMin = 2
 att.Mult_Penetration = 1.5
 att.Mult_AccuracyMOA = 0.35
 ArcCW.LoadAttachmentType(att, "ba_slug")
-
------------------------------------
--- ba_tmj
------------------------------------
-att = {}
-
-att.PrintName = "Steel Core"
-att.Icon = Material("entities/att/acwatt_ammo_tmj.png", "mips smooth")
-att.Description = "Heavy bullets with better long range performance."
-att.Desc_Pros = {
-}
-att.Desc_Cons = {
-}
-att.AutoStats = true
-att.Slot = "ba_ammo_bullet"
-att.SortOrder = 3
-
-att.Mult_Damage = 0.9
-att.Mult_DamageMin = 1.15
-att.Mult_Penetration = 1.5
--- att.Mult_AccuracyMOA = 0.9
-
-ArcCW.LoadAttachmentType(att, "ba_tmj")
