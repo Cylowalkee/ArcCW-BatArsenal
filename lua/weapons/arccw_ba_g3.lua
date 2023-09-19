@@ -46,7 +46,7 @@ SWEP.Slot = 2
 
 SWEP.ViewModel = "models/weapons/arccw/c_ba_rif_g3.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_rif_g3.mdl"
-SWEP.ViewModelFOV = 70
+SWEP.ViewModelFOV = 65
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
 -- Damage parameters --
@@ -130,7 +130,7 @@ SWEP.BarrelLength = 0 -- Anti fun
 
 SWEP.HolsterPos = Vector(12, -1, -1)
 
-SWEP.ActivePos = Vector(0.5, -2, 1)
+SWEP.ActivePos = Vector(0.5, -1, 1)
 SWEP.ActiveAng = Angle(0, 0, 2)
 
 SWEP.HoldtypeHolstered = "passive"
