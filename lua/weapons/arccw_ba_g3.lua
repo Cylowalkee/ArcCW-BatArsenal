@@ -85,13 +85,14 @@ SWEP.Num = 1
 SWEP.Firemodes = {
     {
         Mode = 1,
-        Override_ShotRecoilTable = {
-            [1] = 0.75,
-        }
     },
     {
         Mode = 2,
     },
+}
+
+SWEP.ShotRecoilTable = {
+    [1] = 0.75,
 }
 
 SWEP.ShootPitch = 100
@@ -118,9 +119,11 @@ SWEP.MagID = "xcr"
 
 -- Speed mult --
 
+SWEP.SightTime = 0.35
+
 SWEP.SpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.7
-SWEP.SightTime = 0.35
+SWEP.ShootSpeedMult = 0.75
 
 -- Gun length --
 
@@ -484,10 +487,10 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "smdimport",
         Offset = {
-            vpos = Vector(-0, -1, 2),
-            vang = Angle(0, 90, 0),
+            vpos = Vector(-0, -1, 2.5),
+            vang = Angle(0, -90, 0),
         },
-        CorrectiveAng = Angle( 0, 0, 0 ),
+        CorrectiveAng = Angle( 0, 180, 0 ),
         InstalledEles = {"rail"},
         VMScale = Vector(1.1, 1.1, 1.1),
     },
