@@ -57,8 +57,8 @@ $IllumPosition 0 0 0
 $CDMaterials "models\weapons\batarsenal\g3\"
 $CDMaterials "models\weapons\batarsenal\psg1\"
 
-$attachment "1" "smdimport" -22.00 -0.40 0.00 rotate 0 -180 180
-$attachment "2" "smdimport" -2.00 0.00 -1.00 rotate 45 90 0
+$attachment "1" "smdimport" 0.00 -24.00 0.90 rotate 0 -90 0
+$attachment "2" "smdimport" -1.00 -1.50 1.00 rotate -30 -180 0
 $Attachment "3" "camera" 0 0 0 rotate 0 0 0
 
 $CBox 0 0 0 0 0 0
@@ -154,7 +154,33 @@ $sequence "reload_10_empty" {
 	fps 30
 }
 
+$sequence "reload_30" {
+	"anims\reload_30.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
 
+$sequence "reload_30_empty" {
+	"anims\reload_30_empty.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
+
+$sequence "reload_50" {
+	"anims\reload_50.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
+
+$sequence "reload_50_empty" {
+	"anims\reload_50_empty.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 30
+}
 
 
 $sequence "ready" {

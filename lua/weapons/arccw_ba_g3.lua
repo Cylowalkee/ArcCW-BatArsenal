@@ -130,7 +130,7 @@ SWEP.BarrelLength = 0 -- Anti fun
 
 SWEP.HolsterPos = Vector(12, -1, -1)
 
-SWEP.ActivePos = Vector(0.5, -0.4, 1)
+SWEP.ActivePos = Vector(0.5, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 2)
 
 SWEP.HoldtypeHolstered = "passive"
@@ -160,7 +160,7 @@ local pathAK = "weapons/arccw/batarsenal/ak47/"
 local pathG3 = "weapons/arccw/batarsenal/hk_g3/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
 local pathJH = "weapons/arccw/batarsenal/jackhammer/"
--- local path98 = "weapons/arccw/batarsenal/m98b/"
+local path98 = "weapons/arccw/batarsenal/m98b/"
 -- local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
 -- local pathBA = "weapons/arccw/batarsenal/"
 
@@ -381,6 +381,98 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_30"] = {
+        Source = "reload_30",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 80 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "ak47_tap.mp3", t = 43 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "handle.mp3", t = 45 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "ak47_tap.mp3", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 60 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_30"] = {
+        Source = "reload_30_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 100 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "ak47_tap.mp3", t = 43 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "handle.mp3", t = 45 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "ak47_tap.mp3", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "boltpull.mp3", t = 65 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "boltforward.mp3", t = 75 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 80 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    ["reload_50"] = {
+        Source = "reload_50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 87 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 18 / 30, c = ca, v = 0.2 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "handle.mp3", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 53 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "clipin.mp3", t = 49 / 30, c = ca, v = 0.3 },
+            { s = pathAK .. "ak47_tap.mp3", t = 64 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "cloth.mp3", t = 74 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_50"] = {
+        Source = "reload_50_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        LastClip1OutTime = 2,
+        Framerate = 30,
+        Time = 113 / 30,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKEaseIn = 0.2,
+        LHIKEaseOut = 0.2,
+        LHIKOut = 0.8,
+        SoundTable = {
+            { s = pathG3 .. "boltpull.mp3", t = 4 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "ak47_tap.mp3", t = 11 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "cloth.mp3", t = 15 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 33 / 30, c = ca, v = 0.2 },
+            { s = pathG3 .. "galil_clipout.mp3", t = 34 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "handle.mp3", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "galil_clipin.mp3", t = 65 / 30, c = ca, v = 0.8 },
+            { s = path98 .. "clipin.mp3", t = 61 / 30, c = ca, v = 0.3 },
+            { s = pathAK .. "ak47_tap.mp3", t = 76 / 30, c = ca, v = 0.8 },
+            { s = pathG3 .. "boltforward.mp3", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathL85 .. "boltslap.mp3", t = 90 / 30, c = ca, v = 0.8 },
+        },
+    },
 }
 
 -- Attachments --

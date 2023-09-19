@@ -293,6 +293,10 @@ att.Override_ClipSize = 30
 
 att.ActivateElements = {"mag_g3_30"}
 
+att.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_30"
+end
+
 ArcCW.LoadAttachmentType(att, "ba_g3_mag_30")
 
 -----------------------------------
@@ -320,5 +324,9 @@ att.Slot = "ba_g3_mag"
 att.Override_ClipSize = 50
 
 att.ActivateElements = {"mag_g3_50"}
+
+att.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_50"
+end
 
 ArcCW.LoadAttachmentType(att, "ba_g3_mag_50")
