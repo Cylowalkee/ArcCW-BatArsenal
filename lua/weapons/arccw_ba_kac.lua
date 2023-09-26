@@ -6,9 +6,9 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Knight .300"
 SWEP.TrueName = "KAC PDW"
 SWEP.Trivia_Class = "Personal Defense Weapon"
-SWEP.Trivia_Desc = "Personal Defense Weapon using the .300 Blackout caliber."
+SWEP.Trivia_Desc = "Compact carbine firing shorter but higher velocity rounds."
 SWEP.Trivia_Manufacturer = "Knight's Armament Company"
-SWEP.Trivia_Calibre = ".300 Blackout"
+SWEP.Trivia_Calibre = "6x35mm"
 SWEP.Trivia_Mechanism = "Gas Operated, Rotating Bolt"
 SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 2006
@@ -32,26 +32,29 @@ SWEP.WorldModelOffset = {
     bone    =    "ValveBiped.Bip01_R_Hand",
 }
 
-SWEP.Damage = 30
+SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
+
+SWEP.Damage = 28
 SWEP.DamageMin = 20 -- damage done at maximum range
-SWEP.Range = 65 -- in METRES
-SWEP.Penetration = 10
-SWEP.DamageType = DMG_BULLET
-SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity
+SWEP.Range = 90 -- in METRES
+SWEP.RangeMin = 25
+SWEP.Penetration = 11
+
+SWEP.PhysBulletMuzzleVelocity = 800
+
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
 
 SWEP.RevolverReload = false -- cases all eject on reload
 
-SWEP.OpenBolt = false -- gun fires at the end of 
+SWEP.OpenBolt = false -- gun fires at the end of
 
-SWEP.Recoil = 0.9
-SWEP.RecoilSide = 0.5
-SWEP.VisualRecoilMult = 0.2
+SWEP.Recoil = 0.5
+SWEP.RecoilSide = 0.3
+SWEP.VisualRecoilMult = 0.5
 
-SWEP.Delay = 60 / 650 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -68,9 +71,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 150
 
-SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 6 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.MoveDispersion = 120
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
@@ -86,10 +89,11 @@ SWEP.ShellMaterial = "models/weapons/arcticcw/shell_556mm"
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.2
+SWEP.SightTime = 0.27
 
-SWEP.SpeedMult = 0.82
-SWEP.SightedSpeedMult = 0.8
+SWEP.SpeedMult = 0.9
+SWEP.SightedSpeedMult = 0.7
+SWEP.ShootSpeedMult = 0.8
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",
@@ -135,20 +139,20 @@ SWEP.AttachmentElements = {
     ["barrel_kac_short"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-0.1, 13.8, 3.2),
+            [2] = {
+                vpos = Vector(-0.1, 13.8, 3.2),
                 vang = Angle(90, -88.5, 0),
-			},
-		},
+            },
+        },
     },
     ["barrel_kac_long"] = {
         VMBodygroups = {{ind = 3, bg = 2}},
         AttPosMods = {
-			[2] = {
-				vpos = Vector(-0.1, 18.5, 3.3),
+            [2] = {
+                vpos = Vector(-0.1, 18.5, 3.3),
                 vang = Angle(90, -88.5, 0),
-			},
-		},
+            },
+        },
     },
     ["barrel_kac_supp"] = {
         VMBodygroups = {{ind = 3, bg = 3}},
@@ -192,11 +196,11 @@ SWEP.AttachmentElements = {
 
     ["kac_noiron"] = {
         AttPosMods = {
-			[1] = {
-				vpos = Vector(-0.1, 1, 4.1),
+            [1] = {
+                vpos = Vector(-0.1, 1, 4.1),
             vang = Angle(90, -87.5, -90),
-			},
-		},
+            },
+        },
     },
 }
 
@@ -302,7 +306,7 @@ SWEP.Attachments = {
 
 local pathUMP = "weapons/arccw/batarsenal/hk_ump45/"
 local pathKAC = "weapons/arccw/batarsenal/kac_pdw/"
-local pathBA = "weapons/arccw/batarsenal/"
+-- local pathBA = "weapons/arccw/batarsenal/"
 
 SWEP.ShootSound = pathKAC .. "m4a1_unsil-1.wav"
 SWEP.FirstShootSound = SWEP.ShootSound
@@ -473,8 +477,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             vm:SetBodygroup(1,2)
         else
             vm:SetBodygroup(1,0)
-        end 
-        vm:SetBodygroup(2,0)    
+        end
+        vm:SetBodygroup(2,0)
     end
 
 

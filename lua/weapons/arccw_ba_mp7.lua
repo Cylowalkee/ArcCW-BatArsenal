@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "Kralle 4.6"
 SWEP.TrueName = "MP7"
-SWEP.Trivia_Class = "Submachine Gun"
+SWEP.Trivia_Class = "Personal Defense Weapon"
 SWEP.Trivia_Desc = "Futuristic compact personal defense weapon.\nSpecialized ammunition performs well over range."
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Calibre = "4.6x30mm PDW"
@@ -38,11 +38,10 @@ SWEP.Damage = 25
 SWEP.DamageMin = 18 -- damage done at maximum range
 SWEP.Range = 90 -- in METRES
 SWEP.RangeMin = 20
-
 SWEP.Penetration = 12
-SWEP.DamageType = DMG_BULLET
-SWEP.ShootEntity = nil -- entity to fire, if any
-SWEP.MuzzleVelocity = 500 -- projectile or phys bullet muzzle velocity
+
+SWEP.PhysBulletMuzzleVelocity = 700
+
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 40 -- DefaultClip is automatically set.
@@ -76,7 +75,7 @@ SWEP.NPCWeight = 150
 
 SWEP.AccuracyMOA = 9 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 280 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150
+SWEP.MoveDispersion = 120
 
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
@@ -91,9 +90,9 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.25
+SWEP.SightTime = 0.24
 
-SWEP.SpeedMult = 0.8
+SWEP.SpeedMult = 0.94
 SWEP.SightedSpeedMult = 0.75
 SWEP.ShootSpeedMult = 0.8
 
@@ -441,13 +440,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     local atts = wep.Attachments
     local op = atts[1].Installed
-    local hasOP = (atts[1].Installed != nil)
 
     if !IsValid(vm) then return end
 
-    if hasOP then
-            vm:SetBodygroup(4,1)
-
+    if op != nil then
+        vm:SetBodygroup(4,1)
     else
         vm:SetBodygroup(4,0)
     end
