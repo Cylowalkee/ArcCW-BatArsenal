@@ -173,7 +173,7 @@ att = {}
 
 att.PrintName = "Short Buttstock"
 
-att.Icon = Material("entities/att/acwatt_ba_m24_stock_coll.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_m24_stock_collapsed.png", "smooth mips")
 att.AutoStats = true
 att.Free = true
 att.Description = "Shorten the adjustable stock pad for slightly more mobility."
