@@ -14,7 +14,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_barrel_shorthg.png", "mips smooth")
 att.Description = "A smaller handguard that reduces weight without shortening the barrel."
 
 att.SortOrder = 4
@@ -46,7 +46,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_barrel_short.png", "mips smooth")
 att.Description = "Reduced length barrel and handguard for closer range engagements."
 
 att.SortOrder = 3
@@ -83,7 +83,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_barrel_long.png", "mips smooth")
 att.Description = "Extended barrel and handguard offering more control and range."
 
 att.SortOrder = 5
@@ -118,7 +118,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_barrel_psg.png", "mips smooth")
 att.Description = "Barrel, grip and receiver replacement turning the gun into a marksman rifle.\nVastly improved accuracy and range, but has no automatic firemode."
 att.SortOrder = 10
 att.AutoStats = true
@@ -166,7 +166,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_barrel_combat.png", "mips smooth")
 att.Description = "Extremely short barrel that increases rate of fire.\nWeapon stability and range is significantly reduced."
 
 att.SortOrder = 1
@@ -207,7 +207,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_stock_coll.png", "mips smooth")
 att.Description = "A light wire stock that can be collapsed for faster handling."
 
 att.SortOrder = 2
@@ -252,7 +252,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_stock_psg.png", "mips smooth")
 att.Description = "Sturdy stock with rubber pads, allowing for more accurate shooting."
 
 att.SortOrder = 3
@@ -286,7 +286,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("arccw/hud/atts/default.png", "mips smooth")
 att.Description = "This is not a wise idea."
 
 att.SortOrder = 1
@@ -322,7 +322,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_mag_10.png", "mips smooth")
 att.Description = "Shorter magazine loading high quality ammunition."
 
 att.SortOrder = 3
@@ -362,7 +362,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_mag_30.png", "mips smooth")
 att.Description = "Extended length magazine."
 
 att.SortOrder = 2
@@ -399,7 +399,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/REPLACEME.png", "mips smooth")
+att.Icon = Material("entities/att/acwatt_ba_g3_mag_50.png", "mips smooth")
 att.Description = "Heavy drum magazine for suppressive fire."
 att.SortOrder = 1
 att.AutoStats = true
