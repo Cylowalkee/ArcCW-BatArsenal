@@ -142,7 +142,7 @@ att = {}
 
 att.PrintName = "Ghillie Barrel"
 
-att.Icon = Material("entities/att/acwatt_ba_m24_barrel_longg.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_m24_barrel_mesh.png", "smooth mips")
 att.AutoStats = true
 att.Description = "Extended barrel with added camoflauge and counterweights.\nA heavy setup best suited for motionless camping."
 att.Desc_Pros = {}
@@ -173,7 +173,7 @@ att = {}
 
 att.PrintName = "Short Buttstock"
 
-att.Icon = Material("entities/att/acwatt_ba_m24_stock_short.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_m24_stock_coll.png", "smooth mips")
 att.AutoStats = true
 att.Free = true
 att.Description = "Shorten the adjustable stock pad for slightly more mobility."
@@ -196,7 +196,7 @@ att = {}
 
 att.PrintName = "Padded Buttstock"
 
-att.Icon = Material("entities/att/acwatt_ba_m24_stock_pad.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_m24_stock_padded.png", "smooth mips")
 att.AutoStats = true
 att.Description = "Rubber pad for a more comfortable aiming position."
 att.Desc_Pros = {}
@@ -219,7 +219,7 @@ att = {}
 
 att.PrintName = "Ghillie Buttstock"
 
-att.Icon = Material("entities/att/acwatt_ba_m24_stock_ghil.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_m24_stock_mesh.png", "smooth mips")
 att.AutoStats = true
 att.Description = "Weighted stock with camoflauge.\nA heavy setup that reduces recoil and mobility."
 att.Desc_Pros = {}
