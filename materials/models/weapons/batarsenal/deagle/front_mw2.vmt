@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\batarsenal\deagle\front_mw2"
+	"$bumpmap" 	"models\weapons\batarsenal\deagle\front_norm"
+ 	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.1 .1 .1]"
+//	$selfillum 1
+}
+
