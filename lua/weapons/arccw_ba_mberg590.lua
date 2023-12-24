@@ -23,7 +23,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_ba_shot_m590.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_shot_m590.mdl"
-SWEP.ViewModelFOV = 70
+SWEP.ViewModelFOV = 60
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -115,7 +115,7 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(0, 0, 0)
+SWEP.ActivePos = Vector(0.3, 3, 0.4)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)
