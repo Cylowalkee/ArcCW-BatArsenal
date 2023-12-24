@@ -143,6 +143,30 @@ $sequence "reload_empty" {
 	fps 30
 }
 
+$sequence "reload_10_a" {
+	"anims\reload_10_new.smd"
+	snap
+	fps 30
+}
+
+$sequence "reload_empty_10_a" {
+	"anims\reload_empty_10_new.smd"
+	snap
+	fps 30
+}
+
+$sequence "reload_a" {
+	"anims\reload_new.smd"
+	snap
+	fps 30
+}
+
+$sequence "reload_empty_a" {
+	"anims\reload_empty_new.smd"
+	snap
+	fps 30
+}
+
 
 $sequence "ready" {
 	"anims\ready.smd"

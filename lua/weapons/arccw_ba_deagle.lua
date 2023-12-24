@@ -297,7 +297,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["reload"] = {
-        Source = "reload",
+        Source = "reload_a",
         Time = 77 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
@@ -313,7 +313,7 @@ SWEP.Animations = {
         MinProgress = 52/30,
     },
     ["reload_empty"] = {
-        Source = "reload_empty",
+        Source = "reload_empty_a",
         Time = 95 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
@@ -332,7 +332,7 @@ SWEP.Animations = {
     },
 
     ["reload_10"] = {
-        Source = "reload_10",
+        Source = "reload_10_a",
         Time = 77 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
@@ -348,7 +348,7 @@ SWEP.Animations = {
         MinProgress = 52/30,
     },
     ["reload_empty_10"] = {
-        Source = "reload_empty_10",
+        Source = "reload_empty_10_a",
         Time = 95 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
