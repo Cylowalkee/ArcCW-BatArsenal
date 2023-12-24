@@ -43,6 +43,7 @@ $CDMaterials "models\weapons\batarsenal\svu\"
 
 $attachment "1" "Body" 0.00 -11.00 3.60 rotate -0 -90 0
 $attachment "2" "Body" -0.20 -1.80 4.00 rotate -70 -180 0
+$Attachment "3" "camera" 0 0 0 rotate 0 0 0
 
 $CBox 0 0 0 0 0 0
 

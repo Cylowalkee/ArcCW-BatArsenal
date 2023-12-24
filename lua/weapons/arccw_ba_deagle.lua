@@ -7,11 +7,11 @@ SWEP.PrintName = "Sky-Shatterer .50"
 SWEP.TrueName = "Desert Eagle .50"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Ergonomic pistol firing a powerful caliber.\nAccurate, but damage falls off significantly."
-SWEP.Trivia_Manufacturer = "Heckler & Koch"
+SWEP.Trivia_Manufacturer = "Israeli Military Industries"
 SWEP.Trivia_Calibre = ".50 AE"
-SWEP.Trivia_Mechanism = "Short Recoil-Operated"
-SWEP.Trivia_Country = "Germany"
-SWEP.Trivia_Year = 2006
+SWEP.Trivia_Mechanism = "Gas-Operated"
+SWEP.Trivia_Country = "Israel"
+SWEP.Trivia_Year = 1979
 
 SWEP.Slot = 1
 
@@ -23,7 +23,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_ba_pist_deagle.mdl"
 SWEP.WorldModel = "models/weapons/arccw/c_ba_pist_deagle.mdl"
-SWEP.ViewModelFOV = 70
+SWEP.ViewModelFOV = 60
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -34,10 +34,9 @@ SWEP.WorldModelOffset = {
 
 SWEP.BodyDamageMults = ArcCW.BA.BodyDamageMults
 
--- 3 shot to kill at 20m
--- 4 shot to kill at 33m
-SWEP.Damage = 34
-SWEP.DamageMin = 8 -- damage done at maximum range
+-- 8z please redo these i cant balance for shit
+SWEP.Damage = 50
+SWEP.DamageMin = 12 -- damage done at maximum range
 SWEP.Range = 60 -- in METRES
 SWEP.RangeMin = 20
 SWEP.Penetration = 10
@@ -46,13 +45,13 @@ SWEP.PhysBulletMuzzleVelocity = 250
 
 SWEP.CanFireUnderwater = false
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 10 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
 
-SWEP.Recoil = 1.25
+SWEP.Recoil = 3
 SWEP.RecoilSide = 0.4
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 360 -- 60 / RPM.
+SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -70,8 +69,8 @@ SWEP.AccuracyMOA = 12 -- accuracy in Minutes of Angle. There are 60 MOA in a deg
 SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 120
 
-SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
-SWEP.MagID = "ppa" -- the magazine pool this gun draws from
+SWEP.Primary.Ammo = "357" -- what ammo type the gun uses
+SWEP.MagID = "python" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -103,8 +102,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.34, -5.268, 0.84),
-    Ang = Angle(0, -0.1, 2),
+    Pos = Vector(-3.02, -5.268, 0.84),
+    Ang = Angle(0, -0.5, 2),
     Magnification = 1.1,
     ViewModelFOV = 75,
     SwitchToSound = "", -- sound that plays when switching to this sight
@@ -116,7 +115,7 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(0.5, 1, 0)
+SWEP.ActivePos = Vector(0.5, -2, 0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(-2, -7.145, -11.561)
@@ -130,55 +129,28 @@ SWEP.ExtraSightDist = 10
 SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
-    ["hk45c"] = {
-        VMBodygroups = {{ind = 2, bg = 1},{ind = 1, bg = 2}, {ind = 3, bg = 2}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(-5.8, -1.75, 0),
-                vang = Angle(180, 0, -90),
-            },
-        },
-        NameChange = "HK45C"
-    },
-    ["mag_hk45_12"] = {
+    ["mag_deagle_10"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
     },
 
-    ["barrel_hk45_comp"] = {
+    ["barrel_deagle_short"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(-6.8, -1.75, 0),
-                vang = Angle(180, 0, -90),
-            },
-        }
     },
-    ["barrel_hk45_long"] = {
-        VMBodygroups = {{ind = 2, bg = 2},{ind = 1, bg = 3}},
-        AttPosMods = {
-            [2] = {
-                vpos = Vector(-7.9, -1.75, 0),
-                vang = Angle(180, 0, -90),
-            },
-        }
+    ["barrel_deagle_extended"] = {
+        VMBodygroups = {{ind = 1, bg = 2}},
+    },
+    ["barrel_deagle_marksman"] = {
+        VMBodygroups = {{ind = 1, bg = 3}},
     },
 
-    ["stock_hk45_light"] = {
-        VMBodygroups = {{ind = 4, bg = 1}},
+    ["grip_deagle_ergo"] = {
+        VMBodygroups = {{ind = 2, bg = 1}},
     },
-    ["stock_hk45_med"] = {
-        VMBodygroups = {{ind = 4, bg = 2}},
+    ["grip_deagle_wood"] = {
+        VMBodygroups = {{ind = 2, bg = 2}},
     },
 
-    ["rail"] = {
-        VMBodygroups = {{ind = 5, bg = 1}},
-        AttPosMods = {
-            [3] = {
-                vpos = Vector(-6, 0.4, 0),
-                vang = Angle(180, 0, -90),
-            },
-        },
-    },
+
 
 }
 
@@ -186,44 +158,32 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Optic",
-        Slot = {"optic_lp"},
+        Slot = {"optic_lp","optic"},
         DefaultAttName = "Iron Sights",
-        Bone = "frame",
+        Bone = "Body",
         Offset = {
-            vpos = Vector(-3, -2.4, 0),
-            vang = Angle(0, -180, 90),
+            vpos = Vector(-0, 6.5, 4.2),
+            vang = Angle(90, -90, -90),
         },
-        CorrectiveAng = Angle( 0, 0, 0 ),
-        VMScale = Vector(1.1, 1.1, 1.1),
-        ExcludeFlags = {"ba_hk45_compact"},
-        InstalledEles = {"rail"},
+        CorrectiveAng = Angle( 0, 180, 180 ),
+        VMScale = Vector(1, 1, 1),
     },
-    {
-        PrintName = "Muzzle",
-        DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
-        Bone = "frame",
-        Offset = {
-            vpos = Vector(-6.8, -1.75, 0),
-            vang = Angle(180, 0, -90),
-        },
-        VMScale = Vector(0.9, 0.9, 0.9),
-    },
+
     {
         PrintName = "Tactical",
-        Slot = "tac",
-        Bone = "frame",
+        Slot = {"tac","foregrip"},
+        Bone = "Body",
         Offset = {
-            vpos = Vector(-5, -0.1, 0),
-            vang = Angle(180, 0, -90),
+            vpos = Vector(-0, 6, 2.2),
+            vang = Angle(90, -90, -90),
         },
     },
     {
         PrintName = "Barrel",
-        Slot = {"ba_hk45_barrel"},
+        Slot = {"ba_deagle_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_hk45_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_barrel_normal.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -231,28 +191,27 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Stock",
-        Slot = {"ba_hk45_stock"},
-        DefaultAttName = "No Stock",
+        PrintName = "Grip",
+        Slot = {"ba_deagle_grip"},
+        DefaultAttName = "Standard Polymer Grip",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_grip_normal.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
-        ExcludeFlags = {"ba_hk45_compact"},
     },
 
     {
         PrintName = "Magazine",
-        Slot = {"ba_hk45_mag"},
-        DefaultAttName = "10 Round Magazine",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_hk45_mag_10.png", "smooth mips"),
+        Slot = {"ba_deagle_mag"},
+        DefaultAttName = "7 Round .50AE Magazine",
+        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_mag_7.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
         },
-        ExcludeFlags = {"ba_hk45_compact"},
     },
     {
         PrintName = "Fire Group",
@@ -273,10 +232,10 @@ SWEP.Attachments = {
         PrintName = "Charm",
         Slot = "charm",
         FreeSlot = true,
-        Bone = "frame",
+        Bone = "Body",
         Offset = {
-            vpos = Vector(0.4, -0.5, 3.5),
-            vang = Angle(90, 0, -90),
+            vpos = Vector(0.5, 6.5, 3.2),
+            vang = Angle(110, -90, -90),
         },
         VMScale = Vector(0.5, 0.5, 0.5),
     },
@@ -287,8 +246,9 @@ local pathHK = "weapons/arccw/batarsenal/hk45/"
 local pathBA = "weapons/arccw/batarsenal/"
 local pathL85 = "weapons/arccw/batarsenal/l85a2/"
 local pathAK = "weapons/arccw/batarsenal/ak47/"
+local pathDeagle = "weapons/arccw/batarsenal/deagle/"
 
-SWEP.ShootSound = pathHK .. "hk45-1.wav"
+SWEP.ShootSound = pathDeagle .. "deagle-1.wav"
 SWEP.ShootSoundSilenced = pathBA .. "mp5-1.wav"
 
 SWEP.Animations = {
@@ -301,17 +261,20 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Time = 41 / 30,
+        LHIK = true,
+        LHIKOut = 0.5,
+        LHIKEaseOut = 0.2,
         SoundTable = {
-            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "slidepull.mp3", t = 13 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "sliderelease.mp3", t = 17 / 40, c = ca, v = 0.8 },
+            { s = pathDeagle .. "de_deploy.mp3", t = 0 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 12 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 20 / 30, c = ca, v = 1 },
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         Time = 20 / 30,
         SoundTable = {
-            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathDeagle .. "de_deploy.mp3", t = 0 / 30, c = ca, v = 1 },
         },
         MinProgress = 0.4,
     },
@@ -319,7 +282,7 @@ SWEP.Animations = {
         Source = "draw",
         Time = 20 / 30,
         SoundTable = {
-            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
+            { s = pathDeagle .. "de_deploy.mp3", t = 0 / 30, c = ca, v = 1 },
         },
         MinProgress = 0.4,
     },
@@ -337,69 +300,72 @@ SWEP.Animations = {
         Source = "reload",
         Time = 77 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.15,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 14 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipout.mp3", t = 25 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 49 / 30, c = ca, v = 1 },
         },
+        MinProgress = 52/30,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 95 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 0.25,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
-            { s = pathHK .. "sliderelease.mp3", t = 55 / 40, c = ca, v = 0.8 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 14 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipout.mp3", t = 23 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 49 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 65 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 75 / 30, c = ca, v = 1 },
         },
+        MinProgress = 77/30,
     },
 
-    ["reload_8"] = {
-        Source = "reload_8",
-        Time = 65 / 40,
+    ["reload_10"] = {
+        Source = "reload_10",
+        Time = 77 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.6,
+        LHIKEaseOut = 0.15,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 14 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipout.mp3", t = 25 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 49 / 30, c = ca, v = 1 },
         },
+        MinProgress = 52/30,
     },
-    ["reload_empty_8"] = {
-        Source = "reload_empty_8",
-        Time = 80 / 40,
+    ["reload_empty_10"] = {
+        Source = "reload_empty_10",
+        Time = 95 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        LHIK = true,
+        LHIKIn = 0.2,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 0.25,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
-            { s = pathHK .. "sliderelease.mp3", t = 50 / 40, c = ca, v = 0.8 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 14 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipout.mp3", t = 23 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 49 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_clipin.mp3", t = 65 / 30, c = ca, v = 1 },
+            { s = pathDeagle .. "de_slideback.mp3", t = 75 / 30, c = ca, v = 1 },
         },
+        MinProgress = 77/30,
     },
 
-    ["reload_12"] = {
-        Source = "reload_12",
-        Time = 82 / 40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        SoundTable = {
-            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
-            { s = pathAK .. "ak47_tap.mp3", t = 55 / 40, c = ca, v = 0.8 },
-        },
-    },
-    ["reload_empty_12"] = {
-        Source = "reload_empty_12",
-        Time = 105 / 40,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        SoundTable = {
-            { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
-            { s = pathHK .. "magin.mp3", t = 30 / 40, c = ca, v = 1 },
-            { s = pathAK .. "ak47_tap.mp3", t = 55 / 40, c = ca, v = 0.8 },
-            { s = pathHK .. "sliderelease.mp3", t = 70 / 40, c = ca, v = 0.8 },
-        },
-    },
 }
 
 function SWEP:Hook_TranslateAnimation(anim)
