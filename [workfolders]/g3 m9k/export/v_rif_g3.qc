@@ -46,6 +46,23 @@ $BodyGroup "rear"
 	blank
 }
 
+$BodyGroup "railtop"
+{
+	blank
+	studio "rail_top.smd"	
+}
+
+$BodyGroup "railtac"
+{
+	blank
+	studio "rail_tac.smd"	
+}
+
+$BodyGroup "railbottom"
+{
+	blank
+	studio "rail_bottom.smd"	
+}
 
 
 $SurfaceProp "default"
@@ -56,6 +73,7 @@ $IllumPosition 0 0 0
 
 $CDMaterials "models\weapons\batarsenal\g3\"
 $CDMaterials "models\weapons\batarsenal\psg1\"
+$CDMaterials "models\weapons\batarsenal\ump45\"
 
 $attachment "1" "smdimport" 0.00 -24.00 0.90 rotate 0 -90 0
 $attachment "2" "smdimport" -1.00 -1.50 1.00 rotate -30 -180 0
