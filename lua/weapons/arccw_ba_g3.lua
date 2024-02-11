@@ -399,7 +399,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.15,
         LHIKOut = 0.7,
-        MinProgress = 80/30,
+        MinProgress = 55/30,
         SoundTable = {
             { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
@@ -420,7 +420,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.15,
         LHIKOut = 0.7,
-        MinProgress = 95/30,
+        MinProgress = 75/30,
         SoundTable = {
             { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathG3 .. "galil_clipout.mp3", t = 19 / 30, c = ca, v = 0.8 },
@@ -444,7 +444,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.15,
         LHIKOut = 0.6,
-        MinProgress = 95/30,
+        MinProgress = 64/30,
         SoundTable = {
             { s = pathG3 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathG3 .. "galil_clipin.mp3", t = 18 / 30, c = ca, v = 0.2 },
@@ -465,7 +465,7 @@ SWEP.Animations = {
         LHIKIn = 0.25,
         LHIKEaseOut = 0.25,
         LHIKOut = 0.6,
-        MinProgress = 120/30,
+        MinProgress = 90/30,
         SoundTable = {
             { s = pathG3 .. "boltpull.mp3", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "ak47_tap.mp3", t = 11 / 30, c = ca, v = 0.8 },

@@ -347,6 +347,7 @@ SWEP.Animations = {
         Source = "reload_10",
         Time = 70 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 45/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -357,6 +358,7 @@ SWEP.Animations = {
         Source = "reload_10_empty",
         Time = 90 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 60/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -369,6 +371,7 @@ SWEP.Animations = {
         Source = "reload_8",
         Time = 65 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 45/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -379,6 +382,7 @@ SWEP.Animations = {
         Source = "reload_empty_8",
         Time = 80 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 55/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -391,6 +395,7 @@ SWEP.Animations = {
         Source = "reload_12",
         Time = 82 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 55/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -402,6 +407,7 @@ SWEP.Animations = {
         Source = "reload_empty_12",
         Time = 105 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        MinProgress = 75/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathHK .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },

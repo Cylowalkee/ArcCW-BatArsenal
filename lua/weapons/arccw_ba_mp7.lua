@@ -326,6 +326,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.2,
+        MinProgress = 27/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },
@@ -343,6 +344,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.2,
+        MinProgress = 39/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },
@@ -364,6 +366,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.2,
+        MinProgress = 25/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },
@@ -381,6 +384,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.2,
+        MinProgress = 30/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },
@@ -402,6 +406,7 @@ SWEP.Animations = {
         LHIKIn = 0.3,
         LHIKOut = 0.5,
         LHIKEaseOut = 0.2,
+        MinProgress = 4260/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },
@@ -419,8 +424,9 @@ SWEP.Animations = {
         LHIK = true,
         LHIKEaseIn = 0.2,
         LHIKIn = 0.3,
-        LHIKOut = 0.5,
+        LHIKOut = 1.1,
         LHIKEaseOut = 0.2,
+        MinProgress = 57/30,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathMP7 .. "mp7_magout.mp3", t = 10 / 30, c = ca, v = 0.8 },

@@ -36,7 +36,7 @@ att.Mult_SightedSpeedMult = 1.15
 
 att.ActivateElements = {"mag_mp7_20"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_20"
 end
 
@@ -71,7 +71,7 @@ att.Mult_SightedSpeedMult = 0.85
 
 att.ActivateElements = {"mag_mp7_60"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_60"
 end
 

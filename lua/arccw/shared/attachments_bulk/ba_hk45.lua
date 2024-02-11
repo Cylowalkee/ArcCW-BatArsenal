@@ -34,7 +34,7 @@ att.Mult_SightTime = 1.1
 att.Mult_HipDispersion = 1.1
 att.Mult_SightedSpeedMult = 0.9
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_12"
 end
 
@@ -81,7 +81,7 @@ att.Mult_SightedSpeedMult = 1.15
 
 att.Mult_AccuracyMOA = 1.25
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_8"
 end
 

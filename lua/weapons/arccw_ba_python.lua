@@ -354,6 +354,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.1,
         LHIKEaseOut = 0.2,
         LastClip1OutTime = 1,
+        MinProgress = 80/40,
         SoundTable = {
             { s = pathPython .. "click.mp3", t = 10 / 40, c = ca, v = 0.8 },
             { s = pathPython .. "blick.mp3", t = 20 / 40, c = ca, v = 0.8 },

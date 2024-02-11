@@ -356,6 +356,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.2,
+        MinProgress = 55/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
@@ -371,6 +372,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.2,
+        MinProgress = 95/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 50 / 40, c = ca, v = 1 },
@@ -390,6 +392,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.2,
+        MinProgress = 50/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
@@ -405,6 +408,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.65,
         LHIKEaseOut = 0.3,
+        MinProgress = 67/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 45 / 40, c = ca, v = 1 },
@@ -422,6 +426,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.8,
         LHIKEaseOut = 0.4,
+        MinProgress = 65/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },
@@ -437,6 +442,7 @@ SWEP.Animations = {
         LHIKIn = 0.1,
         LHIKOut = 0.6,
         LHIKEaseOut = 0.3,
+        MinProgress = 115/40,
         SoundTable = {
             { s = pathKAC .. "m4a1_clipout.mp3", t = 10 / 40, c = ca, v = 1 },
             { s = pathKAC .. "m4a1_clipin.mp3", t = 60 / 40, c = ca, v = 1 },

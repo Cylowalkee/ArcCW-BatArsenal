@@ -301,6 +301,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.35,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.5,
+        MinProgress = 122/40,
         SoundTable = {
             { s = pathJH .. "pumpback.wav", t =3 / 40, c = ca, v = 0.8 },
             { s = pathJH .. "clipout.mp3", t =40 / 40, c = ca, v = 0.8 },

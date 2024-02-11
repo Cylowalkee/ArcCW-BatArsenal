@@ -345,7 +345,7 @@ att.Mult_Range = 1.1
 
 att.ActivateElements = {"mag_g3_10"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_10"
 end
 
@@ -382,7 +382,7 @@ att.Mult_HipDispersion = 1.1
 
 att.ActivateElements = {"mag_g3_30"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_30"
 end
 
@@ -420,7 +420,7 @@ att.Mult_SpeedMult = 0.95
 
 att.ActivateElements = {"mag_g3_50"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_50"
 end
 

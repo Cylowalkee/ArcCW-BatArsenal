@@ -386,6 +386,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 60/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 23 / 40, c = ca, v = 0.8 },
@@ -403,6 +404,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 97/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 23 / 40, c = ca, v = 0.8 },
@@ -423,6 +425,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 52/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -440,6 +443,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 75/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -459,6 +463,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 760/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -476,6 +481,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
+        MinProgress = 115/40,
         SoundTable = {
             { s = pathUMP .. "ump45_cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathUMP .. "ump45_clipout1.mp3", t = 25 / 40, c = ca, v = 0.8 },

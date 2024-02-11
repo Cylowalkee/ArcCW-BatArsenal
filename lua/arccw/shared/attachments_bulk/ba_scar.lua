@@ -33,7 +33,7 @@ att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_30l","scar_l"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -68,7 +68,7 @@ att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_45l","scar_l"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_45"
 end
 
@@ -103,7 +103,7 @@ att.Mult_ShootPitch = 1.1
 
 att.ActivateElements = {"mag_scar_60l","scar_l"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_60"
 end
 
@@ -125,7 +125,7 @@ att.Override_ClipSize = 30
 
 att.ActivateElements = {"mag_scar_30h"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_30"
 end
 
@@ -169,7 +169,7 @@ att.GivesFlags = {"no_fcg"}
 
 att.ActivateElements = {"mag_scar_10h"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_10"
 end
 

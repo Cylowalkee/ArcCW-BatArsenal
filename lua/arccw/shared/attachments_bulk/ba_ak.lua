@@ -43,7 +43,7 @@ att.Hook_GetShootSound = function(wep, sound)
     end
 end
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_smg"
 end
 
@@ -130,7 +130,7 @@ att.Hook_GetShootSound = function(wep, sound)
     end
 end
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_45"
 end
 
@@ -176,7 +176,7 @@ att.Hook_GetShootSound = function(wep, sound)
     end
 end
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_15"
 end
 
@@ -198,7 +198,7 @@ att.Override_ClipSize = 45
 
 att.ActivateElements = {"mag_ak_45"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_45"
 end
 
@@ -220,7 +220,7 @@ att.Override_ClipSize = 15
 
 att.ActivateElements = {"mag_ak_15"}
 
-att.Hook_TranslateAnimation = function(wep, anim)
+att.Hook_SelectReloadAnimation = function(wep, anim)
     return anim .. "_15"
 end
 

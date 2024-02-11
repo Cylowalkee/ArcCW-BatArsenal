@@ -384,6 +384,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.4,
         LHIKEaseOut = 0.2,
+        MinProgress = 75/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -401,6 +402,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 1.6,
         LHIKEaseOut = 0.4,
+        MinProgress = 120/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -421,6 +423,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.4,
         LHIKEaseOut = 0.2,
+        MinProgress = 65/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -438,6 +441,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 1.45,
         LHIKEaseOut = 0.4,
+        MinProgress = 115/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -458,6 +462,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.4,
         LHIKEaseOut = 0.2,
+        MinProgress = 60/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -474,6 +479,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 1.4,
         LHIKEaseOut = 0.4,
+        MinProgress = 105/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -493,6 +499,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 0.45,
         LHIKEaseOut = 0.2,
+        MinProgress = 80/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },
@@ -510,6 +517,7 @@ SWEP.Animations = {
         LHIKIn = 0.5,
         LHIKOut = 1.6,
         LHIKEaseOut = 0.4,
+        MinProgress = 137/40,
         SoundTable = {
             { s = pathM98 .. "foley.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathM98 .. "clipout.mp3", t = 25 / 40, c = ca, v = 0.8 },

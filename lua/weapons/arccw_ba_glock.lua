@@ -358,6 +358,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 40/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -372,6 +373,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 65/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -388,6 +390,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 35/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -402,6 +405,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 55/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -418,6 +422,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 45/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -432,6 +437,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 65/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -448,6 +454,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 55/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },
@@ -462,6 +469,7 @@ SWEP.Animations = {
         LHIK = true,
         LHIKIn = 1,
         LHIKOut = 0.3,
+        MinProgress = 90/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathGlock .. "magout.mp3", t = 13 / 40, c = ca, v = 1 },

@@ -352,6 +352,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.1,
         LHIKEaseOut = 0.2,
         LHIKOut = 0.85,
+        MinProgress = 70/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -373,6 +374,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.5,
+        MinProgress = 120/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -397,6 +399,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 0.8,
+        MinProgress = 60/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "svu_magout.wav", t = 20 / 40, c = ca, v = 0.8 },
@@ -417,6 +420,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.45,
+        MinProgress = 112/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "svu_magout.wav", t = 20 / 40, c = ca, v = 0.8 },
@@ -441,6 +445,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 0.85,
+        MinProgress = 77/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -462,6 +467,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.6,
+        MinProgress = 130/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -487,6 +493,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 0.7,
+        MinProgress = 95/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
@@ -509,6 +516,7 @@ SWEP.Animations = {
         LHIKEaseIn = 0.2,
         LHIKEaseOut = 0.2,
         LHIKOut = 1.5,
+        MinProgress = 147/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathSVU .. "g3sg1_clipin.mp3", t = 20 / 40, c = ca, v = 0.8 },
