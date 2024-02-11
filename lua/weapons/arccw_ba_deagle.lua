@@ -165,7 +165,7 @@ SWEP.Attachments = {
             vpos = Vector(-0, 6.5, 4.2),
             vang = Angle(90, -90, -90),
         },
-        CorrectiveAng = Angle( 0, 180, 180 ),
+        CorrectiveAng = Angle( -1.3, 180, 180 ),
         VMScale = Vector(1, 1, 1),
     },
 
@@ -183,7 +183,7 @@ SWEP.Attachments = {
         Slot = {"ba_deagle_barrel"},
         DefaultAttName = "Standard Barrel",
         Bone = "Body",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_barrel_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_barrel_default.png", "smooth mips"),
         Offset = {
             vpos = Vector(0.048, 0.2, 11),
             vang = Angle(90, 0, -90),
@@ -194,7 +194,7 @@ SWEP.Attachments = {
         PrintName = "Grip",
         Slot = {"ba_deagle_grip"},
         DefaultAttName = "Standard Polymer Grip",
-        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_grip_normal.png", "smooth mips"),
+        DefaultAttIcon = Material("entities/att/acwatt_ba_deagle_grip_default.png", "smooth mips"),
         Bone = "Body",
         Offset = {
             vpos = Vector(0.048, 0.2, 11),

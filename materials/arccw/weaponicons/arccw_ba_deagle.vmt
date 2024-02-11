@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+	$basetexture "../addons/ArcCW-BatArsenal/materials/arccw/weaponicons/arccw_ba_deagle"
+
+	$translucent 1
+}

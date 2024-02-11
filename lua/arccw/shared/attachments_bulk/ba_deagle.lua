@@ -143,7 +143,7 @@ if GetConVar("arccw_truenames"):GetBool() then
     att.PrintName = name_real .. att.AbbrevName
 end
 
-att.Icon = Material("entities/att/acwatt_ba_deagle_grip_wood.png", "smooth mips")
+att.Icon = Material("entities/att/acwatt_ba_deagle_grip_default.png", "smooth mips")
 att.AutoStats = true
 att.Description = "Wooden grip."
 att.Desc_Pros = {}
