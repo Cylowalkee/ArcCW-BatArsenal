@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\batarsenal\mp7\sila"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\weapons\batarsenal\mp7\sila_ref"
+}
