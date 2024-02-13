@@ -261,7 +261,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 160 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        MinProgress = 1104/40,
+        MinProgress = 114/40,
         SoundTable = {
             { s = pathL85 .. "cloth.mp3", t = 0 / 40, c = ca, v = 0.8 },
             { s = pathKAC .. "m4a1_deploy.mp3", t = 19 / 40, c = ca, v = 1 },
