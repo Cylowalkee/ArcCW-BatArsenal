@@ -12,7 +12,7 @@ att.AutoStats = true
 att.Slot = "muzzle"
 
 att.Model = "models/weapons/arccw/atts/ba_muzz_hksupp.mdl"
-att.ModelOffset = Vector(0, 0, 0)
+att.ModelOffset = Vector(0.71, 0, 0)
 
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"

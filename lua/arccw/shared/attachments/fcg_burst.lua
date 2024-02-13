@@ -34,4 +34,4 @@ att.Hook_Compatible = function(wep)
     if auto then return false end
 end
 
-att.Mult_RPM = 1.2
+att.Mult_RPM = 1.4

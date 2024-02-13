@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+	$basetexture "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/attachments/anpeq/an-peq15"
+	$bumpmap "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/attachments/anpeq/an-peq15_normalmap"
+}
