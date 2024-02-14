@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	$basetexture "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/attachments/pistlaser/laser_col"
+	$bumpmap "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/attachments/pistlaser/laser_nor"
+
+	$phong 1
+	$phongfresnelranges "[0.5 0.75 1]"
+	$phongwarptexture "../addons/ArcCW-BatArsenal/materials/models/weapons/batarsenal/attachments/pistlaser/laser_spec"
+	$phongexponent 5
+}

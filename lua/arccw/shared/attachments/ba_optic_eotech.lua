@@ -1,4 +1,4 @@
-att.PrintName = "Eotech 557"
+att.PrintName = "Eotech Holo Sight"
 att.Icon = Material("entities/att/acwatt_ba_optic_eotech.png")
 att.Description = "Eotech 557 weapon optic."
 

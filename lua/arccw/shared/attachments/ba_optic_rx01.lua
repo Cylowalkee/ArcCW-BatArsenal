@@ -1,4 +1,4 @@
-att.PrintName = "Trijicon RX01"
+att.PrintName = "Dot Reflex Sight"
 att.Icon = Material("entities/att/acwatt_ba_optic_rx01.png")
 att.Description = "Trijon RX01 Reflex sight."
 

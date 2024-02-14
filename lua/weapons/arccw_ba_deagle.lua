@@ -47,9 +47,11 @@ SWEP.CanFireUnderwater = false
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
 
-SWEP.Recoil = 3
+SWEP.Recoil = 1
 SWEP.RecoilSide = 0.4
-SWEP.RecoilRise = 2
+SWEP.RecoilRise = 1
+
+SWEP.RecoilPunch = 5
 
 SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.

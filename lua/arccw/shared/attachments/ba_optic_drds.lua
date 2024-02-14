@@ -1,6 +1,6 @@
-att.PrintName = "Doctor RDS"
+att.PrintName = "Low Profile Red Dot Sight"
 att.Icon = Material("entities/att/acwatt_ba_optic_drds.png")
-att.Description = "Doctor red dot sight."
+att.Description = "Red dot sight."
 
 att.SortOrder = 10000
 

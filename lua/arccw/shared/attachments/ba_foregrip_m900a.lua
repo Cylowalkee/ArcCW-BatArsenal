@@ -1,4 +1,4 @@
-att.PrintName = "M900A Foregrip & Flashlight"
+att.PrintName = "Foregrip & Flashlight Combo"
 att.Icon = Material("entities/att/acwatt_ba_foregrip_m900a.png")
 att.Description = "A foregrip combined with a flashlight."
 

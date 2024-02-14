@@ -1,4 +1,4 @@
-att.PrintName = "KAC Foregrip"
+att.PrintName = "Vertical Foregrip"
 att.Icon = Material("entities/att/acwatt_ba_foregrip_kac.png")
 att.Description = "A sturdy foregrip that helps with recoil control."
 

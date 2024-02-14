@@ -1,4 +1,4 @@
-att.PrintName = "ANPEQ Laser"
+att.PrintName = "Rifle Laser"
 att.Icon = Material("entities/att/acwatt_ba_optic_rx01.png")
 att.Description = ""
 
@@ -13,7 +13,7 @@ att.Slot = "tac"
 
 att.Model = "models/weapons/arccw/atts/ba_tac_anpeq.mdl"
 att.ModelOffset = Vector(0, 0, -0.1)
-att.ModelScale = Vector(1.1, 1.1, 1.1)
+att.ModelScale = Vector(1.5, 1.5, 1.5)
 
 att.Laser = true
 att.LaserStrength = 1
