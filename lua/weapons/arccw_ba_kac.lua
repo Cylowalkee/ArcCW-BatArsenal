@@ -197,7 +197,7 @@ SWEP.AttachmentElements = {
     ["kac_noiron"] = {
         AttPosMods = {
             [1] = {
-                vpos = Vector(-0.1, 1, 4.1),
+                vpos = Vector(-0.15, 1, 4),
             vang = Angle(90, -87.5, -90),
             },
         },
@@ -213,7 +213,7 @@ SWEP.Attachments = {
         Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
         Bone = "Body", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.1, 4, 4.3), -- offset that the attachment will be relative to the bone
+            vpos = Vector(-0.1, 4, 4.1), -- offset that the attachment will be relative to the bone
             vang = Angle(90, -87.5, -90),
         },
         CorrectiveAng = Angle(-4, 180, 180),
