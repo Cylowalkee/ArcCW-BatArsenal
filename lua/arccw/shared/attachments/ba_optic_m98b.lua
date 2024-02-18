@@ -14,12 +14,12 @@ att.AutoStats = true
 att.Slot = "optic"
 
 att.Model = "models/weapons/arccw/atts/ba_optic_m98b.mdl"
-att.ModelOffset = Vector(0, 0, 0)
+att.ModelOffset = Vector(0, 0, -0.15)
 att.ModelScale = Vector(0.7, 0.7, 0.7)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-0, 11.5, -1.38),
+        Pos = Vector(0.01, 11.5, -1.23),
         Ang = Angle(-0.9, 0, -0.5),
         Magnification = 1.1,
     }
@@ -28,7 +28,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/duplex.png", "smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 11.2
+att.HolosightSize = 9.8
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/ba_optic_m98b_hsp.mdl"
 
