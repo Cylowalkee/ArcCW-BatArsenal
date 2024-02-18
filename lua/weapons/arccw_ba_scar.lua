@@ -547,7 +547,7 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "gun",
         Offset = {
-            vpos = Vector(-0.0, -2.15, -1),
+            vpos = Vector(-0.0, -2.15, -1.5),
             vang = Angle(90, 0, -90),
         },
         CorrectiveAng = Angle( 0, 0, 0 ),

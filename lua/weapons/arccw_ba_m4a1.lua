@@ -488,11 +488,11 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "M4",
         Offset = {
-            vpos = Vector(-0.03, -2.5, 0),
+            vpos = Vector(-0.03, -2.4, 0),
             vang = Angle(90, 0, -90),
         },
         CorrectiveAng = Angle( 0, 0, 0 ),
-        VMScale = Vector(1.1, 1.1, 1.1),
+        VMScale = Vector(1.02, 1.02, 1.02),
         InstalledEles = {"m4a1_rail"},
         GivesFlags = {"norear"},
     },
