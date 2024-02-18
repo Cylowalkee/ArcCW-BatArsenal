@@ -210,12 +210,12 @@ SWEP.Attachments = {
         Slot = {"optic", "optic_sniper", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
         Bone = "Body", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-0.2, -2, 1.4),
+            vpos = Vector(-0.15, -1.8, 1.4),
             vang = Angle(-90, -90, 90),
         },
         CorrectivePos = Vector(0.2, 0, 0.1),
         CorrectiveAng = Angle(0, 180, 180),
-        VMScale = Vector(0.9, 0.9, 0.9),
+        VMScale = Vector(0.8, 0.8, 0.8),
     },
     {
         PrintName = "Muzzle",

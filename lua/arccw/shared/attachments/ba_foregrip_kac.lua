@@ -14,6 +14,7 @@ att.Slot = "foregrip"
 att.LHIK = true
 
 att.Model = "models/weapons/arccw/atts/ba_fg_kac.mdl"
+att.ModelOffset = Vector(0, 0, -0.2)
 
 att.Mult_MoveDispersion = 0.8
 

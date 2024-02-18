@@ -13,11 +13,12 @@ att.AutoStats = true
 att.Slot = "optic"
 
 att.Model = "models/weapons/arccw/atts/ba_optic_eotech.mdl"
-att.ModelOffset = Vector(0, 0, -0.1)
+att.ModelOffset = Vector(0, 0, -0.15)
+att.ModelScale = Vector(1.2, 1.2, 1.2)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10.3, -1.2),
+        Pos = Vector(0, 10.3, -1.5),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
     }

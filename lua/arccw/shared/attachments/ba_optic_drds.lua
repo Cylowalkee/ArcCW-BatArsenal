@@ -14,10 +14,11 @@ att.Slot = "optic_lp"
 
 att.Model = "models/weapons/arccw/atts/ba_optic_drds.mdl"
 att.ModelOffset = Vector(0, 0, 0)
+att.ModelScale = Vector(1.3, 1.3, 1.3)
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0,  7, -0.55),
+        Pos = Vector(0,  7, -0.75),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
     }

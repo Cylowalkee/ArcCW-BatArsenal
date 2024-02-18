@@ -488,7 +488,7 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "M4",
         Offset = {
-            vpos = Vector(-0.03, -2.3, 0),
+            vpos = Vector(-0.03, -2.5, 0),
             vang = Angle(90, 0, -90),
         },
         CorrectiveAng = Angle( 0, 0, 0 ),
@@ -511,7 +511,7 @@ SWEP.Attachments = {
         Slot = {"foregrip"},
         Bone = "M4",
         Offset = {
-            vpos = Vector(-0.03, -0, 7.5),
+            vpos = Vector(-0.03, -0.2, 7.5),
             vang = Angle(90, 0, -90),
         },
         RequireFlags = {"m4a1_ris"},

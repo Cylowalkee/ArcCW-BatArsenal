@@ -164,7 +164,7 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "Body",
         Offset = {
-            vpos = Vector(-0, 6.5, 4.2),
+            vpos = Vector(-0.05, 6.2, 4.15),
             vang = Angle(90, -90, -90),
         },
         CorrectiveAng = Angle( -1.3, 180, 180 ),
@@ -176,7 +176,7 @@ SWEP.Attachments = {
         Slot = {"tac","foregrip"},
         Bone = "Body",
         Offset = {
-            vpos = Vector(-0, 6, 2.2),
+            vpos = Vector(-0, 6.2, 2.4),
             vang = Angle(90, -90, -90),
         },
     },

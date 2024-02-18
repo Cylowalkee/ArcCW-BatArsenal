@@ -223,7 +223,7 @@ SWEP.Attachments = {
         Slot = {"optic", "optic_sniper", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
         Bone = "M98_Body", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.0, -0, 1.2),
+            vpos = Vector(0.0, -1, 1.1),
             vang = Angle(-90, -90, 90),
         },
         CorrectivePos = Vector(0, 0, 0),

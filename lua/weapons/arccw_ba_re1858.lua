@@ -162,11 +162,11 @@ SWEP.Attachments = {
         DefaultAttName = "Iron Sights",
         Bone = "rotation controller",
         Offset = {
-            vpos = Vector(1, -4.1, 0),
+            vpos = Vector(0.7, -4.1, 0),
             vang = Angle(0, 0, -90),
         },
         CorrectiveAng = Angle( 0, 0, 0 ),
-        VMScale = Vector(1.5, 1.5, 1.5),
+        VMScale = Vector(1.1, 1.1, 1.1),
         InstalledEles = {"rail"},
     },
     {

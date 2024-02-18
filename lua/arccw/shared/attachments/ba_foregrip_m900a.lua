@@ -13,7 +13,7 @@ att.AutoStats = true
 att.Slot = "foregrip"
 
 att.Model = "models/weapons/arccw/atts/ba_fg_m900a.mdl"
-att.ModelOffset = Vector(0,0,0)
+att.ModelOffset = Vector(0, 0, -0.2)
 att.OffsetAng = Angle(0,0,0)
 att.ModelScale = Vector(1,1,1)
 

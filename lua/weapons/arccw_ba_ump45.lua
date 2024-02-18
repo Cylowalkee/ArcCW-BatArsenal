@@ -245,7 +245,7 @@ SWEP.Attachments = {
         Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
         Bone = "smdimport", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(0.05, 1.108, 3.124), -- offset that the attachment will be relative to the bone
+            vpos = Vector(0.05, 1.108, 3.024), -- offset that the attachment will be relative to the bone
             vang = Angle(0, -90, 0),
         },
         CorrectiveAng = Angle(0, 180, 0),

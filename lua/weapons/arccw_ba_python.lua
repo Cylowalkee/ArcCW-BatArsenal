@@ -204,12 +204,12 @@ SWEP.Attachments = {
         Slot = {"optic_lp"},
         Bone = "Barrel Low",
         Offset = {
-            vpos = Vector(-6.3, -3.729, -0),
+            vpos = Vector(-6.3, -3.6, -0),
             vang = Angle(180, 0, -90),
         },
         CorrectiveAng = nil, --Angle(90, 0, -90)
         InstalledEles = {"rail"},
-        VMScale = Vector(0.9, 0.9, 0.9),
+        VMScale = Vector(0.8, 0.8, 0.8),
     },
     {
         PrintName = "Muzzle",
